@@ -1,0 +1,88 @@
+# ==============================================================================
+# WINGS INSTITUTE - NETLIFY/CLOUDFLARE PAGES HEADERS
+# 2026 Security & SEO Standards
+# ==============================================================================
+# 
+# For Netlify: Place in /public/_headers
+# For Cloudflare Pages: Place in /public/_headers
+# ==============================================================================
+
+# All Pages - Security Headers
+/*
+  # HSTS - HTTP Strict Transport Security (2 years + preload)
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  
+  # Content Security Policy (Updated: Allow Google Maps & YouTube embeds)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://aistudiocdn.com https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://maps.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https: wss:; frame-src 'self' https://www.google.com https://maps.google.com https://www.youtube.com https://youtube.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self';
+  
+  # Clickjacking Protection
+  X-Frame-Options: SAMEORIGIN
+  
+  # MIME Sniffing Protection
+  X-Content-Type-Options: nosniff
+  
+  # XSS Filter
+  X-XSS-Protection: 1; mode=block
+  
+  # Referrer Policy
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # Permissions Policy
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(self), payment=(), usb=()
+  
+  # Cross-Origin Policies
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  Cross-Origin-Resource-Policy: cross-origin
+
+# Static Assets - Long Cache
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - Long Cache
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/slider-images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts - Long Cache
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# HTML - Short Cache
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Sitemaps - Medium Cache
+/sitemap*.xml
+  Cache-Control: public, max-age=86400
+  Content-Type: application/xml
+
+# Robots.txt
+/robots.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain
+
+# Manifest
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json
+
+# PDF Documents
+/*.pdf
+  Cache-Control: public, max-age=2592000
+

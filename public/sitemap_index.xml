@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WINGS INSTITUTE - SITEMAP INDEX
+  2026 SEO Standard with GEO Optimization
+  Last Updated: 2 January 2026
+-->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main Pages Sitemap -->
+  <sitemap>
+    <loc>https://wingsinstitute.com/sitemap-pages.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
+  
+  <!-- Course Pages Sitemap -->
+  <sitemap>
+    <loc>https://wingsinstitute.com/sitemap-courses.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
+  
+  <!-- AI Tools Sitemap -->
+  <sitemap>
+    <loc>https://wingsinstitute.com/sitemap-ai-tools.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
+  
+  <!-- Blog Sitemap (37 Articles) -->
+  <sitemap>
+    <loc>https://wingsinstitute.com/sitemap-blog.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
+  
+  <!-- Images Sitemap -->
+  <sitemap>
+    <loc>https://wingsinstitute.com/sitemap-images.xml</loc>
+    <lastmod>2026-01-02</lastmod>
+  </sitemap>
+
+</sitemapindex>

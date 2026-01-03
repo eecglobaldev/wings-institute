@@ -1,0 +1,1778 @@
+[
+  {
+    "id": "EVT-2026-01-09",
+    "status": "published",
+    "date": "2026-01-09",
+    "time": "10:00:00",
+    "duration_min": 180,
+    "title": "Udaan: Launch Your Career in Aviation",
+    "titleHi": "उड़ान: एविएशन में अपना करियर शुरू करें",
+    "titleGu": "ઉડાન: એવિએશનમાં તમારી કારકિર્દી શરૂ કરો",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 30,
+    "registered_count": 12,
+    "description": "Interactive session on the physics of flight. Experience 'Life of a Cabin Crew' with alumni success stories from Indigo and Singapore Airlines.",
+    "descriptionHi": "उड़ान के भौतिकी पर इंटरैक्टिव सत्र। इंडिगो और सिंगापुर एयरलाइंस के पूर्व छात्रों की सफलता की कहानियों के साथ 'केबिन क्रू का जीवन' अनुभव करें।",
+    "descriptionGu": "ઉડ્ડયનના ભૌતિકશાસ્ત્ર પર ઇન્ટરેક્ટિવ સત્ર। ઇન્ડિગો અને સિંગાપોર એરલાઇન્સના ભૂતપૂર્વ વિદ્યાર્થીઓની સફળતાની વાર્તાઓ સાથે 'કેબિન ક્રૂનું જીવન' અનુભવો.",
+    "learning_outcomes": [
+      "Understand basics of aviation physics",
+      "Learn cabin crew daily routines",
+      "Practice professional announcements"
+    ],
+    "learning_outcomesHi": [
+      "एविएशन फिजिक्स की मूल बातें समझें",
+      "केबिन क्रू की दैनिक दिनचर्या सीखें",
+      "पेशेवर घोषणाओं का अभ्यास करें"
+    ],
+    "learning_outcomesGu": [
+      "એવિએશન ફિઝિક્સની મૂળભૂત બાબતો સમજો",
+      "કેબિન ક્રૂની દૈનિક દિનચર્યા શીખો",
+      "વ્યાવસાયિક જાહેરાતોનો અભ્યાસ કરો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Free aviation career workshop at Wings Institute Vadodara. Experience our A330 mock cabin and learn from airline professionals."
+  },
+  {
+    "id": "EVT-2026-01-16",
+    "status": "published",
+    "date": "2026-01-16",
+    "time": "14:00:00",
+    "duration_min": 120,
+    "title": "5-Star Service Secrets: Hotel Management Masterclass",
+    "titleHi": "5-स्टार सर्विस सीक्रेट्स: होटल मैनेजमेंट मास्टरक्लास",
+    "titleGu": "5-સ્ટાર સર્વિસ સીક્રેટ્સ: હોટેલ મેનેજમેન્ટ માસ્ટરક્લાસ",
+    "category": "hospitality",
+    "location": "Fine Dine Restaurant Mock-up",
+    "locationHi": "फाइन डाइन रेस्टोरेंट मॉक-अप",
+    "locationGu": "ફાઇન ડાઇન રેસ્ટોરન્ટ મોક-અપ",
+    "capacity": 25,
+    "registered_count": 8,
+    "description": "Discover the art of luxury hospitality. Learn guest handling, table setup, and what makes 5-star hotels truly exceptional.",
+    "descriptionHi": "लक्जरी हॉस्पिटैलिटी की कला खोजें। गेस्ट हैंडलिंग, टेबल सेटअप और जानें कि 5-स्टार होटलों को वास्तव में क्या असाधारण बनाता है।",
+    "descriptionGu": "લક્ઝરી હોસ્પિટાલિટીની કળા શોધો. ગેસ્ટ હેન્ડલિંગ, ટેબલ સેટઅપ અને જાણો કે 5-સ્ટાર હોટેલ્સને ખરેખર શું અસાધારણ બનાવે છે.",
+    "learning_outcomes": [
+      "Master guest greeting protocols",
+      "Learn professional table setting",
+      "Understand hotel hierarchy"
+    ],
+    "learning_outcomesHi": [
+      "गेस्ट ग्रीटिंग प्रोटोकॉल में महारत हासिल करें",
+      "प्रोफेशनल टेबल सेटिंग सीखें",
+      "होटल पदानुक्रम समझें"
+    ],
+    "learning_outcomesGu": [
+      "ગેસ્ટ ગ્રીટિંગ પ્રોટોકોલમાં નિપુણતા મેળવો",
+      "પ્રોફેશનલ ટેબલ સેટિંગ શીખો",
+      "હોટેલ હાયરાર્કી સમજો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free hotel management workshop at Wings Institute. Learn 5-star service secrets from industry experts."
+  },
+  {
+    "id": "EVT-2026-01-22",
+    "status": "published",
+    "date": "2026-01-22",
+    "time": "11:00:00",
+    "duration_min": 150,
+    "title": "Kitchen Confidential: Culinary Arts Introduction",
+    "titleHi": "किचन कॉन्फिडेंशियल: कलिनरी आर्ट्स परिचय",
+    "titleGu": "કિચન કોન્ફિડેન્શિયલ: કલિનરી આર્ટ્સ પરિચય",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 20,
+    "registered_count": 5,
+    "description": "Step into a professional kitchen! Learn knife skills, kitchen safety, and prepare your first gourmet dish with our executive chef.",
+    "descriptionHi": "प्रोफेशनल किचन में कदम रखें! चाकू कौशल, किचन सेफ्टी सीखें और हमारे एग्जीक्यूटिव शेफ के साथ अपना पहला गॉर्मेट डिश तैयार करें।",
+    "descriptionGu": "પ્રોફેશનલ કિચનમાં પગ મૂકો! છરી કૌશલ્ય, કિચન સેફ્ટી શીખો અને અમારા એક્ઝિક્યુટિવ શેફ સાથે તમારી પહેલી ગોર્મેટ ડિશ તૈયાર કરો.",
+    "learning_outcomes": [
+      "Basic knife handling techniques",
+      "Kitchen hygiene & HACCP basics",
+      "Prepare a signature appetizer"
+    ],
+    "learning_outcomesHi": [
+      "बेसिक चाकू हैंडलिंग तकनीक",
+      "किचन हाइजीन और HACCP बेसिक्स",
+      "एक सिग्नेचर एपेटाइज़र तैयार करें"
+    ],
+    "learning_outcomesGu": [
+      "બેસિક છરી હેન્ડલિંગ ટેકનિક",
+      "કિચન હાઇજીન અને HACCP બેઝિક્સ",
+      "એક સિગ્નેચર એપેટાઇઝર તૈયાર કરો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Free culinary arts workshop. Learn professional cooking skills at Wings Institute's commercial kitchen."
+  },
+  {
+    "id": "EVT-2026-01-28",
+    "status": "published",
+    "date": "2026-01-28",
+    "time": "15:00:00",
+    "duration_min": 120,
+    "title": "Behind the Scenes: Airport Operations Decoded",
+    "titleHi": "पर्दे के पीछे: एयरपोर्ट ऑपरेशंस की जानकारी",
+    "titleGu": "પડદા પાછળ: એરપોર્ટ ઓપરેશન્સની જાણકારી",
+    "category": "airport",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 35,
+    "registered_count": 10,
+    "description": "Ever wondered how airports handle thousands of passengers daily? Explore ground handling, check-in operations, and baggage systems.",
+    "descriptionHi": "कभी सोचा है कि एयरपोर्ट रोजाना हजारों यात्रियों को कैसे संभालते हैं? ग्राउंड हैंडलिंग, चेक-इन ऑपरेशंस और बैगेज सिस्टम एक्सप्लोर करें।",
+    "descriptionGu": "ક્યારેય વિચાર્યું છે કે એરપોર્ટ દરરોજ હજારો મુસાફરોને કેવી રીતે સંભાળે છે? ગ્રાઉન્ડ હેન્ડલિંગ, ચેક-ઇન ઓપરેશન્સ અને બેગેજ સિસ્ટમ્સ એક્સપ્લોર કરો.",
+    "learning_outcomes": [
+      "Understand airport workflow",
+      "Learn check-in counter operations",
+      "Explore baggage handling systems"
+    ],
+    "learning_outcomesHi": [
+      "एयरपोर्ट वर्कफ्लो समझें",
+      "चेक-इन काउंटर ऑपरेशंस सीखें",
+      "बैगेज हैंडलिंग सिस्टम एक्सप्लोर करें"
+    ],
+    "learning_outcomesGu": [
+      "એરપોર્ટ વર્કફ્લો સમજો",
+      "ચેક-ઇન કાઉન્ટર ઓપરેશન્સ શીખો",
+      "બેગેજ હેન્ડલિંગ સિસ્ટમ્સ એક્સપ્લોર કરો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free airport management workshop. Learn how airports operate at Wings Institute Vadodara."
+  },
+  {
+    "id": "EVT-2026-02-05",
+    "status": "published",
+    "date": "2026-02-05",
+    "time": "16:00:00",
+    "duration_min": 120,
+    "title": "Wanderlust Workshop: Travel & Tourism Careers",
+    "titleHi": "वांडरलस्ट वर्कशॉप: ट्रैवल एंड टूरिज्म करियर",
+    "titleGu": "વાન્ડરલસ્ટ વર્કશોપ: ટ્રાવેલ એન્ડ ટૂરિઝમ કારકિર્દી",
+    "category": "tourism",
+    "location": "Computer Lab - Galileo Training",
+    "locationHi": "कंप्यूटर लैब - गैलीलियो ट्रेनिंग",
+    "locationGu": "કોમ્પ્યુટર લેબ - ગેલિલિયો ટ્રેનિંગ",
+    "capacity": 25,
+    "registered_count": 7,
+    "description": "Turn your passion for travel into a career! Learn ticketing basics on Galileo/Amadeus and explore opportunities in tourism.",
+    "descriptionHi": "यात्रा के प्रति अपने जुनून को करियर में बदलें! गैलीलियो/अमाडियस पर टिकटिंग बेसिक्स सीखें और टूरिज्म में अवसर खोजें।",
+    "descriptionGu": "મુસાફરી પ્રત્યેના તમારા જુસ્સાને કારકિર્દીમાં બદલો! ગેલિલિયો/અમાડિયસ પર ટિકિટિંગ બેઝિક્સ શીખો અને ટૂરિઝમમાં તકો શોધો.",
+    "learning_outcomes": [
+      "Introduction to GDS systems",
+      "Learn itinerary planning",
+      "Explore tourism career paths"
+    ],
+    "learning_outcomesHi": [
+      "GDS सिस्टम का परिचय",
+      "यात्रा कार्यक्रम प्लानिंग सीखें",
+      "टूरिज्म करियर पाथ एक्सप्लोर करें"
+    ],
+    "learning_outcomesGu": [
+      "GDS સિસ્ટમનો પરિચય",
+      "યાત્રા કાર્યક્રમ પ્લાનિંગ શીખો",
+      "ટૂરિઝમ કારકિર્દી પાથ એક્સપ્લોર કરો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free travel and tourism career workshop. Learn GDS ticketing at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-02-13",
+    "status": "published",
+    "date": "2026-02-13",
+    "time": "17:00:00",
+    "duration_min": 150,
+    "title": "Valentine's Special: Art of Fine Dining Service",
+    "titleHi": "वैलेंटाइन स्पेशल: फाइन डाइनिंग सर्विस की कला",
+    "titleGu": "વેલેન્ટાઇન સ્પેશિયલ: ફાઇન ડાઇનિંગ સર્વિસની કળા",
+    "category": "hospitality",
+    "location": "Fine Dine Restaurant Mock-up",
+    "locationHi": "फाइन डाइन रेस्टोरेंट मॉक-अप",
+    "locationGu": "ફાઇન ડાઇન રેસ્ટોરન્ટ મોક-અપ",
+    "capacity": 25,
+    "registered_count": 18,
+    "description": "A romantic evening learning the art of luxury service. Master napkin folding, mocktail mixing, and create the perfect dining ambiance.",
+    "descriptionHi": "लक्जरी सर्विस की कला सीखने की एक रोमांटिक शाम। नैपकिन फोल्डिंग, मॉकटेल मिक्सिंग में महारत हासिल करें और परफेक्ट डाइनिंग एम्बियंस बनाएं।",
+    "descriptionGu": "લક્ઝરી સર્વિસની કળા શીખવાની એક રોમેન્ટિક સાંજ. નેપકિન ફોલ્ડિંગ, મોક્ટેલ મિક્સિંગમાં નિપુણતા મેળવો અને પરફેક્ટ ડાઇનિંગ એમ્બિયન્સ બનાવો.",
+    "learning_outcomes": [
+      "Creative napkin folding art",
+      "Mix 3 signature mocktails",
+      "Table decoration techniques"
+    ],
+    "learning_outcomesHi": [
+      "क्रिएटिव नैपकिन फोल्डिंग आर्ट",
+      "3 सिग्नेचर मॉकटेल मिक्स करें",
+      "टेबल डेकोरेशन तकनीक"
+    ],
+    "learning_outcomesGu": [
+      "ક્રિએટિવ નેપકિન ફોલ્ડિંગ આર્ટ",
+      "3 સિગ્નેચર મોક્ટેલ મિક્સ કરો",
+      "ટેબલ ડેકોરેશન ટેકનિક"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Valentine's special fine dining workshop. Learn luxury service skills at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-02-20",
+    "status": "published",
+    "date": "2026-02-20",
+    "time": "10:00:00",
+    "duration_min": 180,
+    "title": "Cabin Crew Grooming: Your First Impression Matters",
+    "titleHi": "केबिन क्रू ग्रूमिंग: आपका पहला प्रभाव मायने रखता है",
+    "titleGu": "કેબિન ક્રૂ ગ્રૂમિંગ: તમારી પહેલી છાપ મહત્વની છે",
+    "category": "aviation",
+    "location": "In-House Spa & Grooming Studio",
+    "locationHi": "इन-हाउस स्पा एंड ग्रूमिंग स्टूडियो",
+    "locationGu": "ઇન-હાઉસ સ્પા એન્ડ ગ્રૂમિંગ સ્ટુડિયો",
+    "capacity": 20,
+    "registered_count": 14,
+    "description": "Airlines reject 70% of candidates at the grooming stage. Learn makeup, hairstyling, and posture secrets from our expert trainers.",
+    "descriptionHi": "एयरलाइंस ग्रूमिंग स्टेज पर 70% कैंडिडेट्स को रिजेक्ट करती हैं। हमारे एक्सपर्ट ट्रेनर्स से मेकअप, हेयरस्टाइलिंग और पॉस्चर सीक्रेट्स सीखें।",
+    "descriptionGu": "એરલાઇન્સ ગ્રૂમિંગ સ્ટેજ પર 70% ઉમેદવારોને રિજેક્ટ કરે છે. અમારા એક્સપર્ટ ટ્રેનર્સ પાસેથી મેકઅપ, હેરસ્ટાઇલિંગ અને પોશ્ચર સીક્રેટ્સ શીખો.",
+    "learning_outcomes": [
+      "Airline-approved makeup techniques",
+      "Professional hair styling tips",
+      "Posture and body language"
+    ],
+    "learning_outcomesHi": [
+      "एयरलाइन-अप्रूव्ड मेकअप तकनीक",
+      "प्रोफेशनल हेयर स्टाइलिंग टिप्स",
+      "पॉस्चर और बॉडी लैंग्वेज"
+    ],
+    "learning_outcomesGu": [
+      "એરલાઇન-એપ્રૂવ્ડ મેકઅપ ટેકનિક",
+      "પ્રોફેશનલ હેર સ્ટાઇલિંગ ટિપ્સ",
+      "પોશ્ચર અને બોડી લેંગ્વેજ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free cabin crew grooming workshop. Learn airline-approved makeup and styling at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-02-26",
+    "status": "published",
+    "date": "2026-02-26",
+    "time": "14:00:00",
+    "duration_min": 120,
+    "title": "Bake Like a Pro: Bread & Pastry Fundamentals",
+    "titleHi": "प्रो की तरह बेक करें: ब्रेड और पेस्ट्री फंडामेंटल्स",
+    "titleGu": "પ્રો જેવા બેક કરો: બ્રેડ અને પેસ્ટ્રી ફન્ડામેન્ટલ્સ",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 18,
+    "registered_count": 6,
+    "description": "From dough to delicious! Learn the science of baking, work with commercial ovens, and take home your freshly baked creations.",
+    "descriptionHi": "आटे से स्वादिष्ट तक! बेकिंग का विज्ञान सीखें, कमर्शियल ओवन पर काम करें और अपनी ताज़ी बेक्ड क्रिएशन घर ले जाएं।",
+    "descriptionGu": "કણકથી સ્વાદિષ્ટ સુધી! બેકિંગનું વિજ્ઞાન શીખો, કમર્શિયલ ઓવન પર કામ કરો અને તમારી તાજી બેક કરેલી રચનાઓ ઘરે લઈ જાઓ.",
+    "learning_outcomes": [
+      "Understand baking chemistry",
+      "Operate commercial equipment",
+      "Bake artisan bread from scratch"
+    ],
+    "learning_outcomesHi": [
+      "बेकिंग केमिस्ट्री समझें",
+      "कमर्शियल इक्विपमेंट ऑपरेट करें",
+      "स्क्रैच से आर्टिसन ब्रेड बेक करें"
+    ],
+    "learning_outcomesGu": [
+      "બેકિંગ કેમિસ્ટ્રી સમજો",
+      "કમર્શિયલ ઇક્વિપમેન્ટ ઓપરેટ કરો",
+      "સ્ક્રેચથી આર્ટિસન બ્રેડ બેક કરો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Free baking workshop at Wings Institute. Learn professional pastry skills in our commercial kitchen."
+  },
+  {
+    "id": "EVT-2026-03-02",
+    "status": "published",
+    "date": "2026-03-02",
+    "time": "11:00:00",
+    "duration_min": 150,
+    "title": "Holi Special: Colorful Organic Baking",
+    "titleHi": "होली स्पेशल: रंगीन ऑर्गेनिक बेकिंग",
+    "titleGu": "હોળી સ્પેશિયલ: રંગીન ઓર્ગેનિક બેકિંગ",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 20,
+    "registered_count": 11,
+    "description": "Celebrate Holi with colors you can eat! Learn to create vibrant pastries using natural ingredients like beetroot, turmeric, and spinach.",
+    "descriptionHi": "उन रंगों के साथ होली मनाएं जो आप खा सकते हैं! चुकंदर, हल्दी और पालक जैसी प्राकृतिक सामग्री का उपयोग करके जीवंत पेस्ट्री बनाना सीखें।",
+    "descriptionGu": "એવા રંગો સાથે હોળી ઉજવો જે તમે ખાઈ શકો! બીટરૂટ, હળદર અને પાલક જેવી કુદરતી સામગ્રીનો ઉપયોગ કરીને જીવંત પેસ્ટ્રી બનાવતા શીખો.",
+    "learning_outcomes": [
+      "Natural food coloring techniques",
+      "Healthy baking alternatives",
+      "Create Instagram-worthy desserts"
+    ],
+    "learning_outcomesHi": [
+      "प्राकृतिक फूड कलरिंग तकनीक",
+      "हेल्दी बेकिंग अल्टरनेटिव्स",
+      "इंस्टाग्राम-योग्य डेज़र्ट बनाएं"
+    ],
+    "learning_outcomesGu": [
+      "કુદરતી ફૂડ કલરિંગ ટેકનિક",
+      "હેલ્ધી બેકિંગ અલ્ટરનેટિવ્સ",
+      "ઇન્સ્ટાગ્રામ-યોગ્ય ડેઝર્ટ બનાવો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Holi special baking workshop. Learn natural food coloring at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-03-12",
+    "status": "published",
+    "date": "2026-03-12",
+    "time": "15:00:00",
+    "duration_min": 180,
+    "title": "Sky High Safety: Emergency Response Training",
+    "titleHi": "स्काई हाई सेफ्टी: इमरजेंसी रिस्पॉन्स ट्रेनिंग",
+    "titleGu": "સ્કાય હાઇ સેફ્ટી: ઇમરજન્સી રિસ્પોન્સ ટ્રેનિંગ",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 25,
+    "registered_count": 9,
+    "description": "Safety is the #1 priority in aviation. Learn oxygen mask deployment, life vest procedures, and how cabin crew handle emergencies.",
+    "descriptionHi": "एविएशन में सेफ्टी नंबर 1 प्राथमिकता है। ऑक्सीजन मास्क डिप्लॉयमेंट, लाइफ वेस्ट प्रोसीजर और केबिन क्रू इमरजेंसी को कैसे हैंडल करते हैं सीखें।",
+    "descriptionGu": "એવિએશનમાં સેફ્ટી નંબર 1 પ્રાથમિકતા છે. ઓક્સિજન માસ્ક ડિપ્લોયમેન્ટ, લાઇફ વેસ્ટ પ્રોસિજર અને કેબિન ક્રૂ ઇમરજન્સી કેવી રીતે હેન્ડલ કરે છે તે શીખો.",
+    "learning_outcomes": [
+      "Operate safety equipment",
+      "Practice emergency announcements",
+      "Watch video demo of evacuation slide deployment"
+    ],
+    "learning_outcomesHi": [
+      "सेफ्टी इक्विपमेंट ऑपरेट करें",
+      "इमरजेंसी अनाउंसमेंट प्रैक्टिस करें",
+      "इवैक्यूएशन स्लाइड डिप्लॉयमेंट का वीडियो डेमो देखें"
+    ],
+    "learning_outcomesGu": [
+      "સેફ્ટી ઇક્વિપમેન્ટ ઓપરેટ કરો",
+      "ઇમરજન્સી એનાઉન્સમેન્ટ પ્રેક્ટિસ કરો",
+      "ઇવેક્યુએશન સ્લાઇડ ડિપ્લોયમેન્ટનો વીડિયો ડેમો જુઓ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free aviation safety workshop. Practice emergency procedures at Wings Institute's A330 mock cabin."
+  },
+  {
+    "id": "EVT-2026-03-19",
+    "status": "published",
+    "date": "2026-03-19",
+    "time": "10:00:00",
+    "duration_min": 120,
+    "title": "Room Service Excellence: Housekeeping Masterclass",
+    "titleHi": "रूम सर्विस एक्सीलेंस: हाउसकीपिंग मास्टरक्लास",
+    "titleGu": "રૂમ સર્વિસ એક્સેલન્સ: હાઉસકીપિંગ માસ્ટરક્લાસ",
+    "category": "hospitality",
+    "location": "Hotel Mock-up Suite",
+    "locationHi": "होटल मॉक-अप सुइट",
+    "locationGu": "હોટેલ મોક-અપ સ્યુટ",
+    "capacity": 20,
+    "registered_count": 4,
+    "description": "The art of invisible service! Learn bed-making to hotel standards, room inspection checklists, and guest amenity presentation.",
+    "descriptionHi": "अदृश्य सेवा की कला! होटल मानकों के अनुसार बेड-मेकिंग, रूम इंस्पेक्शन चेकलिस्ट और गेस्ट एमेनिटी प्रेजेंटेशन सीखें।",
+    "descriptionGu": "અદ્રશ્ય સેવાની કળા! હોટેલ માનકો મુજબ બેડ-મેકિંગ, રૂમ ઇન્સ્પેક્શન ચેકલિસ્ટ અને ગેસ્ટ એમેનિટી પ્રેઝન્ટેશન શીખો.",
+    "learning_outcomes": [
+      "Professional bed-making techniques",
+      "Room inspection standards",
+      "Turn-down service protocols"
+    ],
+    "learning_outcomesHi": [
+      "प्रोफेशनल बेड-मेकिंग तकनीक",
+      "रूम इंस्पेक्शन स्टैंडर्ड्स",
+      "टर्न-डाउन सर्विस प्रोटोकॉल"
+    ],
+    "learning_outcomesGu": [
+      "પ્રોફેશનલ બેડ-મેકિંગ ટેકનિક",
+      "રૂમ ઇન્સ્પેક્શન સ્ટાન્ડર્ડ્સ",
+      "ટર્ન-ડાઉન સર્વિસ પ્રોટોકોલ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free housekeeping workshop. Learn hotel room service standards at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-03-27",
+    "status": "published",
+    "date": "2026-03-27",
+    "time": "16:00:00",
+    "duration_min": 120,
+    "title": "Dream Destinations: Tour Package Design",
+    "titleHi": "ड्रीम डेस्टिनेशन: टूर पैकेज डिज़ाइन",
+    "titleGu": "ડ્રીમ ડેસ્ટિનેશન: ટૂર પેકેજ ડિઝાઇન",
+    "category": "tourism",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 30,
+    "registered_count": 8,
+    "description": "Design your own tour package! Learn destination research, costing, and how travel agencies create memorable vacation experiences.",
+    "descriptionHi": "अपना खुद का टूर पैकेज डिज़ाइन करें! डेस्टिनेशन रिसर्च, कॉस्टिंग और ट्रैवल एजेंसियां यादगार वेकेशन अनुभव कैसे बनाती हैं सीखें।",
+    "descriptionGu": "તમારું પોતાનું ટૂર પેકેજ ડિઝાઇન કરો! ડેસ્ટિનેશન રિસર્ચ, કોસ્ટિંગ અને ટ્રાવેલ એજન્સીઓ યાદગાર વેકેશન અનુભવ કેવી રીતે બનાવે છે તે શીખો.",
+    "learning_outcomes": [
+      "Destination research methods",
+      "Package costing basics",
+      "Create a sample itinerary"
+    ],
+    "learning_outcomesHi": [
+      "डेस्टिनेशन रिसर्च मेथड्स",
+      "पैकेज कॉस्टिंग बेसिक्स",
+      "एक सैंपल इटिनरेरी बनाएं"
+    ],
+    "learning_outcomesGu": [
+      "ડેસ્ટિનેશન રિસર્ચ મેથડ્સ",
+      "પેકેજ કોસ્ટિંગ બેઝિક્સ",
+      "એક સેમ્પલ ઇટિનરરી બનાવો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free tour design workshop. Learn travel package creation at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-04-03",
+    "status": "published",
+    "date": "2026-04-03",
+    "time": "11:00:00",
+    "duration_min": 180,
+    "title": "Fearless Flyers: Overcome Your Fear of Flying",
+    "titleHi": "फियरलेस फ्लायर्स: उड़ान के डर पर विजय पाएं",
+    "titleGu": "ફિયરલેસ ફ્લાયર્સ: ઉડ્ડયનના ડરને જીતો",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 25,
+    "registered_count": 15,
+    "description": "Address flight anxiety through exposure therapy! Experience turbulence explanations, cabin pressure demos, and build confidence to fly.",
+    "descriptionHi": "एक्सपोज़र थेरेपी के माध्यम से फ्लाइट एंग्जायटी को संबोधित करें! टर्बुलेंस एक्सप्लेनेशन, केबिन प्रेशर डेमो अनुभव करें और उड़ान का आत्मविश्वास बनाएं।",
+    "descriptionGu": "એક્સપોઝર થેરાપી દ્વારા ફ્લાઇટ એન્ઝાયટીને સંબોધો! ટર્બ્યુલન્સ એક્સપ્લેનેશન, કેબિન પ્રેશર ડેમો અનુભવો અને ઉડવાનો આત્મવિશ્વાસ બનાવો.",
+    "learning_outcomes": [
+      "Understand flight mechanics",
+      "Cabin pressure demonstrations",
+      "Build flying confidence"
+    ],
+    "learning_outcomesHi": [
+      "फ्लाइट मैकेनिक्स समझें",
+      "केबिन प्रेशर डेमोंस्ट्रेशन",
+      "उड़ान का आत्मविश्वास बनाएं"
+    ],
+    "learning_outcomesGu": [
+      "ફ્લાઇટ મિકેનિક્સ સમજો",
+      "કેબિન પ્રેશર ડેમોન્સ્ટ્રેશન",
+      "ઉડવાનો આત્મવિશ્વાસ બનાવો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Overcome fear of flying workshop. Experience our A330 mock cabin at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-04-10",
+    "status": "published",
+    "date": "2026-04-10",
+    "time": "14:00:00",
+    "duration_min": 120,
+    "title": "Spa Therapy Basics: Wellness & Hospitality",
+    "titleHi": "स्पा थेरेपी बेसिक्स: वेलनेस एंड हॉस्पिटैलिटी",
+    "titleGu": "સ્પા થેરાપી બેઝિક્સ: વેલનેસ એન્ડ હોસ્પિટાલિટી",
+    "category": "hospitality",
+    "location": "In-House Spa & Grooming Studio",
+    "locationHi": "इन-हाउस स्पा एंड ग्रूमिंग स्टूडियो",
+    "locationGu": "ઇન-હાઉસ સ્પા એન્ડ ગ્રૂમિંગ સ્ટુડિયો",
+    "capacity": 15,
+    "registered_count": 7,
+    "description": "Explore the booming wellness industry! Learn basic massage techniques, aromatherapy, and spa management fundamentals.",
+    "descriptionHi": "बूमिंग वेलनेस इंडस्ट्री एक्सप्लोर करें! बेसिक मसाज तकनीक, एरोमाथेरेपी और स्पा मैनेजमेंट फंडामेंटल्स सीखें।",
+    "descriptionGu": "બૂમિંગ વેલનેસ ઇન્ડસ્ટ્રી એક્સપ્લોર કરો! બેઝિક મસાજ ટેકનિક, એરોમાથેરાપી અને સ્પા મેનેજમેન્ટ ફન્ડામેન્ટલ્સ શીખો.",
+    "learning_outcomes": [
+      "Introduction to aromatherapy",
+      "Basic hand massage techniques",
+      "Spa industry career overview"
+    ],
+    "learning_outcomesHi": [
+      "एरोमाथेरेपी का परिचय",
+      "बेसिक हैंड मसाज तकनीक",
+      "स्पा इंडस्ट्री करियर ओवरव्यू"
+    ],
+    "learning_outcomesGu": [
+      "એરોમાથેરાપીનો પરિચય",
+      "બેઝિક હેન્ડ મસાજ ટેકનિક",
+      "સ્પા ઇન્ડસ્ટ્રી કારકિર્દી ઓવરવ્યૂ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free spa therapy workshop. Explore wellness careers at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-04-17",
+    "status": "published",
+    "date": "2026-04-17",
+    "time": "10:00:00",
+    "duration_min": 150,
+    "title": "Chef's Table: Continental Cuisine Basics",
+    "titleHi": "शेफ्स टेबल: कॉन्टिनेंटल क्विज़ीन बेसिक्स",
+    "titleGu": "શેફ્સ ટેબલ: કોન્ટિનેન્ટલ ક્વિઝીન બેઝિક્સ",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 18,
+    "registered_count": 10,
+    "description": "Master vegetarian European classics! Learn to prepare fresh pasta, create creamy béchamel & tomato sauces, and plate like a professional chef.",
+    "descriptionHi": "वेजिटेरियन यूरोपियन क्लासिक्स में महारत हासिल करें! फ्रेश पास्ता बनाना, क्रीमी बेशमेल और टोमैटो सॉस बनाना और प्रोफेशनल शेफ की तरह प्लेटिंग सीखें।",
+    "descriptionGu": "વેજિટેરિયન યુરોપિયન ક્લાસિક્સમાં નિપુણતા મેળવો! ફ્રેશ પાસ્તા બનાવવાનું, ક્રીમી બેશમેલ અને ટોમેટો સોસ બનાવવાનું અને પ્રોફેશનલ શેફની જેમ પ્લેટિંગ શીખો.",
+    "learning_outcomes": [
+      "Fresh pasta making",
+      "Vegetarian sauce preparation (Béchamel, Marinara)",
+      "Professional plating techniques"
+    ],
+    "learning_outcomesHi": [
+      "फ्रेश पास्ता बनाना",
+      "वेजिटेरियन सॉस तैयारी (बेशमेल, मारिनारा)",
+      "प्रोफेशनल प्लेटिंग तकनीक"
+    ],
+    "learning_outcomesGu": [
+      "ફ્રેશ પાસ્તા બનાવવું",
+      "વેજિટેરિયન સોસ તૈયારી (બેશમેલ, મરીનારા)",
+      "પ્રોફેશનલ પ્લેટિંગ ટેકનિક"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Free continental cooking workshop. Learn European cuisine at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-04-24",
+    "status": "published",
+    "date": "2026-04-24",
+    "time": "15:00:00",
+    "duration_min": 120,
+    "title": "Ramp Ready: Ground Handling Operations",
+    "titleHi": "रैंप रेडी: ग्राउंड हैंडलिंग ऑपरेशंस",
+    "titleGu": "રેમ્પ રેડી: ગ્રાઉન્ડ હેન્ડલિંગ ઓપરેશન્સ",
+    "category": "airport",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 30,
+    "registered_count": 12,
+    "description": "The action happens on the ramp! Learn aircraft turnaround procedures, marshalling signals, and ground support equipment.",
+    "descriptionHi": "एक्शन रैंप पर होता है! एयरक्राफ्ट टर्नअराउंड प्रोसीजर, मार्शलिंग सिग्नल और ग्राउंड सपोर्ट इक्विपमेंट सीखें।",
+    "descriptionGu": "એક્શન રેમ્પ પર થાય છે! એરક્રાફ્ટ ટર્નઅરાઉન્ડ પ્રોસિજર, માર્શલિંગ સિગ્નલ અને ગ્રાઉન્ડ સપોર્ટ ઇક્વિપમેન્ટ શીખો.",
+    "learning_outcomes": [
+      "Aircraft marshalling signals",
+      "Turnaround time management",
+      "Ground equipment overview"
+    ],
+    "learning_outcomesHi": [
+      "एयरक्राफ्ट मार्शलिंग सिग्नल",
+      "टर्नअराउंड टाइम मैनेजमेंट",
+      "ग्राउंड इक्विपमेंट ओवरव्यू"
+    ],
+    "learning_outcomesGu": [
+      "એરક્રાફ્ટ માર્શલિંગ સિગ્નલ",
+      "ટર્નઅરાઉન્ડ ટાઇમ મેનેજમેન્ટ",
+      "ગ્રાઉન્ડ ઇક્વિપમેન્ટ ઓવરવ્યૂ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free ground handling workshop. Learn airport ramp operations at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-05-01",
+    "status": "published",
+    "date": "2026-05-01",
+    "time": "11:00:00",
+    "duration_min": 120,
+    "title": "Summer Barista Skills: Coffee Culture",
+    "titleHi": "समर बरिस्ता स्किल्स: कॉफी कल्चर",
+    "titleGu": "સમર બરિસ્ટા સ્કિલ્સ: કોફી કલ્ચર",
+    "category": "culinary",
+    "location": "F&B Service Training Area",
+    "locationHi": "F&B सर्विस ट्रेनिंग एरिया",
+    "locationGu": "F&B સર્વિસ ટ્રેનિંગ એરિયા",
+    "capacity": 20,
+    "registered_count": 13,
+    "description": "Beat the summer heat with coffee skills! Learn espresso brewing, latte art, and cafe operations - perfect for part-time jobs abroad.",
+    "descriptionHi": "कॉफी स्किल्स के साथ गर्मी को मात दें! एस्प्रेसो ब्रूइंग, लट्टे आर्ट और कैफे ऑपरेशंस सीखें - विदेश में पार्ट-टाइम जॉब के लिए परफेक्ट।",
+    "descriptionGu": "કોફી સ્કિલ્સ સાથે ગરમીને હરાવો! એસ્પ્રેસો બ્રૂઇંગ, લેટ આર્ટ અને કેફે ઓપરેશન્સ શીખો - વિદેશમાં પાર્ટ-ટાઇમ જોબ માટે પરફેક્ટ.",
+    "learning_outcomes": [
+      "Espresso machine operation",
+      "Basic latte art patterns",
+      "Cafe counter management"
+    ],
+    "learning_outcomesHi": [
+      "एस्प्रेसो मशीन ऑपरेशन",
+      "बेसिक लट्टे आर्ट पैटर्न",
+      "कैफे काउंटर मैनेजमेंट"
+    ],
+    "learning_outcomesGu": [
+      "એસ્પ્રેસો મશીન ઓપરેશન",
+      "બેઝિક લેટ આર્ટ પેટર્ન",
+      "કેફે કાઉન્ટર મેનેજમેન્ટ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Free barista workshop. Learn coffee skills for international jobs at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-05-08",
+    "status": "published",
+    "date": "2026-05-08",
+    "time": "16:00:00",
+    "duration_min": 150,
+    "title": "Wings of Change: Women in Aviation",
+    "titleHi": "विंग्स ऑफ चेंज: एविएशन में महिलाएं",
+    "titleGu": "વિંગ્સ ઓફ ચેન્જ: એવિએશનમાં મહિલાઓ",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 30,
+    "registered_count": 20,
+    "description": "Celebrating women who conquered the skies! Meet female aviation professionals, learn their journeys, and get inspired for your career.",
+    "descriptionHi": "उन महिलाओं का जश्न जिन्होंने आसमान जीता! महिला एविएशन प्रोफेशनल्स से मिलें, उनकी यात्राएं जानें और अपने करियर के लिए प्रेरित हों।",
+    "descriptionGu": "આકાશ જીતનારી મહિલાઓની ઉજવણી! મહિલા એવિએશન પ્રોફેશનલ્સને મળો, તેમની યાત્રાઓ જાણો અને તમારી કારકિર્દી માટે પ્રેરિત થાઓ.",
+    "learning_outcomes": [
+      "Hear alumni success stories",
+      "Network with industry professionals",
+      "Career path guidance"
+    ],
+    "learning_outcomesHi": [
+      "एलुमनी सक्सेस स्टोरीज सुनें",
+      "इंडस्ट्री प्रोफेशनल्स से नेटवर्क करें",
+      "करियर पाथ गाइडेंस"
+    ],
+    "learning_outcomesGu": [
+      "એલુમની સક્સેસ સ્ટોરીઝ સાંભળો",
+      "ઇન્ડસ્ટ્રી પ્રોફેશનલ્સ સાથે નેટવર્ક કરો",
+      "કારકિર્દી પાથ ગાઇડન્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Women in aviation seminar. Meet female aviation professionals at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-05-15",
+    "status": "published",
+    "date": "2026-05-15",
+    "time": "10:00:00",
+    "duration_min": 120,
+    "title": "Concierge Excellence: Guest Relations Mastery",
+    "titleHi": "कॉन्सीयज एक्सीलेंस: गेस्ट रिलेशंस मास्टरी",
+    "titleGu": "કોન્સિયર્જ એક્સેલન્સ: ગેસ્ટ રિલેશન્સ માસ્ટરી",
+    "category": "hospitality",
+    "location": "Fine Dine Restaurant Mock-up",
+    "locationHi": "फाइन डाइन रेस्टोरेंट मॉक-अप",
+    "locationGu": "ફાઇન ડાઇન રેસ્ટોરન્ટ મોક-અપ",
+    "capacity": 25,
+    "registered_count": 9,
+    "description": "The art of anticipating needs! Learn concierge skills, VIP guest handling, and how to create memorable experiences for high-profile guests.",
+    "descriptionHi": "जरूरतों को पहचानने की कला! कॉन्सीयज स्किल्स, VIP गेस्ट हैंडलिंग और हाई-प्रोफाइल गेस्ट्स के लिए यादगार अनुभव बनाना सीखें।",
+    "descriptionGu": "જરૂરિયાતોને ઓળખવાની કળા! કોન્સિયર્જ સ્કિલ્સ, VIP ગેસ્ટ હેન્ડલિંગ અને હાઇ-પ્રોફાઇલ ગેસ્ટ્સ માટે યાદગાર અનુભવો બનાવવાનું શીખો.",
+    "learning_outcomes": [
+      "VIP guest protocols",
+      "Problem-solving scenarios",
+      "Personalized service techniques"
+    ],
+    "learning_outcomesHi": [
+      "VIP गेस्ट प्रोटोकॉल",
+      "प्रॉब्लम-सॉल्विंग सिनेरियोज",
+      "पर्सनलाइज़्ड सर्विस तकनीक"
+    ],
+    "learning_outcomesGu": [
+      "VIP ગેસ્ટ પ્રોટોકોલ",
+      "પ્રોબ્લેમ-સોલ્વિંગ સિનેરિયોઝ",
+      "પર્સનલાઇઝ્ડ સર્વિસ ટેકનિક"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free concierge training workshop. Learn VIP guest handling at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-05-22",
+    "status": "published",
+    "date": "2026-05-22",
+    "time": "14:00:00",
+    "duration_min": 120,
+    "title": "Passport to Adventure: International Travel Guide",
+    "titleHi": "पासपोर्ट टू एडवेंचर: इंटरनेशनल ट्रैवल गाइड",
+    "titleGu": "પાસપોર્ટ ટુ એડવેન્ચર: ઇન્ટરનેશનલ ટ્રાવેલ ગાઇડ",
+    "category": "tourism",
+    "location": "Computer Lab - Galileo Training",
+    "locationHi": "कंप्यूटर लैब - गैलीलियो ट्रेनिंग",
+    "locationGu": "કોમ્પ્યુટર લેબ - ગેલિલિયો ટ્રેનિંગ",
+    "capacity": 25,
+    "registered_count": 11,
+    "description": "Help others see the world! Learn visa documentation, travel insurance basics, and become an expert travel consultant.",
+    "descriptionHi": "दूसरों को दुनिया देखने में मदद करें! वीज़ा डॉक्यूमेंटेशन, ट्रैवल इंश्योरेंस बेसिक्स सीखें और एक्सपर्ट ट्रैवल कंसल्टेंट बनें।",
+    "descriptionGu": "બીજાઓને દુનિયા જોવામાં મદદ કરો! વિઝા ડોક્યુમેન્ટેશન, ટ્રાવેલ ઇન્સ્યોરન્સ બેઝિક્સ શીખો અને એક્સપર્ટ ટ્રાવેલ કન્સલ્ટન્ટ બનો.",
+    "learning_outcomes": [
+      "Visa process overview",
+      "Travel insurance essentials",
+      "International ticketing basics"
+    ],
+    "learning_outcomesHi": [
+      "वीज़ा प्रोसेस ओवरव्यू",
+      "ट्रैवल इंश्योरेंस एसेंशियल्स",
+      "इंटरनेशनल टिकटिंग बेसिक्स"
+    ],
+    "learning_outcomesGu": [
+      "વિઝા પ્રોસેસ ઓવરવ્યૂ",
+      "ટ્રાવેલ ઇન્સ્યોરન્સ એસેન્શિયલ્સ",
+      "ઇન્ટરનેશનલ ટિકિટિંગ બેઝિક્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free travel consultant workshop. Learn visa and ticketing at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-06-04",
+    "status": "published",
+    "date": "2026-06-04",
+    "time": "11:00:00",
+    "duration_min": 150,
+    "title": "In-Flight Service Excellence: Trolley Mastery",
+    "titleHi": "इन-फ्लाइट सर्विस एक्सीलेंस: ट्रॉली मास्टरी",
+    "titleGu": "ઇન-ફ્લાઇટ સર્વિસ એક્સેલન્સ: ટ્રોલી માસ્ટરી",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 25,
+    "registered_count": 16,
+    "description": "Master the art of 35,000-feet service! Practice trolley handling, meal service, and passenger interaction in our A330 cabin.",
+    "descriptionHi": "35,000 फीट की ऊंचाई पर सर्विस की कला में महारत हासिल करें! हमारे A330 केबिन में ट्रॉली हैंडलिंग, मील सर्विस और पैसेंजर इंटरैक्शन प्रैक्टिस करें।",
+    "descriptionGu": "35,000 ફૂટની ઊંચાઈ પર સર્વિસની કળામાં નિપુણતા મેળવો! અમારા A330 કેબિનમાં ટ્રોલી હેન્ડલિંગ, મીલ સર્વિસ અને પેસેન્જર ઇન્ટરેક્શન પ્રેક્ટિસ કરો.",
+    "learning_outcomes": [
+      "Trolley service techniques",
+      "Meal service protocols",
+      "Passenger communication skills"
+    ],
+    "learning_outcomesHi": [
+      "ट्रॉली सर्विस तकनीक",
+      "मील सर्विस प्रोटोकॉल",
+      "पैसेंजर कम्युनिकेशन स्किल्स"
+    ],
+    "learning_outcomesGu": [
+      "ટ્રોલી સર્વિસ ટેકનિક",
+      "મીલ સર્વિસ પ્રોટોકોલ",
+      "પેસેન્જર કમ્યુનિકેશન સ્કિલ્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Free in-flight service training. Practice cabin crew skills at Wings Institute's A330."
+  },
+  {
+    "id": "EVT-2026-06-12",
+    "status": "published",
+    "date": "2026-06-12",
+    "time": "15:00:00",
+    "duration_min": 120,
+    "title": "Global Etiquette: Cross-Cultural Communication",
+    "titleHi": "ग्लोबल एटिकेट: क्रॉस-कल्चरल कम्युनिकेशन",
+    "titleGu": "ગ્લોબલ એટિકેટ: ક્રોસ-કલ્ચરલ કમ્યુનિકેશન",
+    "category": "hospitality",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 35,
+    "registered_count": 14,
+    "description": "Work with guests from 195 countries! Learn dining etiquette variations, cultural sensitivities, and international business manners.",
+    "descriptionHi": "195 देशों के गेस्ट्स के साथ काम करें! डाइनिंग एटिकेट वेरिएशन, कल्चरल सेंसिटिविटीज और इंटरनेशनल बिजनेस मैनर्स सीखें।",
+    "descriptionGu": "195 દેશોના ગેસ્ટ્સ સાથે કામ કરો! ડાઇનિંગ એટિકેટ વેરિએશન, કલ્ચરલ સેન્સિટિવિટીઝ અને ઇન્ટરનેશનલ બિઝનેસ મેનર્સ શીખો.",
+    "learning_outcomes": [
+      "Cultural greeting customs",
+      "International dining etiquette",
+      "Avoiding cultural faux pas"
+    ],
+    "learning_outcomesHi": [
+      "कल्चरल ग्रीटिंग कस्टम्स",
+      "इंटरनेशनल डाइनिंग एटिकेट",
+      "कल्चरल गलतियों से बचें"
+    ],
+    "learning_outcomesGu": [
+      "કલ્ચરલ ગ્રીટિંગ કસ્ટમ્સ",
+      "ઇન્ટરનેશનલ ડાઇનિંગ એટિકેટ",
+      "કલ્ચરલ ભૂલોથી બચો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free global etiquette workshop. Learn cross-cultural skills at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-06-19",
+    "status": "published",
+    "date": "2026-06-19",
+    "time": "10:00:00",
+    "duration_min": 150,
+    "title": "Mocktail Magic: Beverage Service Mastery",
+    "titleHi": "मॉकटेल मैजिक: बेवरेज सर्विस मास्टरी",
+    "titleGu": "મોક્ટેલ મેજિક: બેવરેજ સર્વિસ માસ્ટરી",
+    "category": "culinary",
+    "location": "F&B Service Training Area",
+    "locationHi": "F&B सर्विस ट्रेनिंग एरिया",
+    "locationGu": "F&B સર્વિસ ટ્રેનિંગ એરિયા",
+    "capacity": 20,
+    "registered_count": 8,
+    "description": "Shake, stir, and serve! Learn professional bartending techniques, create 5 signature mocktails, and master beverage presentation.",
+    "descriptionHi": "शेक, स्टिर और सर्व करें! प्रोफेशनल बार्टेंडिंग तकनीक सीखें, 5 सिग्नेचर मॉकटेल बनाएं और बेवरेज प्रेजेंटेशन में महारत हासिल करें।",
+    "descriptionGu": "શેક, સ્ટિર અને સર્વ કરો! પ્રોફેશનલ બાર્ટેન્ડિંગ ટેકનિક શીખો, 5 સિગ્નેચર મોક્ટેલ બનાવો અને બેવરેજ પ્રેઝન્ટેશનમાં નિપુણતા મેળવો.",
+    "learning_outcomes": [
+      "Bartending fundamentals",
+      "Create 5 signature mocktails",
+      "Garnish and presentation"
+    ],
+    "learning_outcomesHi": [
+      "बार्टेंडिंग फंडामेंटल्स",
+      "5 सिग्नेचर मॉकटेल बनाएं",
+      "गार्निश और प्रेजेंटेशन"
+    ],
+    "learning_outcomesGu": [
+      "બાર્ટેન્ડિંગ ફન્ડામેન્ટલ્સ",
+      "5 સિગ્નેચર મોક્ટેલ બનાવો",
+      "ગાર્નિશ અને પ્રેઝન્ટેશન"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Free mocktail making workshop. Learn bartending at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-06-26",
+    "status": "published",
+    "date": "2026-06-26",
+    "time": "14:00:00",
+    "duration_min": 120,
+    "title": "Cargo & Logistics: Airport Supply Chain",
+    "titleHi": "कार्गो एंड लॉजिस्टिक्स: एयरपोर्ट सप्लाई चेन",
+    "titleGu": "કાર્ગો એન્ડ લોજિસ્ટિક્સ: એરપોર્ટ સપ્લાય ચેઇન",
+    "category": "airport",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 30,
+    "registered_count": 6,
+    "description": "Beyond passengers lies a world of cargo! Explore air freight, dangerous goods handling, and the logistics behind global supply chains.",
+    "descriptionHi": "पैसेंजर्स से परे कार्गो की दुनिया है! एयर फ्रेट, डेंजरस गुड्स हैंडलिंग और ग्लोबल सप्लाई चेन के पीछे की लॉजिस्टिक्स एक्सप्लोर करें।",
+    "descriptionGu": "પેસેન્જર્સથી આગળ કાર્ગોની દુનિયા છે! એર ફ્રેટ, ડેન્જરસ ગુડ્સ હેન્ડલિંગ અને ગ્લોબલ સપ્લાય ચેઇન પાછળની લોજિસ્ટિક્સ એક્સપ્લોર કરો.",
+    "learning_outcomes": [
+      "Air cargo basics",
+      "Dangerous goods awareness",
+      "Logistics career opportunities"
+    ],
+    "learning_outcomesHi": [
+      "एयर कार्गो बेसिक्स",
+      "डेंजरस गुड्स अवेयरनेस",
+      "लॉजिस्टिक्स करियर अवसर"
+    ],
+    "learning_outcomesGu": [
+      "એર કાર્ગો બેઝિક્સ",
+      "ડેન્જરસ ગુડ્સ અવેરનેસ",
+      "લોજિસ્ટિક્સ કારકિર્દી તકો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free air cargo workshop. Learn logistics at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-07-03",
+    "status": "published",
+    "date": "2026-07-03",
+    "time": "10:00:00",
+    "duration_min": 180,
+    "title": "Crisis in the Clouds: Medical Emergency Response",
+    "titleHi": "क्राइसिस इन द क्लाउड्स: मेडिकल इमरजेंसी रिस्पॉन्स",
+    "titleGu": "ક્રાઇસિસ ઇન ધ ક્લાઉડ્સ: મેડિકલ ઇમરજન્સી રિસ્પોન્સ",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 25,
+    "registered_count": 17,
+    "description": "When passengers need help at 35,000 feet! Learn CPR basics, use of AED, and medical emergency protocols for cabin crew.",
+    "descriptionHi": "जब पैसेंजर्स को 35,000 फीट पर मदद चाहिए! CPR बेसिक्स, AED का उपयोग और केबिन क्रू के लिए मेडिकल इमरजेंसी प्रोटोकॉल सीखें।",
+    "descriptionGu": "જ્યારે પેસેન્જર્સને 35,000 ફૂટ પર મદદની જરૂર હોય! CPR બેઝિક્સ, AED નો ઉપયોગ અને કેબિન ક્રૂ માટે મેડિકલ ઇમરજન્સી પ્રોટોકોલ શીખો.",
+    "learning_outcomes": [
+      "CPR and first aid basics",
+      "AED operation training",
+      "In-flight medical scenarios"
+    ],
+    "learning_outcomesHi": [
+      "CPR और फर्स्ट एड बेसिक्स",
+      "AED ऑपरेशन ट्रेनिंग",
+      "इन-फ्लाइट मेडिकल सिनेरियोज"
+    ],
+    "learning_outcomesGu": [
+      "CPR અને ફર્સ્ટ એઇડ બેઝિક્સ",
+      "AED ઓપરેશન ટ્રેનિંગ",
+      "ઇન-ફ્લાઇટ મેડિકલ સિનેરિયોઝ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free emergency response training. Learn CPR and first aid at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-07-10",
+    "status": "published",
+    "date": "2026-07-10",
+    "time": "15:00:00",
+    "duration_min": 120,
+    "title": "Monsoon Menu: Seasonal Indian Cuisine",
+    "titleHi": "मानसून मेन्यू: सीजनल इंडियन क्विज़ीन",
+    "titleGu": "મોન્સૂન મેનુ: સીઝનલ ઇન્ડિયન ક્વિઝીન",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 18,
+    "registered_count": 12,
+    "description": "Comfort food for rainy days! Learn to prepare classic monsoon snacks - pakoras, bhajias, and hot chai with a professional twist.",
+    "descriptionHi": "बारिश के दिनों के लिए कम्फर्ट फूड! प्रोफेशनल ट्विस्ट के साथ क्लासिक मॉनसून स्नैक्स - पकोड़े, भजिए और गर्म चाय बनाना सीखें।",
+    "descriptionGu": "વરસાદના દિવસો માટે કમ્ફર્ટ ફૂડ! પ્રોફેશનલ ટ્વિસ્ટ સાથે ક્લાસિક મોન્સૂન સ્નેક્સ - પકોડા, ભજિયા અને ગરમ ચા બનાવતા શીખો.",
+    "learning_outcomes": [
+      "Perfect pakora batter",
+      "Regional bhajia varieties",
+      "Masala chai secrets"
+    ],
+    "learning_outcomesHi": [
+      "परफेक्ट पकोड़ा बैटर",
+      "रीजनल भजिया वेरायटीज",
+      "मसाला चाय सीक्रेट्स"
+    ],
+    "learning_outcomesGu": [
+      "પરફેક્ટ પકોડા બેટર",
+      "રિજનલ ભજિયા વેરાયટીઝ",
+      "મસાલા ચા સીક્રેટ્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Free Indian cooking workshop. Learn monsoon comfort food at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-07-17",
+    "status": "published",
+    "date": "2026-07-17",
+    "time": "11:00:00",
+    "duration_min": 120,
+    "title": "Front Office Brilliance: Hotel Reception Skills",
+    "titleHi": "फ्रंट ऑफिस ब्रिलियंस: होटल रिसेप्शन स्किल्स",
+    "titleGu": "ફ્રન્ટ ઓફિસ બ્રિલિયન્સ: હોટેલ રિસેપ્શન સ્કિલ્સ",
+    "category": "hospitality",
+    "location": "Front Desk Mock-up",
+    "locationHi": "फ्रंट डेस्क मॉक-अप",
+    "locationGu": "ફ્રન્ટ ડેસ્ક મોક-અપ",
+    "capacity": 20,
+    "registered_count": 7,
+    "description": "The face of the hotel! Master check-in procedures, reservation systems, and handle guest complaints with grace.",
+    "descriptionHi": "होटल का चेहरा! चेक-इन प्रोसीजर, रिज़र्वेशन सिस्टम में महारत हासिल करें और गेस्ट शिकायतों को शालीनता से हैंडल करें।",
+    "descriptionGu": "હોટેલનો ચહેરો! ચેક-ઇન પ્રોસિજર, રિઝર્વેશન સિસ્ટમમાં નિપુણતા મેળવો અને ગેસ્ટ ફરિયાદોને શાલીનતાથી હેન્ડલ કરો.",
+    "learning_outcomes": [
+      "Check-in/check-out procedures",
+      "PMS basics",
+      "Complaint resolution techniques"
+    ],
+    "learning_outcomesHi": [
+      "चेक-इन/चेक-आउट प्रोसीजर",
+      "PMS बेसिक्स",
+      "शिकायत समाधान तकनीक"
+    ],
+    "learning_outcomesGu": [
+      "ચેક-ઇન/ચેક-આઉટ પ્રોસિજર",
+      "PMS બેઝિક્સ",
+      "ફરિયાદ સમાધાન ટેકનિક"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free hotel reception workshop. Learn front desk skills at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-07-24",
+    "status": "published",
+    "date": "2026-07-24",
+    "time": "14:00:00",
+    "duration_min": 120,
+    "title": "Adventure Tourism: Trekking & Expedition Planning",
+    "titleHi": "एडवेंचर टूरिज्म: ट्रेकिंग एंड एक्सपेडिशन प्लानिंग",
+    "titleGu": "એડવેન્ચર ટૂરિઝમ: ટ્રેકિંગ એન્ડ એક્સપેડિશન પ્લાનિંગ",
+    "category": "tourism",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 30,
+    "registered_count": 15,
+    "description": "For thrill-seekers! Learn to plan adventure tours, safety protocols, and tap into India's booming adventure tourism market.",
+    "descriptionHi": "थ्रिल-सीकर्स के लिए! एडवेंचर टूर प्लान करना, सेफ्टी प्रोटोकॉल और भारत के बूमिंग एडवेंचर टूरिज्म मार्केट में टैप करना सीखें।",
+    "descriptionGu": "થ્રિલ-સીકર્સ માટે! એડવેન્ચર ટૂર પ્લાન કરવાનું, સેફ્ટી પ્રોટોકોલ અને ભારતના બૂમિંગ એડવેન્ચર ટૂરિઝમ માર્કેટમાં ટેપ કરવાનું શીખો.",
+    "learning_outcomes": [
+      "Adventure tour planning",
+      "Safety and risk assessment",
+      "Eco-tourism principles"
+    ],
+    "learning_outcomesHi": [
+      "एडवेंचर टूर प्लानिंग",
+      "सेफ्टी और रिस्क असेसमेंट",
+      "इको-टूरिज्म प्रिंसिपल्स"
+    ],
+    "learning_outcomesGu": [
+      "એડવેન્ચર ટૂર પ્લાનિંગ",
+      "સેફ્ટી અને રિસ્ક એસેસમેન્ટ",
+      "ઇકો-ટૂરિઝમ પ્રિન્સિપલ્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free adventure tourism workshop. Learn expedition planning at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-07-31",
+    "status": "published",
+    "date": "2026-07-31",
+    "time": "10:00:00",
+    "duration_min": 150,
+    "title": "Sky Guardians: Unruly Passenger Management",
+    "titleHi": "स्काई गार्जियंस: अनरूली पैसेंजर मैनेजमेंट",
+    "titleGu": "સ્કાય ગાર્ડિયન્સ: અનરૂલી પેસેન્જર મેનેજમેન્ટ",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 25,
+    "registered_count": 18,
+    "description": "Raksha Bandhan special! Learn to protect passengers and crew. Master conflict resolution and handle difficult situations professionally.",
+    "descriptionHi": "रक्षा बंधन स्पेशल! पैसेंजर्स और क्रू की रक्षा करना सीखें। कॉन्फ्लिक्ट रेजोल्यूशन में महारत हासिल करें और कठिन परिस्थितियों को प्रोफेशनली हैंडल करें।",
+    "descriptionGu": "રક્ષા બંધન સ્પેશિયલ! પેસેન્જર્સ અને ક્રૂની રક્ષા કરવાનું શીખો. કોન્ફ્લિક્ટ રિઝોલ્યુશનમાં નિપુણતા મેળવો અને મુશ્કેલ પરિસ્થિતિઓને પ્રોફેશનલી હેન્ડલ કરો.",
+    "learning_outcomes": [
+      "De-escalation techniques",
+      "Self-defense awareness",
+      "Legal protocols for crew"
+    ],
+    "learning_outcomesHi": [
+      "डी-एस्केलेशन तकनीक",
+      "सेल्फ-डिफेंस अवेयरनेस",
+      "क्रू के लिए लीगल प्रोटोकॉल"
+    ],
+    "learning_outcomesGu": [
+      "ડી-એસ્કેલેશન ટેકનિક",
+      "સેલ્ફ-ડિફેન્સ અવેરનેસ",
+      "ક્રૂ માટે લીગલ પ્રોટોકોલ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free conflict resolution training for aviation. Learn passenger management at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-08-07",
+    "status": "published",
+    "date": "2026-08-07",
+    "time": "11:00:00",
+    "duration_min": 120,
+    "title": "Independence Day Special: Indian Hospitality Heritage",
+    "titleHi": "स्वतंत्रता दिवस स्पेशल: इंडियन हॉस्पिटैलिटी हेरिटेज",
+    "titleGu": "સ્વતંત્રતા દિવસ સ્પેશિયલ: ઇન્ડિયન હોસ્પિટાલિટી હેરિટેજ",
+    "category": "hospitality",
+    "location": "Fine Dine Restaurant Mock-up",
+    "locationHi": "फाइन डाइन रेस्टोरेंट मॉक-अप",
+    "locationGu": "ફાઇન ડાઇન રેસ્ટોરન્ટ મોક-અપ",
+    "capacity": 25,
+    "registered_count": 10,
+    "description": "Celebrate India's rich hospitality traditions! Learn traditional welcome rituals, regional service styles, and palace-level guest care.",
+    "descriptionHi": "भारत की समृद्ध हॉस्पिटैलिटी परंपराओं का जश्न मनाएं! पारंपरिक स्वागत अनुष्ठान, क्षेत्रीय सर्विस स्टाइल और पैलेस-लेवल गेस्ट केयर सीखें।",
+    "descriptionGu": "ભારતની સમૃદ્ધ હોસ્પિટાલિટી પરંપરાઓની ઉજવણી કરો! પરંપરાગત સ્વાગત વિધિઓ, પ્રાદેશિક સર્વિસ સ્ટાઇલ અને પેલેસ-લેવલ ગેસ્ટ કેર શીખો.",
+    "learning_outcomes": [
+      "Traditional welcome rituals",
+      "Regional hospitality styles",
+      "Heritage hotel concepts"
+    ],
+    "learning_outcomesHi": [
+      "पारंपरिक स्वागत अनुष्ठान",
+      "क्षेत्रीय हॉस्पिटैलिटी स्टाइल",
+      "हेरिटेज होटल कॉन्सेप्ट्स"
+    ],
+    "learning_outcomesGu": [
+      "પરંપરાગત સ્વાગત વિધિઓ",
+      "પ્રાદેશિક હોસ્પિટાલિટી સ્ટાઇલ",
+      "હેરિટેજ હોટેલ કોન્સેપ્ટ્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Independence Day hospitality workshop. Celebrate Indian service traditions at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-08-14",
+    "status": "published",
+    "date": "2026-08-14",
+    "time": "16:00:00",
+    "duration_min": 150,
+    "title": "Tricolor Treats: Patriotic Baking Workshop",
+    "titleHi": "तिरंगा ट्रीट्स: देशभक्ति बेकिंग वर्कशॉप",
+    "titleGu": "ત્રિરંગા ટ્રીટ્સ: દેશભક્તિ બેકિંગ વર્કશોપ",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 20,
+    "registered_count": 14,
+    "description": "Celebrate Independence Day with edible art! Create tricolor desserts, themed cupcakes, and patriotic pastry designs.",
+    "descriptionHi": "खाद्य कला के साथ स्वतंत्रता दिवस मनाएं! तिरंगा डेज़र्ट, थीम्ड कपकेक और देशभक्ति पेस्ट्री डिज़ाइन बनाएं।",
+    "descriptionGu": "ખાદ્ય કળા સાથે સ્વતંત્રતા દિવસ ઉજવો! ત્રિરંગા ડેઝર્ટ, થીમ્ડ કપકેક અને દેશભક્તિ પેસ્ટ્રી ડિઝાઇન બનાવો.",
+    "learning_outcomes": [
+      "Tricolor dessert creation",
+      "Fondant decoration basics",
+      "Themed cake design"
+    ],
+    "learning_outcomesHi": [
+      "तिरंगा डेज़र्ट क्रिएशन",
+      "फोंडेंट डेकोरेशन बेसिक्स",
+      "थीम्ड केक डिज़ाइन"
+    ],
+    "learning_outcomesGu": [
+      "ત્રિરંગા ડેઝર્ટ ક્રિએશન",
+      "ફોન્ડન્ટ ડેકોરેશન બેઝિક્સ",
+      "થીમ્ડ કેક ડિઝાઇન"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Independence Day baking workshop. Create tricolor desserts at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-08-21",
+    "status": "published",
+    "date": "2026-08-21",
+    "time": "10:00:00",
+    "duration_min": 120,
+    "title": "Security First: Airport Security Operations",
+    "titleHi": "सिक्योरिटी फर्स्ट: एयरपोर्ट सिक्योरिटी ऑपरेशंस",
+    "titleGu": "સિક્યોરિટી ફર્સ્ટ: એરપોર્ટ સિક્યોરિટી ઓપરેશન્સ",
+    "category": "airport",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 30,
+    "registered_count": 11,
+    "description": "The guardians of air travel! Learn screening procedures, threat identification, and the technology behind airport security.",
+    "descriptionHi": "एयर ट्रैवल के रक्षक! स्क्रीनिंग प्रोसीजर, थ्रेट आइडेंटिफिकेशन और एयरपोर्ट सिक्योरिटी के पीछे की टेक्नोलॉजी सीखें।",
+    "descriptionGu": "એર ટ્રાવેલના રક્ષકો! સ્ક્રીનિંગ પ્રોસિજર, થ્રેટ આઇડેન્ટિફિકેશન અને એરપોર્ટ સિક્યોરિટી પાછળની ટેક્નોલોજી શીખો.",
+    "learning_outcomes": [
+      "Security screening basics",
+      "X-ray image interpretation",
+      "Threat assessment awareness"
+    ],
+    "learning_outcomesHi": [
+      "सिक्योरिटी स्क्रीनिंग बेसिक्स",
+      "X-रे इमेज इंटरप्रेटेशन",
+      "थ्रेट असेसमेंट अवेयरनेस"
+    ],
+    "learning_outcomesGu": [
+      "સિક્યોરિટી સ્ક્રીનિંગ બેઝિક્સ",
+      "X-રે ઇમેજ ઇન્ટરપ્રેટેશન",
+      "થ્રેટ એસેસમેન્ટ અવેરનેસ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free airport security workshop. Learn screening operations at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-09-04",
+    "status": "published",
+    "date": "2026-09-04",
+    "time": "10:00:00",
+    "duration_min": 150,
+    "title": "Teacher's Day: Become a Hospitality Trainer",
+    "titleHi": "शिक्षक दिवस: हॉस्पिटैलिटी ट्रेनर बनें",
+    "titleGu": "શિક્ષક દિવસ: હોસ્પિટાલિટી ટ્રેનર બનો",
+    "category": "hospitality",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 25,
+    "registered_count": 8,
+    "description": "Honoring educators! Explore training careers in hospitality. Learn presentation skills and how to become an industry trainer.",
+    "descriptionHi": "शिक्षकों का सम्मान! हॉस्पिटैलिटी में ट्रेनिंग करियर एक्सप्लोर करें। प्रेजेंटेशन स्किल्स और इंडस्ट्री ट्रेनर कैसे बनें सीखें।",
+    "descriptionGu": "શિક્ષકોનું સન્માન! હોસ્પિટાલિટીમાં ટ્રેનિંગ કારકિર્દી એક્સપ્લોર કરો. પ્રેઝન્ટેશન સ્કિલ્સ અને ઇન્ડસ્ટ્રી ટ્રેનર કેવી રીતે બનવું તે શીખો.",
+    "learning_outcomes": [
+      "Presentation & public speaking",
+      "Training methodology basics",
+      "Career path in training"
+    ],
+    "learning_outcomesHi": [
+      "प्रेजेंटेशन और पब्लिक स्पीकिंग",
+      "ट्रेनिंग मेथडोलॉजी बेसिक्स",
+      "ट्रेनिंग में करियर पाथ"
+    ],
+    "learning_outcomesGu": [
+      "પ્રેઝન્ટેશન અને પબ્લિક સ્પીકિંગ",
+      "ટ્રેનિંગ મેથડોલોજી બેઝિક્સ",
+      "ટ્રેનિંગમાં કારકિર્દી પાથ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Teacher's Day special workshop. Explore hospitality training careers at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-09-11",
+    "status": "published",
+    "date": "2026-09-11",
+    "time": "14:00:00",
+    "duration_min": 120,
+    "title": "Ganesh Chaturthi: Festival Event Management",
+    "titleHi": "गणेश चतुर्थी: फेस्टिवल इवेंट मैनेजमेंट",
+    "titleGu": "ગણેશ ચતુર્થી: ફેસ્ટિવલ ઇવેન્ટ મેનેજમેન્ટ",
+    "category": "hospitality",
+    "location": "Fine Dine Restaurant Mock-up",
+    "locationHi": "फाइन डाइन रेस्टोरेंट मॉक-अप",
+    "locationGu": "ફાઇન ડાઇન રેસ્ટોરન્ટ મોક-અપ",
+    "capacity": 25,
+    "registered_count": 16,
+    "description": "Celebrate with purpose! Learn to plan and execute festival events, banquet setup, and large-scale hospitality operations.",
+    "descriptionHi": "उद्देश्य के साथ जश्न मनाएं! फेस्टिवल इवेंट्स प्लान और एग्जीक्यूट करना, बैंक्वेट सेटअप और लार्ज-स्केल हॉस्पिटैलिटी ऑपरेशंस सीखें।",
+    "descriptionGu": "હેતુ સાથે ઉજવણી કરો! ફેસ્ટિવલ ઇવેન્ટ્સ પ્લાન અને એક્ઝિક્યુટ કરવાનું, બેન્ક્વેટ સેટઅપ અને લાર્જ-સ્કેલ હોસ્પિટાલિટી ઓપરેશન્સ શીખો.",
+    "learning_outcomes": [
+      "Event planning fundamentals",
+      "Banquet setup techniques",
+      "Festival catering basics"
+    ],
+    "learning_outcomesHi": [
+      "इवेंट प्लानिंग फंडामेंटल्स",
+      "बैंक्वेट सेटअप तकनीक",
+      "फेस्टिवल कैटरिंग बेसिक्स"
+    ],
+    "learning_outcomesGu": [
+      "ઇવેન્ટ પ્લાનિંગ ફન્ડામેન્ટલ્સ",
+      "બેન્ક્વેટ સેટઅપ ટેકનિક",
+      "ફેસ્ટિવલ કેટરિંગ બેઝિક્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Ganesh Chaturthi event management workshop. Learn festival hospitality at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-09-18",
+    "status": "published",
+    "date": "2026-09-18",
+    "time": "11:00:00",
+    "duration_min": 180,
+    "title": "Sky High Announcements: PA System Mastery",
+    "titleHi": "स्काई हाई अनाउंसमेंट्स: PA सिस्टम मास्टरी",
+    "titleGu": "સ્કાય હાઇ એનાઉન્સમેન્ટ્સ: PA સિસ્ટમ માસ્ટરી",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 25,
+    "registered_count": 19,
+    "description": "Your voice matters! Master professional announcements in Hindi, English, and Gujarati. Practice in our real A330 PA system.",
+    "descriptionHi": "आपकी आवाज़ मायने रखती है! हिंदी, अंग्रेजी और गुजराती में प्रोफेशनल अनाउंसमेंट में महारत हासिल करें। हमारे रियल A330 PA सिस्टम में प्रैक्टिस करें।",
+    "descriptionGu": "તમારો અવાજ મહત્વનો છે! હિન્દી, અંગ્રેજી અને ગુજરાતીમાં પ્રોફેશનલ એનાઉન્સમેન્ટમાં નિપુણતા મેળવો. અમારા રિયલ A330 PA સિસ્ટમમાં પ્રેક્ટિસ કરો.",
+    "learning_outcomes": [
+      "Voice modulation training",
+      "Multilingual announcements",
+      "Emergency broadcast protocols"
+    ],
+    "learning_outcomesHi": [
+      "वॉइस मॉड्यूलेशन ट्रेनिंग",
+      "मल्टीलिंगुअल अनाउंसमेंट",
+      "इमरजेंसी ब्रॉडकास्ट प्रोटोकॉल"
+    ],
+    "learning_outcomesGu": [
+      "વોઇસ મોડ્યુલેશન ટ્રેનિંગ",
+      "મલ્ટીલિંગ્વલ એનાઉન્સમેન્ટ",
+      "ઇમરજન્સી બ્રોડકાસ્ટ પ્રોટોકોલ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Free PA announcement workshop. Practice in Wings Institute's A330 mock cabin."
+  },
+  {
+    "id": "EVT-2026-09-25",
+    "status": "published",
+    "date": "2026-09-25",
+    "time": "15:00:00",
+    "duration_min": 120,
+    "title": "World Tourism Day: Future of Travel Careers",
+    "titleHi": "विश्व पर्यटन दिवस: ट्रैवल करियर का भविष्य",
+    "titleGu": "વિશ્વ પર્યટન દિવસ: ટ્રાવેલ કારકિર્દીનું ભવિષ્ય",
+    "category": "tourism",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 35,
+    "registered_count": 22,
+    "description": "Celebrate World Tourism Day! Explore emerging trends - sustainable tourism, digital nomads, and the post-pandemic travel boom.",
+    "descriptionHi": "विश्व पर्यटन दिवस मनाएं! उभरते ट्रेंड एक्सप्लोर करें - सस्टेनेबल टूरिज्म, डिजिटल नोमैड्स और पोस्ट-पैंडेमिक ट्रैवल बूम।",
+    "descriptionGu": "વિશ્વ પર્યટન દિવસ ઉજવો! ઉભરતા ટ્રેન્ડ્સ એક્સપ્લોર કરો - સસ્ટેનેબલ ટૂરિઝમ, ડિજિટલ નોમેડ્સ અને પોસ્ટ-પેન્ડેમિક ટ્રાવેલ બૂમ.",
+    "learning_outcomes": [
+      "Sustainable tourism practices",
+      "Digital travel trends",
+      "Emerging career opportunities"
+    ],
+    "learning_outcomesHi": [
+      "सस्टेनेबल टूरिज्म प्रैक्टिसेज",
+      "डिजिटल ट्रैवल ट्रेंड्स",
+      "उभरते करियर अवसर"
+    ],
+    "learning_outcomesGu": [
+      "સસ્ટેનેબલ ટૂરિઝમ પ્રેક્ટિસેસ",
+      "ડિજિટલ ટ્રાવેલ ટ્રેન્ડ્સ",
+      "ઉભરતી કારકિર્દી તકો"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "World Tourism Day celebration. Explore travel career trends at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-10-02",
+    "status": "published",
+    "date": "2026-10-02",
+    "time": "10:00:00",
+    "duration_min": 150,
+    "title": "Navratri Special: Garba Night Grooming",
+    "titleHi": "नवरात्रि स्पेशल: गरबा नाइट ग्रूमिंग",
+    "titleGu": "નવરાત્રિ સ્પેશિયલ: ગરબા નાઇટ ગ્રૂમિંગ",
+    "category": "aviation",
+    "location": "In-House Spa & Grooming Studio",
+    "locationHi": "इन-हाउस स्पा एंड ग्रूमिंग स्टूडियो",
+    "locationGu": "ઇન-હાઉસ સ્પા એન્ડ ગ્રૂમિંગ સ્ટુડિયો",
+    "capacity": 20,
+    "registered_count": 18,
+    "description": "Get ready for Garba! Learn professional makeup transitions from day (interview) to night (festive). Perfect your look for 9 nights!",
+    "descriptionHi": "गरबा के लिए तैयार हों! दिन (इंटरव्यू) से रात (त्योहार) तक प्रोफेशनल मेकअप ट्रांजिशन सीखें। 9 रातों के लिए अपना लुक परफेक्ट करें!",
+    "descriptionGu": "ગરબા માટે તૈયાર થાઓ! દિવસ (ઇન્ટરવ્યૂ) થી રાત (તહેવાર) સુધી પ્રોફેશનલ મેકઅપ ટ્રાન્ઝિશન શીખો. 9 રાત માટે તમારો લુક પરફેક્ટ કરો!",
+    "learning_outcomes": [
+      "Day to night makeup transition",
+      "Traditional hair styling",
+      "Festive skin care routine"
+    ],
+    "learning_outcomesHi": [
+      "डे टू नाइट मेकअप ट्रांजिशन",
+      "ट्रेडिशनल हेयर स्टाइलिंग",
+      "फेस्टिव स्किन केयर रूटीन"
+    ],
+    "learning_outcomesGu": [
+      "ડે ટુ નાઇટ મેકઅપ ટ્રાન્ઝિશન",
+      "ટ્રેડિશનલ હેર સ્ટાઇલિંગ",
+      "ફેસ્ટિવ સ્કિન કેર રૂટીન"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Navratri grooming workshop. Learn festive makeup at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-10-09",
+    "status": "published",
+    "date": "2026-10-09",
+    "time": "11:00:00",
+    "duration_min": 120,
+    "title": "Festival Food: Gujarati Thali Presentation",
+    "titleHi": "फेस्टिवल फूड: गुजराती थाली प्रेजेंटेशन",
+    "titleGu": "ફેસ્ટિવલ ફૂડ: ગુજરાતી થાળી પ્રેઝન્ટેશન",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 18,
+    "registered_count": 13,
+    "description": "The art of the traditional thali! Learn arrangement, portion control, and presentation of a complete Gujarati festive meal.",
+    "descriptionHi": "पारंपरिक थाली की कला! एक पूर्ण गुजराती उत्सव भोजन की व्यवस्था, पोर्शन कंट्रोल और प्रेजेंटेशन सीखें।",
+    "descriptionGu": "પરંપરાગત થાળીની કળા! સંપૂર્ણ ગુજરાતી ઉત્સવ ભોજનની ગોઠવણી, પોર્શન કંટ્રોલ અને પ્રેઝન્ટેશન શીખો.",
+    "learning_outcomes": [
+      "Thali arrangement principles",
+      "Traditional accompaniments",
+      "Festive presentation styles"
+    ],
+    "learning_outcomesHi": [
+      "थाली व्यवस्था सिद्धांत",
+      "पारंपरिक साइड डिशेज",
+      "त्योहार प्रेजेंटेशन स्टाइल"
+    ],
+    "learning_outcomesGu": [
+      "થાળી ગોઠવણી સિદ્ધાંતો",
+      "પરંપરાગત સાઇડ ડિશેસ",
+      "ઉત્સવ પ્રેઝન્ટેશન સ્ટાઇલ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Gujarati thali workshop. Learn festive food presentation at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-10-16",
+    "status": "published",
+    "date": "2026-10-16",
+    "time": "15:00:00",
+    "duration_min": 120,
+    "title": "Dussehra Special: Victory Over Interview Fear",
+    "titleHi": "दशहरा स्पेशल: इंटरव्यू के डर पर विजय",
+    "titleGu": "દશેરા સ્પેશિયલ: ઇન્ટરવ્યૂના ડર પર વિજય",
+    "category": "aviation",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 30,
+    "registered_count": 20,
+    "description": "Conquer your interview fears! Mock airline interviews, feedback sessions, and confidence-building exercises for aviation aspirants.",
+    "descriptionHi": "अपने इंटरव्यू के डर पर विजय पाएं! एविएशन आकांक्षियों के लिए मॉक एयरलाइन इंटरव्यू, फीडबैक सेशन और आत्मविश्वास-निर्माण अभ्यास।",
+    "descriptionGu": "તમારા ઇન્ટરવ્યૂના ડરને જીતો! એવિએશન આકાંક્ષીઓ માટે મોક એરલાઇન ઇન્ટરવ્યૂ, ફીડબેક સેશન અને આત્મવિશ્વાસ-નિર્માણ અભ્યાસ.",
+    "learning_outcomes": [
+      "Mock interview practice",
+      "Body language coaching",
+      "Common Q&A preparation"
+    ],
+    "learning_outcomesHi": [
+      "मॉक इंटरव्यू प्रैक्टिस",
+      "बॉडी लैंग्वेज कोचिंग",
+      "कॉमन Q&A तैयारी"
+    ],
+    "learning_outcomesGu": [
+      "મોક ઇન્ટરવ્યૂ પ્રેક્ટિસ",
+      "બોડી લેંગ્વેજ કોચિંગ",
+      "કોમન Q&A તૈયારી"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Dussehra interview preparation workshop. Build confidence at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-10-23",
+    "status": "published",
+    "date": "2026-10-23",
+    "time": "10:00:00",
+    "duration_min": 120,
+    "title": "Festive Rush: Airport Peak Season Management",
+    "titleHi": "फेस्टिव रश: एयरपोर्ट पीक सीजन मैनेजमेंट",
+    "titleGu": "ફેસ્ટિવ રશ: એરપોર્ટ પીક સીઝન મેનેજમેન્ટ",
+    "category": "airport",
+    "location": "Computer Lab - Galileo Training",
+    "locationHi": "कंप्यूटर लैब - गैलीलियो ट्रेनिंग",
+    "locationGu": "કોમ્પ્યુટર લેબ - ગેલિલિયો ટ્રેનિંગ",
+    "capacity": 25,
+    "registered_count": 9,
+    "description": "Handle the Diwali rush! Simulate check-in counter operations during peak travel season. Master queue management and ticketing.",
+    "descriptionHi": "दिवाली रश हैंडल करें! पीक ट्रैवल सीजन के दौरान चेक-इन काउंटर ऑपरेशंस सिमुलेट करें। क्यू मैनेजमेंट और टिकटिंग में महारत हासिल करें।",
+    "descriptionGu": "દિવાળી રશ હેન્ડલ કરો! પીક ટ્રાવેલ સીઝન દરમિયાન ચેક-ઇન કાઉન્ટર ઓપરેશન્સ સિમ્યુલેટ કરો. ક્યુ મેનેજમેન્ટ અને ટિકિટિંગમાં નિપુણતા મેળવો.",
+    "learning_outcomes": [
+      "Peak season operations",
+      "Queue management techniques",
+      "Galileo ticketing practice"
+    ],
+    "learning_outcomesHi": [
+      "पीक सीजन ऑपरेशंस",
+      "क्यू मैनेजमेंट तकनीक",
+      "गैलीलियो टिकटिंग प्रैक्टिस"
+    ],
+    "learning_outcomesGu": [
+      "પીક સીઝન ઓપરેશન્સ",
+      "ક્યુ મેનેજમેન્ટ ટેકનિક",
+      "ગેલિલિયો ટિકિટિંગ પ્રેક્ટિસ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Peak season airport operations workshop. Learn queue management at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-11-01",
+    "status": "published",
+    "date": "2026-11-01",
+    "time": "11:00:00",
+    "duration_min": 150,
+    "title": "Diwali Decor: The Royal Host Workshop",
+    "titleHi": "दिवाली डेकोर: द रॉयल होस्ट वर्कशॉप",
+    "titleGu": "દિવાળી ડેકોર: ધ રોયલ હોસ્ટ વર્કશોપ",
+    "category": "hospitality",
+    "location": "Fine Dine Restaurant Mock-up",
+    "locationHi": "फाइन डाइन रेस्टोरेंट मॉक-अप",
+    "locationGu": "ફાઇન ડાઇન રેસ્ટોરન્ટ મોક-અપ",
+    "capacity": 25,
+    "registered_count": 21,
+    "description": "Transform spaces for Diwali! Learn flower arrangement, rangoli design, and luxury home/hotel decoration for the festival of lights.",
+    "descriptionHi": "दिवाली के लिए स्थानों को बदलें! फूलों की सजावट, रंगोली डिज़ाइन और रोशनी के त्योहार के लिए लक्जरी होम/होटल डेकोरेशन सीखें।",
+    "descriptionGu": "દિવાળી માટે જગ્યાઓને બદલો! ફૂલોની સજાવટ, રંગોળી ડિઝાઇન અને પ્રકાશના તહેવાર માટે લક્ઝરી હોમ/હોટેલ ડેકોરેશન શીખો.",
+    "learning_outcomes": [
+      "Flower arrangement techniques",
+      "Rangoli design basics",
+      "Festive table setting"
+    ],
+    "learning_outcomesHi": [
+      "फूलों की सजावट तकनीक",
+      "रंगोली डिज़ाइन बेसिक्स",
+      "त्योहार टेबल सेटिंग"
+    ],
+    "learning_outcomesGu": [
+      "ફૂલોની સજાવટ ટેકનિક",
+      "રંગોળી ડિઝાઇન બેઝિક્સ",
+      "ઉત્સવ ટેબલ સેટિંગ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Diwali decoration workshop. Learn festive home styling at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-11-06",
+    "status": "published",
+    "date": "2026-11-06",
+    "time": "16:00:00",
+    "duration_min": 150,
+    "title": "Mithai Masterclass: Indian Sweets Workshop",
+    "titleHi": "मिठाई मास्टरक्लास: इंडियन स्वीट्स वर्कशॉप",
+    "titleGu": "મિઠાઈ માસ્ટરક્લાસ: ઇન્ડિયન સ્વીટ્સ વર્કશોપ",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 18,
+    "registered_count": 15,
+    "description": "Diwali without sweets is incomplete! Learn to make professional-quality barfi, ladoo, and modern fusion Indian desserts.",
+    "descriptionHi": "मिठाई के बिना दिवाली अधूरी है! प्रोफेशनल-क्वालिटी बर्फी, लड्डू और मॉडर्न फ्यूजन इंडियन डेज़र्ट बनाना सीखें।",
+    "descriptionGu": "મિઠાઈ વિના દિવાળી અધૂરી છે! પ્રોફેશનલ-ક્વોલિટી બરફી, લાડુ અને મોડર્ન ફ્યુઝન ઇન્ડિયન ડેઝર્ટ બનાવતા શીખો.",
+    "learning_outcomes": [
+      "Traditional barfi making",
+      "Perfect ladoo rolling",
+      "Fusion dessert concepts"
+    ],
+    "learning_outcomesHi": [
+      "पारंपरिक बर्फी बनाना",
+      "परफेक्ट लड्डू रोलिंग",
+      "फ्यूजन डेज़र्ट कॉन्सेप्ट्स"
+    ],
+    "learning_outcomesGu": [
+      "પરંપરાગત બરફી બનાવવી",
+      "પરફેક્ટ લાડુ રોલિંગ",
+      "ફ્યુઝન ડેઝર્ટ કોન્સેપ્ટ્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Diwali sweets workshop. Learn Indian dessert making at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-11-13",
+    "status": "published",
+    "date": "2026-11-13",
+    "time": "10:00:00",
+    "duration_min": 180,
+    "title": "Wings for Children: Career Awareness for Parents",
+    "titleHi": "विंग्स फॉर चिल्ड्रन: पैरेंट्स के लिए करियर अवेयरनेस",
+    "titleGu": "વિંગ્સ ફોર ચિલ્ડ્રન: પેરેન્ટ્સ માટે કારકિર્દી અવેરનેસ",
+    "category": "aviation",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 40,
+    "registered_count": 25,
+    "description": "Children's Day special for parents! Understand aviation & hospitality careers, salary expectations, and how to guide your child.",
+    "descriptionHi": "पैरेंट्स के लिए बाल दिवस स्पेशल! एविएशन और हॉस्पिटैलिटी करियर, सैलरी एक्सपेक्टेशंस और अपने बच्चे को कैसे गाइड करें समझें।",
+    "descriptionGu": "પેરેન્ટ્સ માટે બાળ દિવસ સ્પેશિયલ! એવિએશન અને હોસ્પિટાલિટી કારકિર્દી, સેલરી એક્સપેક્ટેશન્સ અને તમારા બાળકને કેવી રીતે ગાઇડ કરવું તે સમજો.",
+    "learning_outcomes": [
+      "Industry career overview",
+      "Salary and growth prospects",
+      "Parent-student career planning"
+    ],
+    "learning_outcomesHi": [
+      "इंडस्ट्री करियर ओवरव्यू",
+      "सैलरी और ग्रोथ प्रॉस्पेक्ट्स",
+      "पैरेंट-स्टूडेंट करियर प्लानिंग"
+    ],
+    "learning_outcomesGu": [
+      "ઇન્ડસ્ટ્રી કારકિર્દી ઓવરવ્યૂ",
+      "સેલરી અને ગ્રોથ પ્રોસ્પેક્ટ્સ",
+      "પેરેન્ટ-સ્ટુડન્ટ કારકિર્દી પ્લાનિંગ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Children's Day career counseling for parents. Explore aviation careers at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-11-20",
+    "status": "published",
+    "date": "2026-11-20",
+    "time": "14:00:00",
+    "duration_min": 120,
+    "title": "Heritage Tourism: Gujarat's Hidden Gems",
+    "titleHi": "हेरिटेज टूरिज्म: गुजरात के छुपे रत्न",
+    "titleGu": "હેરિટેજ ટૂરિઝમ: ગુજરાતના છુપાયેલા રત્નો",
+    "category": "tourism",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 30,
+    "registered_count": 12,
+    "description": "Discover Gujarat's tourism potential! Learn about heritage sites, Rann Utsav, and opportunities in Gujarat's growing tourism sector.",
+    "descriptionHi": "गुजरात की टूरिज्म क्षमता खोजें! हेरिटेज साइट्स, रण उत्सव और गुजरात के बढ़ते टूरिज्म सेक्टर में अवसरों के बारे में जानें।",
+    "descriptionGu": "ગુજરાતની ટૂરિઝમ ક્ષમતા શોધો! હેરિટેજ સાઇટ્સ, રણ ઉત્સવ અને ગુજરાતના વધતા ટૂરિઝમ સેક્ટરમાં તકો વિશે જાણો.",
+    "learning_outcomes": [
+      "Gujarat heritage destinations",
+      "Rann Utsav tourism",
+      "Local tour guide skills"
+    ],
+    "learning_outcomesHi": [
+      "गुजरात हेरिटेज डेस्टिनेशंस",
+      "रण उत्सव टूरिज्म",
+      "लोकल टूर गाइड स्किल्स"
+    ],
+    "learning_outcomesGu": [
+      "ગુજરાત હેરિટેજ ડેસ્ટિનેશન્સ",
+      "રણ ઉત્સવ ટૂરિઝમ",
+      "લોકલ ટૂર ગાઇડ સ્કિલ્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Gujarat heritage tourism workshop. Explore local tourism careers at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-12-04",
+    "status": "published",
+    "date": "2026-12-04",
+    "time": "11:00:00",
+    "duration_min": 180,
+    "title": "International Flights: Long-Haul Service Excellence",
+    "titleHi": "इंटरनेशनल फ्लाइट्स: लॉन्ग-हॉल सर्विस एक्सीलेंस",
+    "titleGu": "ઇન્ટરનેશનલ ફ્લાઇટ્સ: લોન્ગ-હોલ સર્વિસ એક્સેલન્સ",
+    "category": "aviation",
+    "location": "Airbus A330 Mock-up Room",
+    "locationHi": "एयरबस A330 मॉक-अप रूम",
+    "locationGu": "એરબસ A330 મોક-અપ રૂમ",
+    "capacity": 25,
+    "registered_count": 17,
+    "description": "Dream of flying international? Learn 12-hour flight service patterns, time zone management, and international passenger expectations.",
+    "descriptionHi": "इंटरनेशनल फ्लाई करने का सपना? 12-घंटे की फ्लाइट सर्विस पैटर्न, टाइम ज़ोन मैनेजमेंट और इंटरनेशनल पैसेंजर एक्सपेक्टेशंस सीखें।",
+    "descriptionGu": "ઇન્ટરનેશનલ ફ્લાય કરવાનું સપનું? 12-કલાકની ફ્લાઇટ સર્વિસ પેટર્ન, ટાઇમ ઝોન મેનેજમેન્ટ અને ઇન્ટરનેશનલ પેસેન્જર એક્સપેક્ટેશન્સ શીખો.",
+    "learning_outcomes": [
+      "Long-haul service patterns",
+      "Crew rest management",
+      "International passenger cultures"
+    ],
+    "learning_outcomesHi": [
+      "लॉन्ग-हॉल सर्विस पैटर्न",
+      "क्रू रेस्ट मैनेजमेंट",
+      "इंटरनेशनल पैसेंजर कल्चर्स"
+    ],
+    "learning_outcomesGu": [
+      "લોન્ગ-હોલ સર્વિસ પેટર્ન",
+      "ક્રૂ રેસ્ટ મેનેજમેન્ટ",
+      "ઇન્ટરનેશનલ પેસેન્જર કલ્ચર્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "International flight service workshop. Learn long-haul cabin crew skills at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-12-11",
+    "status": "published",
+    "date": "2026-12-11",
+    "time": "15:00:00",
+    "duration_min": 120,
+    "title": "Luxury Hotel Tour: 5-Star Property Insights",
+    "titleHi": "लक्जरी होटल टूर: 5-स्टार प्रॉपर्टी इनसाइट्स",
+    "titleGu": "લક્ઝરી હોટેલ ટૂર: 5-સ્ટાર પ્રોપર્ટી ઇનસાઇટ્સ",
+    "category": "hospitality",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 30,
+    "registered_count": 14,
+    "description": "Virtual tour of world's best hotels! Learn what makes Taj, Oberoi, and Marriott special. Understand luxury hospitality standards.",
+    "descriptionHi": "दुनिया के सबसे बेहतरीन होटलों का वर्चुअल टूर! जानें ताज, ओबेरॉय और मैरियट को क्या खास बनाता है। लक्जरी हॉस्पिटैलिटी स्टैंडर्ड्स समझें।",
+    "descriptionGu": "દુનિયાની શ્રેષ્ઠ હોટેલ્સનો વર્ચુઅલ ટૂર! જાણો તાજ, ઓબેરોય અને મેરિયટને શું ખાસ બનાવે છે. લક્ઝરી હોસ્પિટાલિટી સ્ટાન્ડર્ડ્સ સમજો.",
+    "learning_outcomes": [
+      "Luxury brand standards",
+      "Career paths in 5-star hotels",
+      "Guest experience philosophy"
+    ],
+    "learning_outcomesHi": [
+      "लक्जरी ब्रांड स्टैंडर्ड्स",
+      "5-स्टार होटल्स में करियर पाथ",
+      "गेस्ट एक्सपीरियंस फिलॉसफी"
+    ],
+    "learning_outcomesGu": [
+      "લક્ઝરી બ્રાન્ડ સ્ટાન્ડર્ડ્સ",
+      "5-સ્ટાર હોટેલ્સમાં કારકિર્દી પાથ",
+      "ગેસ્ટ એક્સપિરિયન્સ ફિલોસોફી"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "Luxury hotel insights workshop. Explore 5-star careers at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-12-18",
+    "status": "published",
+    "date": "2026-12-18",
+    "time": "10:00:00",
+    "duration_min": 150,
+    "title": "Christmas Bakery: Winter Wonderland Treats",
+    "titleHi": "क्रिसमस बेकरी: विंटर वंडरलैंड ट्रीट्स",
+    "titleGu": "ક્રિસમસ બેકરી: વિન્ટર વન્ડરલેન્ડ ટ્રીટ્સ",
+    "category": "culinary",
+    "location": "Commercial Kitchen & Bakery",
+    "locationHi": "कमर्शियल किचन एंड बेकरी",
+    "locationGu": "કમર્શિયલ કિચન એન્ડ બેકરી",
+    "capacity": 18,
+    "registered_count": 16,
+    "description": "Celebrate the festive season! Traditional Christmas cake mixing, gingerbread decoration, and holiday baking techniques.",
+    "descriptionHi": "त्योहारी सीजन मनाएं! पारंपरिक क्रिसमस केक मिक्सिंग, जिंजरब्रेड डेकोरेशन और हॉलिडे बेकिंग तकनीक।",
+    "descriptionGu": "ઉત્સવની સીઝન ઉજવો! પરંપરાગત ક્રિસમસ કેક મિક્સિંગ, જિન્જરબ્રેડ ડેકોરેશન અને હોલીડે બેકિંગ ટેકનિક.",
+    "learning_outcomes": [
+      "Christmas cake traditions",
+      "Gingerbread house making",
+      "Holiday cookie decoration"
+    ],
+    "learning_outcomesHi": [
+      "क्रिसमस केक परंपराएं",
+      "जिंजरब्रेड हाउस बनाना",
+      "हॉलिडे कुकी डेकोरेशन"
+    ],
+    "learning_outcomesGu": [
+      "ક્રિસમસ કેક પરંપરાઓ",
+      "જિન્જરબ્રેડ હાઉસ બનાવવું",
+      "હોલીડે કૂકી ડેકોરેશન"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate", "snacks"],
+    "metaDescription": "Christmas baking workshop. Learn holiday pastry at Wings Institute."
+  },
+  {
+    "id": "EVT-2026-12-24",
+    "status": "published",
+    "date": "2026-12-24",
+    "time": "14:00:00",
+    "duration_min": 180,
+    "title": "New Year, New Career: 2027 Planning Workshop",
+    "titleHi": "नया साल, नया करियर: 2027 प्लानिंग वर्कशॉप",
+    "titleGu": "નવું વર્ષ, નવી કારકિર્દી: 2027 પ્લાનિંગ વર્કશોપ",
+    "category": "aviation",
+    "location": "Smart Classroom",
+    "locationHi": "स्मार्ट क्लासरूम",
+    "locationGu": "સ્માર્ટ ક્લાસરૂમ",
+    "capacity": 40,
+    "registered_count": 28,
+    "description": "End the year with clarity! Career counseling, goal setting, and complete roadmap to join aviation or hospitality in 2027.",
+    "descriptionHi": "स्पष्टता के साथ साल समाप्त करें! करियर काउंसलिंग, गोल सेटिंग और 2027 में एविएशन या हॉस्पिटैलिटी जॉइन करने का पूरा रोडमैप।",
+    "descriptionGu": "સ્પષ્ટતા સાથે વર્ષ સમાપ્ત કરો! કારકિર્દી કાઉન્સેલિંગ, ગોલ સેટિંગ અને 2027માં એવિએશન અથવા હોસ્પિટાલિટી જોઇન કરવાનો સંપૂર્ણ રોડમેપ.",
+    "learning_outcomes": [
+      "Personal career assessment",
+      "2027 goal setting",
+      "Enrollment guidance"
+    ],
+    "learning_outcomesHi": [
+      "पर्सनल करियर असेसमेंट",
+      "2027 गोल सेटिंग",
+      "एनरोलमेंट गाइडेंस"
+    ],
+    "learning_outcomesGu": [
+      "પર્સનલ કારકિર્દી એસેસમેન્ટ",
+      "2027 ગોલ સેટિંગ",
+      "એનરોલમેન્ટ ગાઇડન્સ"
+    ],
+    "image_url": "/images/events/wings-events.png",
+    "tags": ["free", "certificate"],
+    "metaDescription": "New Year career planning workshop. Start your 2027 journey at Wings Institute."
+  }
+]

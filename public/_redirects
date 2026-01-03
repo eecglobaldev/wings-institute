@@ -1,0 +1,43 @@
+# ==============================================================================
+# WINGS INSTITUTE - NETLIFY REDIRECTS
+# Canonical URL Enforcement & SPA Routing
+# ==============================================================================
+
+# Force HTTPS (Netlify handles this automatically, but explicit is good)
+http://wingsinstitute.com/* https://wingsinstitute.com/:splat 301!
+http://www.wingsinstitute.com/* https://wingsinstitute.com/:splat 301!
+
+# Force non-www (Canonical domain)
+https://www.wingsinstitute.com/* https://wingsinstitute.com/:splat 301!
+
+# Remove trailing slashes (except root)
+/air-hostess-training/ /air-hostess-training 301
+/airport-management/ /airport-management 301
+/hotel-management/ /hotel-management 301
+/culinary-cooking-course/ /culinary-cooking-course 301
+/travel-tourism-management/ /travel-tourism-management 301
+/about/ /about 301
+/contact-us/ /contact-us 301
+/admissions/ /admissions 301
+/placement/ /placement 301
+/virtual-tour/ /virtual-tour 301
+/scholarship-test/ /scholarship-test 301
+/salary-roi-calculator/ /salary-roi-calculator 301
+/franchise/ /franchise 301
+/jobs-at-wings/ /jobs-at-wings 301
+/blog/ /blog 301
+/ai-tools/ /ai-tools 301
+/pa-simulator/ /pa-simulator 301
+/interview-coach/ /interview-coach 301
+/career-navigator/ /career-navigator 301
+/resume-builder/ /resume-builder 301
+/career-quest/ /career-quest 301
+/privacy-policy/ /privacy-policy 301
+
+# Legacy URL redirects (if migrating from old site)
+# /old-air-hostess-page /air-hostess-training 301
+# /cabin-crew-course /air-hostess-training 301
+
+# SPA Fallback - Must be last
+/* /index.html 200
+

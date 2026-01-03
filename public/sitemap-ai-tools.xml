@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WINGS INSTITUTE - AI TOOLS SITEMAP
+  2026 SEO Standard - Proprietary AI-Powered Training Tools
+  Last Updated: 2 January 2026
+  
+  Innovation Core: High differentiation factor for GEO visibility
+  URL Structure follows React SPA routing (types.ts PageType)
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- AI Tools Landing Page -->
+  <url>
+    <loc>https://wingsinstitute.com/ai-tools</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- In-Flight PA Simulator -->
+  <url>
+    <loc>https://wingsinstitute.com/pa-simulator</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Job Interview Coach AI -->
+  <url>
+    <loc>https://wingsinstitute.com/interview-coach</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- AI Career Navigator -->
+  <url>
+    <loc>https://wingsinstitute.com/career-navigator</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Resume Builder -->
+  <url>
+    <loc>https://wingsinstitute.com/resume-builder</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  
+  <!-- CareerQuest Game -->
+  <url>
+    <loc>https://wingsinstitute.com/career-quest</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  
+  <!-- Salary ROI Calculator -->
+  <url>
+    <loc>https://wingsinstitute.com/roi-calculator</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+</urlset>

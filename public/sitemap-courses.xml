@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WINGS INSTITUTE - COURSE PAGES SITEMAP
+  2026 SEO Standard - Revenue-Generating Course Pages
+  Last Updated: 2 January 2026
+  
+  URL Structure follows React SPA routing (types.ts PageType)
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Air Hostess / Cabin Crew Training - Flagship Course -->
+  <url>
+    <loc>https://wingsinstitute.com/air-hostess</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/meal-service-training.jpg</image:loc>
+      <image:title>Air Hostess Training in Gujarat - Wings Institute Vadodara</image:title>
+      <image:caption>Cabin crew trainees practicing meal service inside Airbus A330 mock aircraft at Wings Institute</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Airport Management / Ground Staff -->
+  <url>
+    <loc>https://wingsinstitute.com/airport-mgmt</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/airport-management-training.jpg</image:loc>
+      <image:title>Airport Management Course - Ground Staff Training Vadodara</image:title>
+      <image:caption>Airport ground operations and passenger handling training at Wings Institute</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Hotel Management -->
+  <url>
+    <loc>https://wingsinstitute.com/hotel-mgmt</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/hotel-management-course.jpg</image:loc>
+      <image:title>Hotel Management Course in Vadodara - Wings Institute</image:title>
+      <image:caption>Diploma in hotel management with 6-month paid industrial training at 5-star hotels</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Culinary / Cooking Course -->
+  <url>
+    <loc>https://wingsinstitute.com/culinary</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/wings-cooking-course.jpg</image:loc>
+      <image:title>Culinary Arts Course - Professional Chef Training Vadodara</image:title>
+      <image:caption>Professional chef training in commercial kitchen lab at Wings Institute</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Travel & Tourism -->
+  <url>
+    <loc>https://wingsinstitute.com/travel-tourism</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/travel-tourism-course.jpg</image:loc>
+      <image:title>Travel &amp; Tourism Course - GDS Training Vadodara</image:title>
+      <image:caption>Amadeus and Galileo GDS training for travel agents at Wings Institute</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+  </url>
+
+</urlset>

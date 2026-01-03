@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WINGS INSTITUTE - MAIN PAGES SITEMAP
+  2026 SEO Standard - All Core Navigation & Conversion Pages
+  Last Updated: 2 January 2026
+  
+  URL Structure follows React SPA routing (types.ts PageType)
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://wingsinstitute.com/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/wings-logo.png</image:loc>
+      <image:title>Wings Institute Logo - Aviation &amp; Hotel Management Training Since 2008</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Why Choose Wings / Advantage Page -->
+  <url>
+    <loc>https://wingsinstitute.com/advantage</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://wingsinstitute.com/about</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Admissions Page - High Conversion -->
+  <url>
+    <loc>https://wingsinstitute.com/admissions</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <!-- Placement Page - Trust Signal -->
+  <url>
+    <loc>https://wingsinstitute.com/placements</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Contact Page - Local SEO Critical -->
+  <url>
+    <loc>https://wingsinstitute.com/contact</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Virtual Tour - Engagement & Trust -->
+  <url>
+    <loc>https://wingsinstitute.com/virtual-tour</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Scholarship Test - Lead Magnet -->
+  <url>
+    <loc>https://wingsinstitute.com/scholarship</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- ROI Calculator - Interactive Tool -->
+  <url>
+    <loc>https://wingsinstitute.com/roi-calculator</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Franchise Page - B2B -->
+  <url>
+    <loc>https://wingsinstitute.com/franchise</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Careers at Wings -->
+  <url>
+    <loc>https://wingsinstitute.com/careers</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://wingsinstitute.com/privacy</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Transparency & Trust Page -->
+  <url>
+    <loc>https://wingsinstitute.com/transparency</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- LLM.txt - AI Crawler Curriculum -->
+  <url>
+    <loc>https://wingsinstitute.com/llm.txt</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- Events Page - Workshops & Seminars -->
+  <url>
+    <loc>https://wingsinstitute.com/events</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+</urlset>

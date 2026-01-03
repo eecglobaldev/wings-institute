@@ -1,0 +1,311 @@
+# ============================================================================
+# WINGS INSTITUTE - ROBOTS.TXT
+# 2026 Generative Engine Optimization (GEO) Standard
+# Last Updated: 2 January 2026
+# ============================================================================
+# Strategic Philosophy: Maximize visibility in AI-powered search engines
+# while protecting server resources from non-converting scrapers.
+# ============================================================================
+
+# ============================================================================
+# SECTION 1: PREMIUM SEARCH ENGINE CRAWLERS (FULL ACCESS)
+# These bots directly impact organic rankings and AI search visibility.
+# ============================================================================
+
+# Google Search & AI (Gemini, SGE, AI Overviews)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+# Google Extended - CRITICAL FOR GEO
+# This bot trains Google's AI models (Gemini, Bard, AI Overviews)
+# Allowing this = appearing in AI-generated answers
+User-agent: Google-Extended
+Allow: /
+
+# Bing & Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: msnbot
+Allow: /
+
+# Apple (Siri, Spotlight, Safari Suggestions)
+User-agent: Applebot
+Allow: /
+
+# ============================================================================
+# SECTION 2: AI SEARCH ENGINES (GEO PRIORITY - 2026)
+# These power the new generation of AI-first search experiences.
+# Allowing them = visibility in AI chat interfaces and answer engines.
+# ============================================================================
+
+# OpenAI - ChatGPT & SearchGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI - Fast-growing AI search engine
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude (Web Search)
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Meta AI (Facebook, Instagram, WhatsApp AI)
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Cohere AI (Enterprise AI Search)
+User-agent: cohere-ai
+Allow: /
+
+# You.com AI Search
+User-agent: YouBot
+Allow: /
+
+# Brave Search
+User-agent: BraveBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex (Russia - International reach)
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Baidu (China - International students)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# ============================================================================
+# SECTION 3: SEO & ANALYTICS TOOLS (ALLOWED)
+# These help monitor and improve our search performance.
+# ============================================================================
+
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: rogerbot
+Allow: /
+Crawl-delay: 5
+
+User-agent: DotBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 10
+
+# ============================================================================
+# SECTION 4: SOCIAL MEDIA CRAWLERS (ALLOWED)
+# Enable rich link previews on social platforms.
+# ============================================================================
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: PinterestBot
+Allow: /
+
+# ============================================================================
+# SECTION 5: BLOCKED BOTS (RESOURCE PROTECTION)
+# Commercial scrapers, content thieves, and non-converting crawlers.
+# These provide zero SEO value and drain server resources.
+# ============================================================================
+
+# Content Scrapers & Copiers
+User-agent: CCBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+# AI Training Scrapers (Non-Search)
+# These scrape for model training but don't provide search visibility
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+# Aggressive Marketing/Sales Bots
+User-agent: SalesIntelligent
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Archive Bots (Optional - uncomment to block)
+# User-agent: ia_archiver
+# Disallow: /
+
+# Generic Spam Bots
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: Seekport
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+# Proxy/VPN Service Bots
+User-agent: proximic
+Disallow: /
+
+# Email Harvesters
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+# ============================================================================
+# SECTION 6: DEFAULT RULE FOR UNKNOWN BOTS
+# Conservative approach: Allow crawling but with rate limiting signal
+# ============================================================================
+
+User-agent: *
+Allow: /
+Crawl-delay: 10
+
+# ============================================================================
+# SECTION 7: PROTECTED PATHS (ALL BOTS)
+# Sensitive directories that should never be indexed.
+# ============================================================================
+
+# API Endpoints
+User-agent: *
+Disallow: /api/
+Disallow: /_api/
+
+# Admin & Internal
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /internal/
+
+# User Data & Auth
+Disallow: /login
+Disallow: /register
+Disallow: /account/
+Disallow: /user/
+Disallow: /profile/
+
+# Development & Build
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /dist/
+Disallow: /build/
+
+# Temporary & Cache
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Search & Filter Pages (Duplicate Content Prevention)
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*page=
+Disallow: /*?*ref=
+Disallow: /*?*utm_
+
+# ============================================================================
+# SECTION 8: SITEMAP & LLM.TXT DECLARATION
+# ============================================================================
+
+Sitemap: https://wingsinstitute.com/sitemap_index.xml
+
+# LLM Training Curriculum (2026 GEO Standard)
+# AI crawlers should reference this for structured entity knowledge
+# https://wingsinstitute.com/llm.txt
+# https://wingsinstitute.com/.well-known/llm.txt
+
+# ============================================================================
+# SECTION 9: HOST DECLARATION (Canonical Domain)
+# ============================================================================
+
+Host: https://wingsinstitute.com
+
+# ============================================================================
+# END OF ROBOTS.TXT
+# 
+# GEO Strategy Summary:
+# ✅ ALLOWED: Google, Bing, Apple, OpenAI, Perplexity, Anthropic, Meta, Brave
+# ✅ ALLOWED: Social Media Bots (rich previews)
+# ✅ ALLOWED: SEO Tools (with rate limiting)
+# ❌ BLOCKED: Commercial scrapers, content thieves, spam bots
+# 
+# Review Schedule: Quarterly (as new AI search engines emerge)
+# ============================================================================
+

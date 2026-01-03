@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FORENSIC FONT LOCKDOWN: Target ALL elements including form controls */
+/* Use 'Inter' directly to match original Google Fonts CDN behavior */
+* {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Vernacular Language Typography Enhancements */
+.lang-hi * {
+  font-family: 'Noto Sans Devanagari', 'Inter', sans-serif !important;
+  line-height: 1.8 !important;
+}
+.lang-gu * {
+  font-family: 'Noto Sans Gujarati', 'Inter', sans-serif !important;
+  line-height: 1.8 !important;
+}
+.lang-hi h1, .lang-hi h2, .lang-hi h3, .lang-hi h4, .lang-hi h5, .lang-hi h6,
+.lang-gu h1, .lang-gu h2, .lang-gu h3, .lang-gu h4, .lang-gu h5, .lang-gu h6 {
+  line-height: 1.4 !important;
+  font-weight: 700 !important;
+}
+.lang-hi p, .lang-hi span, .lang-hi div,
+.lang-gu p, .lang-gu span, .lang-gu div {
+  line-height: 1.9 !important;
+}
+.lang-hi button, .lang-gu button,
+.lang-hi .btn, .lang-gu .btn {
+  line-height: 1.5 !important;
+  font-weight: 600 !important;
+}
+.lang-hi .uppercase, .lang-gu .uppercase {
+  letter-spacing: 0.05em !important;
+  line-height: 1.6 !important;
+}
+
+/* Base Styles */
+body {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F7;
+  overflow-x: hidden;
+  width: 100%;
+  color: #09090b;
+  font-feature-settings: 'cv02', 'cv05', 'cv08', 'cv11', 'ss01', 'tnum';
+}
+
+.dark body {
+  background-color: #050507;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
+/* Aurora Background Pattern */
+.aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
+}
+.dark .bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+}
+
+/* Orb Animation */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  animation: blob 15s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+  mix-blend-mode: multiply;
+}
+.dark .orb {
+  mix-blend-mode: screen;
+  opacity: 0.3;
+}
+
+/* Animation delay utility */
+.animation-delay-2000 {
+  animation-delay: 2000ms;
+}
+
+/* Glass Panel Effects */
+.glass-panel {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.02),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+/* Default glass-panel background (only if no Tailwind bg-* class is present) */
+.glass-panel:not([class*="bg-white"]):not([class*="bg-zinc"]):not([class*="bg-"]):not([style*="background"]) {
+  background: rgba(255, 255, 255, 0.7);
+}
+.dark .glass-panel:not([class*="bg-white"]):not([class*="bg-zinc"]):not([class*="bg-"]):not([style*="background"]) {
+  background: rgba(20, 20, 25, 0.6);
+}
+.dark .glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 40px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.dark .glass-card-hover:hover {
+  box-shadow: 
+    0 20px 40px -5px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Text Gradient Utility */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, #18181b 0%, #52525b 100%);
+}
+.dark .text-gradient {
+  background-image: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.8);
+}
+
+/* Enhanced Font Utilities */
+.font-black { font-weight: 900; }
+.font-extrabold { font-weight: 800; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.font-medium { font-weight: 500; }
+.tracking-tightest { letter-spacing: -0.05em; }
+
+/* Header background matching - Remove backdrop-blur in dark mode */
+.dark header {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}

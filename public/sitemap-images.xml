@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WINGS INSTITUTE - IMAGES SITEMAP
+  2026 SEO Standard - Visual Asset SEO for Google Images
+  Last Updated: 2 January 2026
+  
+  All images include geo_location for local SEO
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage with all slider/facility images -->
+  <url>
+    <loc>https://wingsinstitute.com/</loc>
+    
+    <!-- Logo -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/wings-logo.png</image:loc>
+      <image:title>Wings Institute Logo - Aviation &amp; Hotel Management Training Since 2008</image:title>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- OG Image -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/wings-og-image.jpg</image:loc>
+      <image:title>Wings Institute Campus - Premier Aviation Training in Gujarat</image:title>
+      <image:caption>Wings Institute Alkapuri campus featuring Airbus A330 mock cabin and hospitality training facilities</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Airbus A330 Mock Cabin - USP Image -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/meal-service-training.jpg</image:loc>
+      <image:title>Airbus A330 Mock Cabin - Air Hostess Training Gujarat</image:title>
+      <image:caption>Students practicing in-flight meal service inside real Airbus A330 mock cabin at Wings Institute Vadodara - Only facility in Gujarat</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Hotel Management Course -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/hotel-management-course.jpg</image:loc>
+      <image:title>Hotel Management Course Vadodara - Mock Restaurant Training</image:title>
+      <image:caption>Fine-dine restaurant service training for hotel management students at Wings Institute</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Commercial Kitchen Lab -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/wings-cooking-course.jpg</image:loc>
+      <image:title>Culinary Arts Course - Commercial Kitchen Lab Vadodara</image:title>
+      <image:caption>Professional chef training in industry-grade commercial kitchen at Wings Institute</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Baking Classes -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/baking-classes.jpg</image:loc>
+      <image:title>Baking &amp; Confectionery Training Vadodara</image:title>
+      <image:caption>Professional bakery and pastry arts training at Wings Institute culinary lab</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Smart Classrooms -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/smart-classrooms.jpg</image:loc>
+      <image:title>Smart Classrooms - AI-Integrated Aviation Training</image:title>
+      <image:caption>Modern smart classrooms with AI-powered learning tools at Wings Institute</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Computer Lab - GDS Training -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/computer-lab.jpg</image:loc>
+      <image:title>GDS Computer Lab - Amadeus Galileo Training Vadodara</image:title>
+      <image:caption>Amadeus and Galileo GDS training facility for travel and tourism students</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Fitness Center -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/fitness-center.jpg</image:loc>
+      <image:title>Fitness Center - Physical Training for Aviation Careers</image:title>
+      <image:caption>Physical fitness training facility for cabin crew and aviation professionals at Wings Institute</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Grooming Spa / Makeover Studio -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/grroming-spa.jpg</image:loc>
+      <image:title>Makeover Studio - Grooming Training for Air Hostess</image:title>
+      <image:caption>Professional grooming and personality development studio for cabin crew students</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Makeup Training Stations -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/makeup-stations.jpg</image:loc>
+      <image:title>Makeup Training Stations - Airline Grooming Standards</image:title>
+      <image:caption>Professional makeup and grooming training for airline interview preparation</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Certificate -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/wings-certificate.jpg</image:loc>
+      <image:title>Wings Institute Professional Certificate</image:title>
+      <image:caption>Aviation and hospitality professional certification from Wings Institute Vadodara</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Interview Skills Training -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/wings-job-interview-skills.jpg</image:loc>
+      <image:title>Job Interview Skills Training - AI Mock Interview</image:title>
+      <image:caption>AI-powered mock interview training for airline and hotel recruitment at Wings Institute</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <!-- Yoga Sessions -->
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/slider-images/yoga-sessions.jpg</image:loc>
+      <image:title>Yoga &amp; Wellness Training - Holistic Development</image:title>
+      <image:caption>Yoga and wellness sessions for holistic personality development at Wings Institute</image:caption>
+      <image:geo_location>Alkapuri, Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Placement Page - Success Stories -->
+  <url>
+    <loc>https://wingsinstitute.com/placements</loc>
+    
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/success-stories/Nandini-Singh.png</image:loc>
+      <image:title>Nandini Singh - Air India Cabin Crew Alumni</image:title>
+      <image:caption>Wings Institute alumna Nandini Singh working as Cabin Crew at Air India</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/success-stories/Mohd-Fahad-Diwan.png</image:loc>
+      <image:title>Mohd Fahad Diwan - IndiGo Ground Staff Alumni</image:title>
+      <image:caption>Wings Institute alumnus Mohd Fahad Diwan working as Ground Staff at IndiGo</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/success-stories/Aanchal-Jain.png</image:loc>
+      <image:title>Aanchal Jain - Emirates Cabin Crew Alumni</image:title>
+      <image:caption>Wings Institute alumna Aanchal Jain working as Cabin Crew at Emirates Dubai</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/success-stories/Kuldeep.png</image:loc>
+      <image:title>Kuldeep - Qatar Airways Ground Staff Alumni</image:title>
+      <image:caption>Wings Institute alumnus Kuldeep working at Qatar Airways Doha</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/success-stories/Pratibha-Saini.png</image:loc>
+      <image:title>Pratibha Saini - Taj Hotels Front Office Alumni</image:title>
+      <image:caption>Wings Institute alumna Pratibha Saini working at Taj Hotels Front Office</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://wingsinstitute.com/images/success-stories/Aryan-Kashyap.png</image:loc>
+      <image:title>Aryan Kashyap - Marriott F&amp;B Service Alumni</image:title>
+      <image:caption>Wings Institute alumnus Aryan Kashyap working at Marriott Hotels</image:caption>
+      <image:geo_location>Vadodara, Gujarat, India</image:geo_location>
+    </image:image>
+  </url>
+
+</urlset>

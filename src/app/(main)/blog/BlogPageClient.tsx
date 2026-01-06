@@ -10056,6 +10056,8 @@ export const BlogPageClient: React.FC<BlogPageClientProps> = () => {
                           alt={authorCredentials.name} 
                           className="w-full h-full object-cover"
                           loading="eager"
+                          fetchPriority="high"
+                          decoding="async"
                           itemProp="image"
                         />
                       ) : (
@@ -10099,6 +10101,8 @@ export const BlogPageClient: React.FC<BlogPageClientProps> = () => {
               alt={`${activePost.title} - Wings Institute ${activePost.category} career guide Vadodara Gujarat`} 
               className="absolute inset-0 w-full h-full object-cover"
               loading="eager"
+              fetchPriority="high"
+              decoding="async"
               itemProp="url contentUrl"
               width="1200"
               height="630"
@@ -10332,6 +10336,8 @@ export const BlogPageClient: React.FC<BlogPageClientProps> = () => {
                           alt={`${postSEO?.titleTag || post.title} - ${post.category} career guide from Wings Institute Vadodara Gujarat`} 
                           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
+                          fetchPriority="low"
+                          decoding="async"
                           itemProp="image"
                           width="400"
                           height="300"

@@ -23,12 +23,18 @@ const nextConfig: NextConfig = {
     ],
     formats: ['image/avif', 'image/webp'],
     // Enable image optimization
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Reduced sizes for lower memory usage (optimized for 1GB RAM)
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
     // Minimum quality for optimized images
     minimumCacheTTL: 60,
     // Enable unoptimized for faster dev builds (disable in production)
     unoptimized: false,
+    // Image quality (75 is default, 90 for better quality on critical images)
+    // Individual images can override with quality prop
+    // Enable faster image loading
+    dangerouslyAllowSVG: false,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
   // Security headers (migrated from vercel.json)

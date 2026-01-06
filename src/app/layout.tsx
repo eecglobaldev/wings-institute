@@ -135,6 +135,19 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Preload critical images for faster loading */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/slider-images/meal-service-training.jpg"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/home-page/wings-hotel-management-course.jpg"
+          fetchPriority="high"
+        />
         {/* Load Google Fonts via CDN to match original exactly */}
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Devanagari:wght@100..900&family=Noto+Sans+Gujarati:wght@100..900&display=swap"

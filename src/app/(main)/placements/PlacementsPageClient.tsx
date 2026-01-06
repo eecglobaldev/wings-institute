@@ -219,6 +219,9 @@ export function PlacementsPageClient() {
                         src={currentVideo.thumbnail}
                         alt={currentVideo.title}
                         fill
+                        priority
+                        fetchPriority="high"
+                        quality={85}
                         className="object-cover"
                         sizes="(max-width: 768px) 300px, 340px"
                       />

@@ -334,6 +334,8 @@ export default function AirHostessPageClient({ initialLang }: AirHostessPageClie
                            alt="Safety Training"
                            fill
                            priority
+                           fetchPriority="high"
+                           quality={90}
                            className="object-cover transition-transform duration-700 group-hover:scale-110"
                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />

@@ -38,6 +38,8 @@ export const AdvantageGrid: React.FC = () => {
                 alt="Cabin crew trainees practicing meal service inside Airbus A330 mock aircraft at Wings Institute Vadodara" 
                 fill
                 priority
+                fetchPriority="high"
+                quality={90}
                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 800px"
               />
@@ -70,6 +72,8 @@ export const AdvantageGrid: React.FC = () => {
                 alt="Hospitality students learning fine-dining silver service at Wings Institute mock restaurant Gujarat" 
                 fill
                 priority
+                fetchPriority="high"
+                quality={90}
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
               />

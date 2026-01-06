@@ -441,6 +441,8 @@ export const VirtualTourPageClient: React.FC = () => {
                                 alt={`${zone.name} - ${zone.subtitle} facility at Wings Institute Vadodara campus`}
                                 className="w-full h-full object-cover object-center" 
                                 loading="eager"
+                                fetchPriority="high"
+                                decoding="async"
                             />
                         </div>
                     ))}
@@ -631,6 +633,8 @@ export const VirtualTourPageClient: React.FC = () => {
                         alt={img.caption || 'Campus Life'}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         loading="lazy"
+                        fetchPriority="low"
+                        decoding="async"
                     />
                     
                     {/* Overlay */}

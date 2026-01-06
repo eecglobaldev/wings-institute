@@ -10,6 +10,9 @@ interface CredentialCardProps {
   index: number;
   hoverText: string;
   verifiedText: string;
+  isVernacular?: boolean;
+  gradientColor?: 'blue' | 'amber' | 'pink' | 'indigo' | 'cyan';
+  verifiedColor?: 'green' | 'orange' | 'amber';
 }
 
 export const CredentialCard: React.FC<CredentialCardProps> = ({ 
@@ -17,10 +20,27 @@ export const CredentialCard: React.FC<CredentialCardProps> = ({
   image, 
   index, 
   hoverText, 
-  verifiedText 
+  verifiedText,
+  isVernacular = false,
+  gradientColor = 'blue',
+  verifiedColor = 'green'
 }) => {
+  const gradientClasses = {
+    blue: 'bg-gradient-to-r from-blue-900 via-indigo-600 to-purple-950',
+    amber: 'bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500',
+    pink: 'bg-gradient-to-r from-pink-900 to-purple-950',
+    indigo: 'bg-gradient-to-r from-indigo-900 via-blue-600 to-indigo-900',
+    cyan: 'bg-gradient-to-br from-cyan-900 via-sky-900 to-sky-950'
+  };
+
+  const verifiedColorClasses = {
+    green: 'bg-green-500',
+    orange: 'bg-orange-500',
+    amber: 'bg-amber-500'
+  };
+
   return (
-    <div className="group relative h-80 w-full rounded-[2.5rem] overflow-hidden bg-gradient-to-r from-blue-900 via-indigo-600 to-purple-950 dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 shadow-lg hover:shadow-2xl transition-all duration-500">
+    <div className={`group relative h-80 w-full rounded-[2.5rem] overflow-hidden ${gradientClasses[gradientColor]} dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 shadow-lg hover:shadow-2xl transition-all duration-500`}>
       
       {/* --- LAYER 1: THE LABEL (Visible Initially) --- */}
       <div className="absolute inset-0 p-8 flex flex-col justify-between">
@@ -32,10 +52,10 @@ export const CredentialCard: React.FC<CredentialCardProps> = ({
          </div>
          
          <div className="relative z-0">
-            <h4 className="text-xl font-bold text-zinc-100 dark:text-white leading-[1.4] mb-3 group-hover:translate-y-4 group-hover:opacity-0 transition-all duration-300">{title}</h4>
-            <div className="flex items-center gap-2 text-[11px] font-bold text-white uppercase tracking-wide group-hover:opacity-0 transition-opacity duration-300 leading-[1.5]">
-               <span className="w-2 h-2 rounded-full bg-white animate-pulse shrink-0"></span>
-               <span>{hoverText}</span>
+            <h4 className={`text-xl font-bold text-zinc-200 dark:text-white mb-3 group-hover:translate-y-4 group-hover:opacity-0 transition-all duration-300 ${isVernacular ? 'leading-[1.5] font-extrabold' : 'leading-tight'}`}>{title}</h4>
+            <div className={`flex items-center gap-2 text-xs text-white uppercase tracking-widest group-hover:opacity-0 transition-opacity duration-300 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>
+               <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+               {hoverText}
             </div>
          </div>
       </div>
@@ -54,8 +74,8 @@ export const CredentialCard: React.FC<CredentialCardProps> = ({
             </div>
             
             {/* Verified Stamp */}
-            <div className="absolute top-6 right-6 bg-green-500 text-white text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1 shadow-lg transform scale-0 group-hover:scale-100 transition-transform duration-500 delay-200 border border-white/20 leading-none">
-               <Icons.CheckCircle2 className="w-3 h-3 shrink-0" /> <span className="leading-[1.4]">{verifiedText}</span>
+            <div className={`absolute top-6 right-6 ${verifiedColorClasses[verifiedColor]} text-white text-[10px] px-3 py-1 rounded-full flex items-center gap-1 shadow-lg transform scale-0 group-hover:scale-100 transition-transform duration-500 delay-200 border border-white/20 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>
+               <Icons.CheckCircle2 className="w-3 h-3" /> {verifiedText}
             </div>
          </div>
       </div>

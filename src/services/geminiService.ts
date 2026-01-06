@@ -60,7 +60,11 @@ export const getAIQuestions = async (industry: Industry, round: Round, t: (key: 
 
 export const transcribeAudio = async (audioBlob: Blob, language: string, t: (key: any) => string): Promise<string> => {
     const ai = getAI();
-    if (!process.env.API_KEY) throw new Error(t('noApiKey'));
+    // Check for API key based on environment (client vs server)
+    const apiKey = typeof window !== 'undefined' 
+        ? process.env.NEXT_PUBLIC_GEMINI_API_KEY 
+        : process.env.API_KEY;
+    if (!apiKey) throw new Error(t('noApiKey'));
 
     const reader = new FileReader();
     const base64Promise = new Promise<string>((resolve, reject) => {

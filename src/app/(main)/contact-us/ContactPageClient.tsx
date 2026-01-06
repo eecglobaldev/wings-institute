@@ -151,7 +151,7 @@ export function ContactPageClient() {
   };
 
   return (
-    <div className="min-h-screen pt-3 pb-20 relative z-10">
+    <div className="min-h-screen pt-3 pb-20 relative z-10 overflow-x-hidden">
       
       <div className="max-w-7xl mx-auto px-6">
 
@@ -163,10 +163,10 @@ export function ContactPageClient() {
           <LanguageToggle isHomepage={true} />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start overflow-visible">
 
           {/* Left Info */}
-          <div className="sticky top-32">
+          <div className="lg:sticky lg:top-32 self-start">
             <span className={`text-indigo-600 dark:text-indigo-400 font-black text-sm uppercase mb-8 block ${isVernacular ? 'tracking-[0.1em]' : 'tracking-[0.3em]'}`}>{t('contact.badge')}</span>
             <h1 className={`font-display text-6xl md:text-8xl font-black text-zinc-900 dark:text-white tracking-tighter mb-12 ${isVernacular ? 'leading-[1.1]' : 'leading-[0.9]'}`}>
               {t('contact.title')} <br/>

@@ -37,7 +37,7 @@ export function TravelTourismPageClient() {
       {/* 1. HERO SECTION */}
       <section className="px-6 mb-24 relative">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col lg:flex-row items-center lg:items-center gap-4">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border-teal-500/30 mb-2 lg:mb-8 animate-fade-in-up bg-white/60 dark:bg-black/40 backdrop-blur-md">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 opacity-75"></span>
@@ -46,6 +46,7 @@ export function TravelTourismPageClient() {
               <span className={`text-xs text-teal-600 dark:text-teal-400 uppercase tracking-widest ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.badge')}</span>
             </div>
 
+            {/* Language Toggle */}
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 mb-8">
               <label className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
                 {t('hero.translate') || 'Translate'}
@@ -76,11 +77,11 @@ export function TravelTourismPageClient() {
               </div>
             </div>
             <div className="glass-panel p-6 rounded-2xl flex items-center gap-4 border-l-4 border-teal-500">
-              <div className="p-3 bg-teal-500/10 rounded-xl text-teal-600"><Icons.Globe className="w-6 h-6" /></div>
+              <div className="p-3 bg-teal-500/10 rounded-xl text-teal-600"><Icons.BookOpen className="w-6 h-6" /></div>
               <div>
-                <div className={`text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.gds')}</div>
-                <div className={`text-lg text-zinc-900 dark:text-white ${isVernacular ? 'font-extrabold leading-[1.4]' : 'font-bold'}`}>{t('tt.gds_value')}</div>
-                <div className={`text-xs text-zinc-500 dark:text-zinc-400 ${isVernacular ? 'font-semibold' : ''}`}>{t('tt.gds_sub')}</div>
+                <div className={`text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.curriculum')}</div>
+                <div className={`text-lg text-zinc-900 dark:text-white ${isVernacular ? 'font-extrabold leading-[1.4]' : 'font-bold'}`}>{t('tt.curriculum_value')}</div>
+                <div className={`text-xs text-zinc-500 dark:text-zinc-400 ${isVernacular ? 'font-semibold' : ''}`}>{t('tt.curriculum_sub')}</div>
               </div>
             </div>
             <div className="glass-panel p-6 rounded-2xl flex items-center gap-4 border-l-4 border-teal-500">
@@ -104,12 +105,12 @@ export function TravelTourismPageClient() {
             <h2 className={`text-3xl md:text-5xl font-display font-bold text-zinc-900 dark:text-white ml-auto text-right ${isVernacular ? 'leading-[1.3]' : ''}`}>{t('tt.modules_title')}</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 perspective-container">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 perspective-container">
             <PowerModuleCard 
               index={1}
               title={t('tt.mod1_title')}
               roleTitle={t('tt.mod1_role')}
-              icon={Icons.Globe}
+              icon={Icons.MapPin}
               color="teal"
               desc={t('tt.mod1_desc')}
               tapLabel={t('tt.mod_tap')}
@@ -120,7 +121,7 @@ export function TravelTourismPageClient() {
               index={2}
               title={t('tt.mod2_title')}
               roleTitle={t('tt.mod2_role')}
-              icon={Icons.Ticket}
+              icon={Icons.Globe}
               color="cyan"
               desc={t('tt.mod2_desc')}
               tapLabel={t('tt.mod_tap')}
@@ -131,20 +132,9 @@ export function TravelTourismPageClient() {
               index={3}
               title={t('tt.mod3_title')}
               roleTitle={t('tt.mod3_role')}
-              icon={Icons.Map}
+              icon={Icons.MonitorPlay}
               color="blue"
               desc={t('tt.mod3_desc')}
-              tapLabel={t('tt.mod_tap')}
-              curriculumLabel={t('tt.mod_curriculum')}
-              includedLabel={t('tt.cert_included')}
-            />
-            <PowerModuleCard 
-              index={4}
-              title={t('tt.mod4_title')}
-              roleTitle={t('tt.mod4_role')}
-              icon={Icons.Briefcase}
-              color="purple"
-              desc={t('tt.mod4_desc')}
               tapLabel={t('tt.mod_tap')}
               curriculumLabel={t('tt.mod_curriculum')}
               includedLabel={t('tt.cert_included')}
@@ -153,7 +143,152 @@ export function TravelTourismPageClient() {
         </div>
       </section>
 
-      {/* 3. CERTIFICATES */}
+      {/* 3. PRACTICAL TRAINING INFRASTRUCTURE */}
+      <section className="px-6 mb-32">
+        <div className="max-w-7xl mx-auto">
+          <div className="glass-panel p-8 md:p-16 rounded-[3rem] border border-teal-500/20 bg-gradient-to-br from-white to-teal-50 dark:from-zinc-900 dark:to-black relative overflow-hidden">
+            
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <div className={`inline-block px-4 py-1 rounded-lg bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 text-xs uppercase tracking-widest mb-6 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>
+                  {t('tt.practical_badge')}
+                </div>
+                <h2 className={`font-display text-4xl md:text-5xl font-bold text-zinc-900 dark:text-white mb-6 ${isVernacular ? 'leading-[1.3]' : ''}`}>
+                  {t('tt.practical_title')}<br/>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">{t('tt.practical_accent')}</span>
+                </h2>
+                <p className={`text-lg text-zinc-600 dark:text-zinc-400 mb-8 ${isVernacular ? 'leading-[1.8] font-semibold' : 'leading-relaxed'}`}>
+                  {t('tt.practical_desc')}
+                </p>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-teal-600 text-white flex items-center justify-center shrink-0 shadow-lg">
+                      <Icons.Map className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className={`text-lg font-bold text-zinc-900 dark:text-white ${isVernacular ? 'leading-[1.4]' : ''}`}>{t('tt.infra1_title')}</h4>
+                      <p className={`text-sm text-zinc-500 dark:text-zinc-400 ${isVernacular ? 'leading-[1.7] font-semibold' : ''}`}>{t('tt.infra1_desc')}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-cyan-600 text-white flex items-center justify-center shrink-0 shadow-lg">
+                      <Icons.FileText className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className={`text-lg font-bold text-zinc-900 dark:text-white ${isVernacular ? 'leading-[1.4]' : ''}`}>{t('tt.infra2_title')}</h4>
+                      <p className={`text-sm text-zinc-500 dark:text-zinc-400 ${isVernacular ? 'leading-[1.7] font-semibold' : ''}`}>{t('tt.infra2_desc')}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-lg">
+                      <Icons.Ticket className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className={`text-lg font-bold text-zinc-900 dark:text-white ${isVernacular ? 'leading-[1.4]' : ''}`}>{t('tt.infra3_title')}</h4>
+                      <p className={`text-sm text-zinc-500 dark:text-zinc-400 ${isVernacular ? 'leading-[1.7] font-semibold' : ''}`}>{t('tt.infra3_desc')}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative h-[500px] rounded-[2rem] overflow-hidden group shadow-2xl border border-white/20">
+                <Image 
+                  src="/images/travel-tourism/wings-classroom.jpg" 
+                  alt="Travel Planning"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute top-4 left-4 md:top-6 md:left-6 inline-flex items-center gap-2 text-[10px] md:text-sm font-black text-green-400 z-20">
+                  <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+                  {t('adv.card2.tag1')}
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-8 left-8 text-white">
+                  <div className={`text-3xl font-display font-bold ${isVernacular ? 'leading-[1.3]' : ''}`}>{t('tt.practical_areas')}</div>
+                  <p className={`text-white/80 ${isVernacular ? 'font-semibold' : ''}`}>{t('tt.practical_sub')}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. HOLISTIC DEVELOPMENT */}
+      <section className="px-6 mb-32 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          
+          <div className="text-center mb-20">
+            <span className={`text-teal-500 tracking-widest uppercase text-xs mb-3 block ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.holistic_badge')}</span>
+            <h2 className={`font-display text-5xl md:text-7xl font-bold text-zinc-900 dark:text-white mb-6 ${isVernacular ? 'leading-[1.2]' : ''}`}>
+              {t('tt.holistic_title')}<br/>
+              <span className="italic font-serif text-teal-500">{t('tt.holistic_accent')}</span>
+            </h2>
+            <p className={`text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto ${isVernacular ? 'leading-[1.8] font-semibold' : 'leading-relaxed'}`}>
+              {t('tt.holistic_desc')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
+            
+            {/* English - Featured */}
+            <div className="md:col-span-3 lg:col-span-4 group relative bg-zinc-900 dark:bg-white rounded-[2.5rem] p-10 shadow-xl border border-zinc-100 dark:border-white/5 overflow-hidden hover:-translate-y-2 transition-all duration-500">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl -mr-10 -mt-10"></div>
+              <div className="relative z-10 flex flex-col justify-center h-full">
+                <div className="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center mb-6 text-2xl shadow-sm text-white">
+                  <Icons.Languages className="w-7 h-7" />
+                </div>
+                <h3 className={`text-2xl font-bold text-white dark:text-zinc-900 mb-3 ${isVernacular ? 'leading-[1.4]' : ''}`}>{t('tt.english_title')}</h3>
+                <p className={`text-sm text-zinc-300 dark:text-zinc-600 max-w-lg ${isVernacular ? 'leading-[1.8] font-semibold' : 'leading-relaxed'}`}>
+                  {t('tt.english_desc')}
+                </p>
+              </div>
+            </div>
+
+            {/* Grooming - Compact */}
+            <div className="md:col-span-3 lg:col-span-2 group relative bg-white dark:bg-zinc-900 rounded-[2.5rem] p-8 shadow-xl border border-zinc-100 dark:border-white/5 overflow-hidden hover:-translate-y-2 transition-all duration-500">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 rounded-full blur-2xl -mr-16 -mt-16 transition-all group-hover:bg-pink-500/20"></div>
+              <div className="w-14 h-14 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center mb-6 text-2xl shadow-sm">
+                <Icons.Sparkles className="w-7 h-7" />
+              </div>
+              <h3 className={`text-xl font-bold text-zinc-900 dark:text-white mb-3 ${isVernacular ? 'leading-[1.4]' : ''}`}>{t('tt.spa_title')}</h3>
+              <p className={`text-sm text-zinc-600 dark:text-zinc-400 ${isVernacular ? 'leading-[1.8] font-semibold' : 'leading-relaxed'}`}>
+                {t('tt.spa_desc')}
+              </p>
+            </div>
+
+            {/* Fitness - Compact */}
+            <div className="md:col-span-3 lg:col-span-2 group relative bg-white dark:bg-zinc-900 rounded-[2.5rem] p-8 shadow-xl border border-zinc-100 dark:border-white/5 overflow-hidden hover:-translate-y-2 transition-all duration-500">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full blur-2xl -mr-16 -mt-16 transition-all group-hover:bg-green-500/20"></div>
+              <div className="w-14 h-14 rounded-2xl bg-green-50 text-green-600 flex items-center justify-center mb-6 text-2xl shadow-sm">
+                <Icons.Activity className="w-7 h-7" />
+              </div>
+              <h3 className={`text-xl font-bold text-zinc-900 dark:text-white mb-3 ${isVernacular ? 'leading-[1.4]' : ''}`}>{t('tt.fitness_title')}</h3>
+              <p className={`text-sm text-zinc-600 dark:text-zinc-400 ${isVernacular ? 'leading-[1.8] font-semibold' : 'leading-relaxed'}`}>
+                {t('tt.fitness_desc')}
+              </p>
+            </div>
+
+            {/* Mandatory Workshops - Wide */}
+            <div className="md:col-span-3 lg:col-span-4 group relative bg-white dark:bg-zinc-900 rounded-[2.5rem] p-8 shadow-xl border border-zinc-100 dark:border-white/5 overflow-hidden hover:-translate-y-2 transition-all duration-500">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-red-500/10 rounded-full blur-3xl -mr-10 -mt-10 transition-all group-hover:bg-red-500/20"></div>
+              <div className="w-14 h-14 rounded-2xl bg-red-50 text-red-600 flex items-center justify-center mb-6 text-2xl shadow-sm">
+                <Icons.ShieldCheck className="w-7 h-7" />
+              </div>
+              <h3 className={`text-2xl font-bold text-zinc-900 dark:text-white mb-3 ${isVernacular ? 'leading-[1.4]' : ''}`}>{t('tt.skills_title')}</h3>
+              <div className="flex flex-wrap gap-4 mt-4">
+                <span className={`px-3 py-1 rounded-lg bg-zinc-100 dark:bg-white/10 text-xs uppercase tracking-wider text-zinc-600 dark:text-zinc-300 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.first_aid')}</span>
+                <span className={`px-3 py-1 rounded-lg bg-zinc-100 dark:bg-white/10 text-xs uppercase tracking-wider text-zinc-600 dark:text-zinc-300 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.posh')}</span>
+                <span className={`px-3 py-1 rounded-lg bg-zinc-100 dark:bg-white/10 text-xs uppercase tracking-wider text-zinc-600 dark:text-zinc-300 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.customer_service')}</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 5. JOB MASTERY & CERTIFICATES */}
       <section className="px-6 mb-24">
         <div className="max-w-6xl mx-auto">
           <div className="relative p-10 rounded-[3rem] bg-zinc-50 border border-zinc-200 mb-16 shadow-xl overflow-hidden">
@@ -173,34 +308,164 @@ export function TravelTourismPageClient() {
                     index={i}
                     hoverText={t('tt.cert_hover')}
                     verifiedText={t('tt.cert_verified')}
+                    isVernacular={isVernacular}
+                    gradientColor="cyan"
+                    verifiedColor="green"
                   />
                 ))}
               </div>
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl">
+          {/* The Final Push: Job Interview Mastery */}
+          <div className="relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl group">
+            {/* Dynamic Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-[#1a1a1a] to-zinc-900"></div>
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-600/20 blur-[120px] rounded-full"></div>
+            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+            
+            {/* Ambient Lighting */}
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-600/20 blur-[120px] rounded-full mix-blend-screen animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-600/10 blur-[120px] rounded-full mix-blend-screen"></div>
 
             <div className="relative z-10 p-10 md:p-20 flex flex-col items-center text-center">
-              <h2 className={`font-display font-black text-5xl md:text-7xl tracking-tighter mb-8 text-white ${isVernacular ? 'leading-[1.1]' : 'leading-[0.9]'}`}>
-                {t('tt.cta_title')} <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-cyan-500">
-                  {t('tt.cta_accent')}
+              
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-8 shadow-lg">
+                <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
+                <span className={`text-xs text-yellow-500 uppercase tracking-widest ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.mastery_badge')}</span>
+              </div>
+
+              {/* Title */}
+              <h2 className={`font-display font-black text-5xl md:text-8xl tracking-tighter mb-8 text-white drop-shadow-2xl ${isVernacular ? 'leading-[1.1]' : 'leading-[0.9]'}`}>
+                {t('tt.mastery_title')} <br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-cyan-400 to-blue-50">
+                  {t('tt.mastery_accent')}
                 </span>
               </h2>
 
+              {/* Content Box */}
+              <div className="max-w-3xl mx-auto bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 mb-10">
+                <p className={`text-xl text-zinc-200 font-light mb-8 ${isVernacular ? 'leading-[1.8]' : 'leading-relaxed'}`}>
+                  {t('tt.mastery_desc')}
+                </p>
+
+                {/* Features pills */}
+                <div className="flex flex-wrap justify-center gap-4">
+                  <div className="flex items-center gap-3 px-6 py-3 rounded-xl bg-zinc-900/50 border border-white/10 shadow-lg">
+                    <div className="p-2 bg-teal-500/20 rounded-full text-teal-400"><Icons.Bot className="w-5 h-5" /></div>
+                    <span className={`text-white ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.ai_practice')}</span>
+                  </div>
+                  <div className="flex items-center gap-3 px-6 py-3 rounded-xl bg-zinc-900/50 border border-white/10 shadow-lg">
+                    <div className="p-2 bg-cyan-500/20 rounded-full text-cyan-400"><Icons.FileText className="w-5 h-5" /></div>
+                    <span className={`text-white ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.resume_builder')}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA */}
               <Link 
                 href="/admissions"
-                className="group relative px-12 py-6 bg-white text-zinc-900 rounded-full font-black text-xl hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3)]"
+                className={`group relative px-12 py-6 bg-white text-zinc-900 rounded-full font-black text-xl tracking-tight hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3)] overflow-hidden ${isVernacular ? 'leading-[1.4]' : ''}`}
               >
-                <span className="flex items-center gap-2">
-                  {t('tt.cta_btn')} <Icons.ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                <span className="relative z-10 flex items-center gap-2">
+                  {t('tt.mastery_btn')} <Icons.ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
                 </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-zinc-100 to-zinc-300 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </Link>
+
+              {/* Career Paths Subtext */}
+              <p className={`mt-8 text-sm text-zinc-400 uppercase tracking-widest ${isVernacular ? 'font-semibold leading-[1.6]' : 'font-medium'}`}>
+                {t('tt.career_paths')}
+              </p>
+
             </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 6. WALL OF FAME */}
+      <section className="px-6 mb-32">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <span className={`text-teal-600 text-xs tracking-wider uppercase mb-3 block ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('tt.fame_badge')}</span>
+            <h2 className={`font-display text-4xl md:text-6xl font-bold text-zinc-900 dark:text-white ${isVernacular ? 'leading-[1.3]' : ''}`}>
+              {t('tt.fame_title')} <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">{t('tt.fame_accent')}</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Student 1 */}
+            <div className="group relative rounded-[2.5rem] overflow-hidden cursor-pointer">
+              <div className="aspect-[3/4] relative">
+                <Image 
+                  src="/images/travel-tourism/vashisth-shukal.jpg" 
+                  alt="Vashisth Shukal, Wings Institute travel & tourism graduate running own travel company in Dubai"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <div className={`inline-block px-3 py-1 rounded-lg bg-[#000000] text-white text-[10px] uppercase tracking-widest mb-3 border border-white/20 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>
+                    Own Travel Company, Dubai
+                  </div>
+                  <h3 className="font-display font-bold text-2xl mb-1">Vashisth Shukal</h3>
+                  <p className={`text-zinc-300 text-sm ${isVernacular ? 'font-semibold' : ''}`}>Own Travel Company, Dubai</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Student 2 */}
+            <div className="group relative rounded-[2.5rem] overflow-hidden cursor-pointer mt-0 md:-mt-12">
+              <div className="aspect-[3/4] relative">
+                <Image 
+                  src="/images/travel-tourism/jenil-patel.jpg" 
+                  alt="Jenil Patel, Wings Institute alumnus operating own travel agency in Dubai"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <div className={`inline-block px-3 py-1 rounded-lg bg-[#00529B] text-white text-[10px] uppercase tracking-widest mb-3 border border-white/20 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>
+                    Own Travel Agency, Dubai
+                  </div>
+                  <h3 className="font-display font-bold text-2xl mb-1">Jenil Patel</h3>
+                  <p className={`text-zinc-300 text-sm ${isVernacular ? 'font-semibold' : ''}`}>Own Travel Agency, Dubai</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Student 3 */}
+            <div className="group relative rounded-[2.5rem] overflow-hidden cursor-pointer">
+              <div className="aspect-[3/4] relative">
+                <Image 
+                  src="/images/travel-tourism/tauseef-patel.jpeg" 
+                  alt="Tauseef Patel, Wings Institute Vadodara graduate and owner of STHL Holidays travel agency"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <div className={`inline-block px-3 py-1 rounded-lg bg-teal-600 text-white text-[10px] uppercase tracking-widest mb-3 border border-white/20 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>
+                    Owner STHL Holidays
+                  </div>
+                  <h3 className="font-display font-bold text-2xl mb-1">Tauseef Patel</h3>
+                  <p className={`text-zinc-300 text-sm ${isVernacular ? 'font-semibold' : ''}`}>Owner, STHL Holidays</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <Link 
+              href="/placements"
+              className={`inline-flex items-center gap-2 px-8 py-4 glass-panel rounded-full text-zinc-900 dark:text-white hover:bg-white/50 dark:hover:bg-white/10 transition-all border border-zinc-200 dark:border-white/10 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}
+            >
+              {t('tt.fame_btn')} <Icons.ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

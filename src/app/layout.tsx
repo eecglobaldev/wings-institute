@@ -154,9 +154,9 @@ export default async function RootLayout({
 
         {/* Aurora Background */}
         <div className="aurora-bg">
-          <div className="bg-grid-pattern opacity-0 dark:opacity-50" />
-          <div className="orb w-[800px] h-[800px] bg-blue-300/30 dark:bg-indigo-900/20 top-[-20%] left-[-10%] animate-blob hidden dark:block" />
-          <div className="orb w-[600px] h-[600px] bg-indigo-500/20 dark:bg-red-900/10 top-[20%] right-[-10%] animate-blob animation-delay-2000 hidden dark:block" />
+          <div className="bg-grid-pattern opacity-100 dark:opacity-50" />
+          <div className="orb w-[800px] h-[800px] bg-blue-300/30 dark:bg-indigo-900/20 top-[-20%] left-[-10%] animate-blob" />
+          <div className="orb w-[600px] h-[600px] bg-indigo-500/20 dark:bg-red-900/10 top-[20%] right-[-10%] animate-blob animation-delay-2000" />
         </div>
 
         <Providers language={language as Language}>

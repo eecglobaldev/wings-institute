@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Icons } from '@/components/Icons';
@@ -11,8 +11,14 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 export function PlacementsPageClient() {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const { language, t } = useLanguage();
   const isVernacular = language === 'hi' || language === 'gu';
+
+  // Reset video playing state when video changes
+  useEffect(() => {
+    setIsVideoPlaying(false);
+  }, [currentVideoIndex]);
 
   const fameWall = [
     { name: "Nandini Singh", role: "Cabin Crew", company: "Air India", category: "Aviation", image: "/images/success-stories/Nandini-Singh.png" },
@@ -198,14 +204,35 @@ export function PlacementsPageClient() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-zinc-900 rounded-b-2xl z-30"></div>
                 
                 <div className="w-full h-full relative bg-black">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${currentVideo.videoId}?autoplay=0&controls=1&modestbranding=1&rel=0&showinfo=0&playsinline=1`}
-                    className="absolute inset-0 w-full h-full"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title={currentVideo.title}
-                  ></iframe>
+                  {isVideoPlaying ? (
+                    <iframe
+                      src={`https://www.youtube.com/embed/${currentVideo.videoId}?autoplay=1&controls=1&modestbranding=1&rel=0&showinfo=0&playsinline=1`}
+                      className="absolute inset-0 w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      title={currentVideo.title}
+                    ></iframe>
+                  ) : (
+                    <>
+                      <Image
+                        src={currentVideo.thumbnail}
+                        alt={currentVideo.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 300px, 340px"
+                      />
+                      <button
+                        onClick={() => setIsVideoPlaying(true)}
+                        className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/20 transition-colors z-30 cursor-pointer group"
+                        aria-label={`Play ${currentVideo.title}`}
+                      >
+                        <div className="w-20 h-20 rounded-full bg-red-600 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                          <Icons.PlayCircle className="w-10 h-10 text-white ml-1" />
+                        </div>
+                      </button>
+                    </>
+                  )}
                   
                   <div className={`absolute inset-0 bg-gradient-to-b ${currentVideo.color} mix-blend-overlay opacity-20 pointer-events-none`}></div>
                   <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none"></div>
@@ -236,7 +263,10 @@ export function PlacementsPageClient() {
                 {videoVault.map((video, idx) => (
                   <div 
                     key={video.id}
-                    onClick={() => setCurrentVideoIndex(idx)}
+                    onClick={() => {
+                      setCurrentVideoIndex(idx);
+                      setIsVideoPlaying(false);
+                    }}
                     className={`
                       group relative flex items-center gap-4 p-3 rounded-2xl cursor-pointer transition-all duration-300 border
                       ${currentVideoIndex === idx 

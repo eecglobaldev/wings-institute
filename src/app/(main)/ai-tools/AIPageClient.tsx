@@ -122,9 +122,34 @@ export const AIPageClient: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             
             <div className="relative border border-zinc-200 dark:border-white/20 bg-white/80 dark:bg-zinc-900/60 p-1.5 rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl">
-               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 bg-zinc-50 dark:bg-black/60 rounded-[1.3rem] md:rounded-[1.8rem] lg:rounded-[2.8rem] overflow-hidden">
+               <div className="bg-zinc-50 dark:bg-black/60 rounded-[1.3rem] md:rounded-[1.8rem] lg:rounded-[2.8rem] overflow-hidden">
+                  {/* Image card */}
+                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] border-b border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+                     <div className="bg-grid-pattern"></div>
+                     <div className="absolute inset-0 bg-emerald-500/5"></div>
+                     <div className="relative w-full max-w-md bg-zinc-900 dark:bg-zinc-950 border border-white/20 rounded-xl md:rounded-2xl shadow-2xl p-6 md:p-8 lg:p-10 transform group-hover:scale-[1.02] transition-transform duration-500">
+                        <div className="w-full bg-white h-48 md:h-64 lg:h-80 rounded-lg mb-4 md:mb-6 p-4 md:p-6 relative overflow-hidden">
+                           <div className="w-12 md:w-16 lg:w-20 h-12 md:h-16 lg:h-20 bg-zinc-200 rounded-full mb-4 md:mb-6"></div>
+                           <div className="h-2 md:h-3 w-32 md:w-40 bg-zinc-800 rounded mb-2 md:mb-3"></div>
+                           <div className="h-1.5 md:h-2 w-24 md:w-32 bg-zinc-400 rounded mb-6 md:mb-8"></div>
+                           <div className="space-y-2 md:space-y-3">
+                              <div className="h-1.5 md:h-2 w-full bg-zinc-200 rounded"></div>
+                              <div className="h-1.5 md:h-2 w-full bg-zinc-200 rounded"></div>
+                              <div className="h-1.5 md:h-2 w-3/4 bg-zinc-200 rounded"></div>
+                           </div>
+                           <div className="absolute inset-0 bg-emerald-500/10 h-1.5 w-full top-0 animate-scanline shadow-[0_0_25px_#10b981]"></div>
+                        </div>
+                        <div className="flex justify-between items-center bg-zinc-800 rounded-lg md:rounded-xl p-3 md:p-4 lg:p-5 border border-white/20 shadow-lg">
+                           <div className="flex items-center gap-2 md:gap-3">
+                              <Icons.CheckCircle2 className="w-5 h-6 text-emerald-500" />
+                              <span className="text-xs md:text-sm font-mono font-black text-white tracking-widest">ATS_COMPLIANT</span>
+                           </div>
+                           <span className="text-xl md:text-2xl font-black font-mono text-emerald-400">98/100</span>
+                        </div>
+                     </div>
+                  </div>
                   
-                  <div className="p-6 md:p-10 lg:p-20 flex flex-col justify-center order-2 lg:order-1">
+                  <div className="p-6 md:p-10 lg:p-20 flex flex-col justify-center w-full">
                      <TechBadge color="emerald">{t('ai.module_01')}</TechBadge>
                      <h2 className={`text-3xl md:text-4xl lg:text-5xl font-display font-bold text-zinc-900 dark:text-white mt-6 md:mt-10 mb-4 md:mb-6 ${isVernacular ? 'leading-[1.3]' : ''}`}>
                         {t('ai.resume_title')}
@@ -156,30 +181,6 @@ export const AIPageClient: React.FC = () => {
                         </span>
                      </Link>
                   </div>
-
-                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-grid-pattern border-b lg:border-b-0 lg:border-l border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden order-1 lg:order-2">
-                     <div className="absolute inset-0 bg-emerald-500/5"></div>
-                     <div className="relative w-full max-w-md bg-zinc-900 dark:bg-zinc-950 border border-white/20 rounded-xl md:rounded-2xl shadow-2xl p-6 md:p-8 lg:p-10 transform group-hover:scale-[1.02] transition-transform duration-500">
-                        <div className="w-full bg-white h-48 md:h-64 lg:h-80 rounded-lg mb-4 md:mb-6 p-4 md:p-6 relative overflow-hidden">
-                           <div className="w-12 md:w-16 lg:w-20 h-12 md:h-16 lg:h-20 bg-zinc-200 rounded-full mb-4 md:mb-6"></div>
-                           <div className="h-2 md:h-3 w-32 md:w-40 bg-zinc-800 rounded mb-2 md:mb-3"></div>
-                           <div className="h-1.5 md:h-2 w-24 md:w-32 bg-zinc-400 rounded mb-6 md:mb-8"></div>
-                           <div className="space-y-2 md:space-y-3">
-                              <div className="h-1.5 md:h-2 w-full bg-zinc-200 rounded"></div>
-                              <div className="h-1.5 md:h-2 w-full bg-zinc-200 rounded"></div>
-                              <div className="h-1.5 md:h-2 w-3/4 bg-zinc-200 rounded"></div>
-                           </div>
-                           <div className="absolute inset-0 bg-emerald-500/10 h-1.5 w-full top-0 animate-scanline shadow-[0_0_25px_#10b981]"></div>
-                        </div>
-                        <div className="flex justify-between items-center bg-zinc-800 rounded-lg md:rounded-xl p-3 md:p-4 lg:p-5 border border-white/20 shadow-lg">
-                           <div className="flex items-center gap-2 md:gap-3">
-                              <Icons.CheckCircle2 className="w-5 h-6 text-emerald-500" />
-                              <span className="text-xs md:text-sm font-mono font-black text-white tracking-widest">ATS_COMPLIANT</span>
-                           </div>
-                           <span className="text-xl md:text-2xl font-black font-mono text-emerald-400">98/100</span>
-                        </div>
-                     </div>
-                  </div>
                </div>
             </div>
          </div>
@@ -191,8 +192,10 @@ export const AIPageClient: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             
             <div className="relative border border-zinc-200 dark:border-white/20 bg-white/80 dark:bg-zinc-900/60 p-1.5 rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl">
-               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 bg-zinc-50 dark:bg-black/60 rounded-[1.3rem] md:rounded-[1.8rem] lg:rounded-[2.8rem] overflow-hidden">
-                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-grid-pattern border-b lg:border-b-0 lg:border-r border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+               <div className="bg-zinc-50 dark:bg-black/60 rounded-[1.3rem] md:rounded-[1.8rem] lg:rounded-[2.8rem] overflow-hidden">
+                  {/* Image card */}
+                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] border-b border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+                     <div className="bg-grid-pattern"></div>
                      <div className="absolute inset-0 bg-cyan-500/5"></div>
                      <div className="relative w-full max-w-md bg-zinc-900 dark:bg-zinc-950 border border-white/20 rounded-xl md:rounded-2xl p-6 md:p-8 lg:p-10 transform group-hover:scale-[1.02] transition-transform duration-500">
                         <div className="flex items-center justify-between mb-6 md:mb-8 border-b border-white/10 pb-4 md:pb-6">
@@ -238,8 +241,8 @@ export const AIPageClient: React.FC = () => {
                         </div>
                      </div>
                   </div>
-
-                  <div className="p-10 lg:p-20 flex flex-col justify-center">
+                  
+                  <div className="p-10 lg:p-20 flex flex-col justify-center w-full">
                      <TechBadge color="cyan">{t('ai.module_02')}</TechBadge>
                      <h2 className={`text-4xl md:text-5xl font-display font-bold text-zinc-900 dark:text-white mt-10 mb-6 ${isVernacular ? 'leading-[1.3]' : ''}`}>
                         {t('ai.interview_title')}
@@ -282,8 +285,31 @@ export const AIPageClient: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-l from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             
             <div className="relative border border-zinc-200 dark:border-white/20 bg-white/80 dark:bg-zinc-900/60 p-1.5 rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl">
-               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 bg-zinc-50 dark:bg-black/60 rounded-[2.8rem] overflow-hidden">
-                  <div className="p-10 lg:p-20 flex flex-col justify-center order-2 lg:order-1">
+               <div className="bg-zinc-50 dark:bg-black/60 rounded-[2.8rem] overflow-hidden">
+                  {/* Image card */}
+                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] border-b border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+                     <div className="bg-grid-pattern"></div>
+                     <div className="absolute inset-0 bg-purple-500/5"></div>
+                     <div className="relative w-full max-w-md bg-zinc-900 dark:bg-zinc-950 border border-white/20 rounded-xl md:rounded-2xl shadow-2xl p-6 md:p-8 lg:p-10 flex flex-col items-center transform group-hover:scale-[1.02] transition-transform duration-500">
+                        <div className="flex gap-1.5 md:gap-2 h-16 md:h-20 items-center mb-6 md:mb-10 w-full justify-center">
+                           {[40, 60, 30, 80, 50, 90, 40, 60, 70, 30, 50, 80, 40, 60, 30].map((h, i) => (
+                              <div key={i} style={{height: `${h}%`, animationDelay: `${i*0.1}s`}} className="w-2 md:w-2.5 bg-purple-500 rounded-full animate-pulse shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
+                           ))}
+                        </div>
+                        <div className="w-full space-y-4 md:space-y-6">
+                           <div className="flex justify-between items-center text-sm md:text-base font-mono border-b border-white/10 pb-2 md:pb-3">
+                              <span className="text-zinc-500 font-bold text-xs md:text-sm">RATE_OF_SPEECH</span>
+                              <span className="text-purple-400 font-black text-xs md:text-sm lg:text-base">145 WPM [OPTIMAL]</span>
+                           </div>
+                           <div className="flex justify-between items-center text-sm md:text-base font-mono border-b border-white/10 pb-2 md:pb-3">
+                              <span className="text-zinc-500 font-bold text-xs md:text-sm">CLARITY_INDEX</span>
+                              <span className="text-green-400 font-black text-xs md:text-sm lg:text-base">98.5%</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div className="p-10 lg:p-20 flex flex-col justify-center w-full">
                      <TechBadge color="purple">{t('ai.module_03')}</TechBadge>
                      <h2 className={`text-4xl md:text-5xl font-display font-bold text-zinc-900 dark:text-white mt-10 mb-6 ${isVernacular ? 'leading-[1.3]' : ''}`}>
                         {t('ai.voice_title')}
@@ -315,27 +341,6 @@ export const AIPageClient: React.FC = () => {
                         </span>
                      </Link>
                   </div>
-
-                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-grid-pattern border-b lg:border-b-0 lg:border-l border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden order-1 lg:order-2">
-                     <div className="absolute inset-0 bg-purple-500/5"></div>
-                     <div className="relative w-full max-w-md bg-zinc-900 dark:bg-zinc-950 border border-white/20 rounded-xl md:rounded-2xl shadow-2xl p-6 md:p-8 lg:p-10 flex flex-col items-center transform group-hover:scale-[1.02] transition-transform duration-500">
-                        <div className="flex gap-1.5 md:gap-2 h-16 md:h-20 items-center mb-6 md:mb-10 w-full justify-center">
-                           {[40, 60, 30, 80, 50, 90, 40, 60, 70, 30, 50, 80, 40, 60, 30].map((h, i) => (
-                              <div key={i} style={{height: `${h}%`, animationDelay: `${i*0.1}s`}} className="w-2 md:w-2.5 bg-purple-500 rounded-full animate-pulse shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
-                           ))}
-                        </div>
-                        <div className="w-full space-y-4 md:space-y-6">
-                           <div className="flex justify-between items-center text-sm md:text-base font-mono border-b border-white/10 pb-2 md:pb-3">
-                              <span className="text-zinc-500 font-bold text-xs md:text-sm">RATE_OF_SPEECH</span>
-                              <span className="text-purple-400 font-black text-xs md:text-sm lg:text-base">145 WPM [OPTIMAL]</span>
-                           </div>
-                           <div className="flex justify-between items-center text-sm md:text-base font-mono border-b border-white/10 pb-2 md:pb-3">
-                              <span className="text-zinc-500 font-bold text-xs md:text-sm">CLARITY_INDEX</span>
-                              <span className="text-green-400 font-black text-xs md:text-sm lg:text-base">98.5%</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
                </div>
             </div>
          </div>
@@ -347,8 +352,10 @@ export const AIPageClient: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             
             <div className="relative border border-zinc-200 dark:border-white/20 bg-white/80 dark:bg-zinc-900/60 p-1.5 rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl">
-               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 bg-zinc-50 dark:bg-black/60 rounded-[2.8rem] overflow-hidden">
-                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-grid-pattern border-b lg:border-b-0 lg:border-r border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+               <div className="bg-zinc-50 dark:bg-black/60 rounded-[2.8rem] overflow-hidden">
+                  {/* Image card */}
+                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] border-b border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+                     <div className="bg-grid-pattern"></div>
                      <div className="absolute inset-0 bg-blue-500/5"></div>
                      <div className="relative w-full max-w-md bg-zinc-900 dark:bg-zinc-950 border border-white/20 rounded-xl md:rounded-2xl shadow-2xl p-6 md:p-10 lg:p-12 transform group-hover:scale-[1.02] transition-transform duration-500">
                         <div className="flex justify-center mb-6 md:mb-10">
@@ -370,8 +377,8 @@ export const AIPageClient: React.FC = () => {
                         </div>
                      </div>
                   </div>
-
-                  <div className="p-10 lg:p-20 flex flex-col justify-center">
+                  
+                  <div className="p-10 lg:p-20 flex flex-col justify-center w-full">
                      <TechBadge color="blue">{t('ai.module_04')}</TechBadge>
                      <h2 className={`text-4xl md:text-5xl font-display font-bold text-zinc-900 dark:text-white mt-10 mb-6 ${isVernacular ? 'leading-[1.3]' : ''}`}>
                         {t('ai.nav_title')}
@@ -414,8 +421,37 @@ export const AIPageClient: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-l from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             
             <div className="relative border border-zinc-200 dark:border-white/20 bg-white/80 dark:bg-zinc-900/60 p-1.5 rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl">
-               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 bg-zinc-50 dark:bg-black/60 rounded-[2.8rem] overflow-hidden">
-                  <div className="p-10 lg:p-20 flex flex-col justify-center order-2 lg:order-1">
+               <div className="bg-zinc-50 dark:bg-black/60 rounded-[2.8rem] overflow-hidden">
+                  {/* Image card */}
+                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] border-b border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden">
+                     <div className="bg-grid-pattern"></div>
+                     <div className="absolute inset-0 bg-amber-500/5"></div>
+                     <div className="relative w-full max-w-md bg-zinc-900 dark:bg-zinc-950 border border-white/20 rounded-xl md:rounded-2xl shadow-2xl p-6 md:p-8 lg:p-10 transform group-hover:scale-[1.02] transition-transform duration-500">
+                        <div className="flex justify-between items-center mb-6 md:mb-8 border-b border-white/10 pb-4 md:pb-6">
+                           <div className="flex items-center gap-2 md:gap-3">
+                              <Icons.Trophy className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-amber-500 shadow-glow" />
+                              <span className="text-sm md:text-base lg:text-lg font-black text-white tracking-tight">ELITE_LEVEL_05</span>
+                           </div>
+                           <span className="font-mono text-amber-400 font-black text-lg md:text-xl">2450 XP</span>
+                        </div>
+                        <div className="space-y-3 md:space-y-4">
+                           {[
+                              { label: "Ramp Safety", grade: "A+", score: "100%", color: "text-green-400", bg: "bg-green-500/10", border: "border-green-500/20" },
+                              { label: "F&B Service", grade: "B", score: "85%", color: "text-amber-400", bg: "bg-amber-500/10", border: "border-amber-500/20" },
+                           ].map((item, i) => (
+                              <div key={i} className={`flex items-center justify-between p-3 md:p-4 rounded-lg md:rounded-xl border shadow-sm ${item.bg} ${item.border}`}>
+                                 <span className="text-sm md:text-base text-white font-mono font-bold tracking-tight">{item.label}</span>
+                                 <div className="text-right">
+                                    <span className={`block text-xs md:text-sm font-black uppercase tracking-widest ${item.color}`}>{item.grade}</span>
+                                    <span className="text-[10px] md:text-xs text-zinc-500 font-mono">{item.score}</span>
+                                 </div>
+                              </div>
+                           ))}
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div className="p-10 lg:p-20 flex flex-col justify-center w-full">
                      <TechBadge color="amber">{t('ai.module_05')}</TechBadge>
                      <h2 className={`text-4xl md:text-5xl font-display font-bold text-zinc-900 dark:text-white mt-10 mb-6 ${isVernacular ? 'leading-[1.3]' : ''}`}>
                         {t('ai.quest_title')}
@@ -446,33 +482,6 @@ export const AIPageClient: React.FC = () => {
                            {t('ai.quest_btn')} <Icons.ArrowUpRight className="w-6 h-6" />
                         </span>
                      </Link>
-                  </div>
-
-                  <div className="relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-grid-pattern border-b lg:border-b-0 lg:border-l border-zinc-200 dark:border-white/10 p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden order-1 lg:order-2">
-                     <div className="absolute inset-0 bg-amber-500/5"></div>
-                     <div className="relative w-full max-w-md bg-zinc-900 dark:bg-zinc-950 border border-white/20 rounded-xl md:rounded-2xl shadow-2xl p-6 md:p-8 lg:p-10 transform group-hover:scale-[1.02] transition-transform duration-500">
-                        <div className="flex justify-between items-center mb-6 md:mb-8 border-b border-white/10 pb-4 md:pb-6">
-                           <div className="flex items-center gap-2 md:gap-3">
-                              <Icons.Trophy className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-amber-500 shadow-glow" />
-                              <span className="text-sm md:text-base lg:text-lg font-black text-white tracking-tight">ELITE_LEVEL_05</span>
-                           </div>
-                           <span className="font-mono text-amber-400 font-black text-lg md:text-xl">2450 XP</span>
-                        </div>
-                        <div className="space-y-3 md:space-y-4">
-                           {[
-                              { label: "Ramp Safety", grade: "A+", score: "100%", color: "text-green-400", bg: "bg-green-500/10", border: "border-green-500/20" },
-                              { label: "F&B Service", grade: "B", score: "85%", color: "text-amber-400", bg: "bg-amber-500/10", border: "border-amber-500/20" },
-                           ].map((item, i) => (
-                              <div key={i} className={`flex items-center justify-between p-3 md:p-4 rounded-lg md:rounded-xl border shadow-sm ${item.bg} ${item.border}`}>
-                                 <span className="text-sm md:text-base text-white font-mono font-bold tracking-tight">{item.label}</span>
-                                 <div className="text-right">
-                                    <span className={`block text-xs md:text-sm font-black uppercase tracking-widest ${item.color}`}>{item.grade}</span>
-                                    <span className="text-[10px] md:text-xs text-zinc-500 font-mono">{item.score}</span>
-                                 </div>
-                              </div>
-                           ))}
-                        </div>
-                     </div>
                   </div>
                </div>
             </div>

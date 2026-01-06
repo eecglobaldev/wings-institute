@@ -14,7 +14,6 @@ export function AboutPageClient() {
 
   return (
     <div className="min-h-screen pt-3 pb-20 relative z-10">
-      
       {/* Background Ambience */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
         <div className="absolute top-0 left-0 w-[1000px] h-[600px] bg-zinc-100 dark:bg-zinc-900 rounded-full blur-[120px] opacity-50"></div>
@@ -67,7 +66,7 @@ export function AboutPageClient() {
             {/* Founder 1: Ms. Mili Mehta */}
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-wings-red/20 to-orange-500/20 rounded-[40px] opacity-0 group-hover:opacity-100 transition-opacity blur-2xl"></div>
-              <div className="relative glass-panel p-8 md:p-12 rounded-[40px] border border-white/40 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-xl h-full flex flex-col hover:-translate-y-2 transition-transform duration-500">
+              <div className="relative glass-panel p-8 md:p-12 rounded-[40px] border border-white/40 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-xl h-full flex flex-col hover:-translate-y-2 transition-all duration-500 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_30px_80px_-20px_rgba(0,0,0,0.25)] dark:hover:shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
                 
                 <div className="flex items-start justify-between mb-8">
                   <div className="w-20 h-20 rounded-full bg-wings-red/10 flex items-center justify-center text-wings-red border border-wings-red/20 overflow-hidden">
@@ -120,7 +119,7 @@ export function AboutPageClient() {
             {/* Founder 2: Mr. Amit Jalan */}
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-indigo-500/20 rounded-[40px] opacity-0 group-hover:opacity-100 transition-opacity blur-2xl"></div>
-              <div className="relative glass-panel p-8 md:p-12 rounded-[40px] border border-white/40 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-xl h-full flex flex-col hover:-translate-y-2 transition-transform duration-500">
+              <div className="relative glass-panel p-8 md:p-12 rounded-[40px] border border-white/40 dark:border-white/10 bg-white/80 dark:bg-black/60 backdrop-blur-xl h-full flex flex-col hover:-translate-y-2 transition-all duration-500 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_30px_80px_-20px_rgba(0,0,0,0.25)] dark:hover:shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]">
                 
                 <div className="flex items-start justify-between mb-8">
                   <div className="w-20 h-20 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-600 border border-blue-500/20 overflow-hidden">
@@ -174,7 +173,7 @@ export function AboutPageClient() {
           </div>
 
           {/* PARENT COMPANY CARD - POWERED BY EEC */}
-          <div className="glass-panel p-8 md:p-12 lg:p-20 rounded-[3rem] md:rounded-[4rem] border border-zinc-200 dark:border-white/10 bg-white/90 dark:bg-zinc-900/50 backdrop-blur-3xl relative overflow-hidden shadow-2xl mt-20">
+          <div className="glass-panel p-8 md:p-12 lg:p-20 rounded-[3rem] md:rounded-[4rem] border border-zinc-200 dark:border-white/10 bg-white/90 dark:bg-zinc-900/50 backdrop-blur-3xl relative overflow-hidden shadow-[0_25px_80px_-15px_rgba(0,0,0,0.2)] dark:shadow-[0_25px_80px_-15px_rgba(0,0,0,0.6)] mt-20">
             <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
             
             <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-24">

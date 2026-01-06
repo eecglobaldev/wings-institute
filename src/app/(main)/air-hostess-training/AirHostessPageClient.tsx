@@ -333,6 +333,7 @@ export default function AirHostessPageClient({ initialLang }: AirHostessPageClie
                            src="/images/air-hostess-course-page/safety-training.jpg"
                            alt="Safety Training"
                            fill
+                           priority
                            className="object-cover transition-transform duration-700 group-hover:scale-110"
                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
@@ -370,6 +371,7 @@ export default function AirHostessPageClient({ initialLang }: AirHostessPageClie
                         src="/images/air-hostess-course-page/aviation-training-academy-gujarat.jpg" 
                         alt="Wings Institute aviation training academy campus building in Alkapuri Vadodara Gujarat"
                         fill
+                        priority
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
                         sizes="(max-width: 1024px) 100vw, 50vw"
                      />

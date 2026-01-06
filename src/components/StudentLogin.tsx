@@ -105,6 +105,14 @@ export const StudentLogin: React.FC<StudentLoginProps> = ({ toolName, onLoginSuc
       }
     }
   }, [onLoginSuccess]);
+
+  // Prevent body scrolling when login modal is shown
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
  
 
 
@@ -270,11 +278,11 @@ export const StudentLogin: React.FC<StudentLoginProps> = ({ toolName, onLoginSuc
   }
 
   return (
-   <div className="min-h-screen  pb-20 relative z-50 flex items-center justify-center px-4">
+   <div className="fixed inset-0 z-50 flex items-center justify-center px-4 overflow-y-auto">
    {/* Background Overlay */}
    <div className="fixed inset-0 bg-white/80 dark:bg-black/90 backdrop-blur-md z-0"></div>
    
-   <div className="relative z-10 w-full max-w-lg animate-fade-in-up">
+   <div className="relative z-10 w-full max-w-lg my-8 animate-fade-in-up">
       <div className="glass-panel p-8 rounded-[2.5rem] border border-white/40 dark:border-white/10 shadow-2xl bg-white/90 dark:bg-zinc-900/90 relative overflow-hidden">
          
          {/* Decor */}

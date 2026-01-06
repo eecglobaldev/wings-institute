@@ -104,7 +104,7 @@ export const Header: React.FC = () => {
   return (
     <>
       {/* --- THE COMMAND BAR (HEADER) --- */}
-      <header className="fixed top-0 left-0 right-0 h-20 bg-white/90 dark:bg-[#050507] backdrop-blur-2xl z-[40] border-b border-zinc-200/50 dark:border-white/5 flex items-center transition-all duration-300 px-[env(safe-area-inset-left)] px-[env(safe-area-inset-right)]">
+      <header className="fixed top-0 left-0 right-0 h-20 bg-white/90 dark:bg-[#050507] backdrop-blur-2xl z-[60] border-b border-zinc-200/50 dark:border-white/5 flex items-center transition-all duration-300 px-[env(safe-area-inset-left)] px-[env(safe-area-inset-right)]">
         <div className="max-w-screen-xl mx-auto w-full px-4 md:px-8 flex items-center justify-between gap-2 ">
           
           {/* Left: Brand */}
@@ -195,12 +195,16 @@ export const Header: React.FC = () => {
 
       {/* --- THE NEO-MATRIX OVERLAY --- */}
       <div 
-        className={`fixed inset-0 z-[20] bg-white dark:bg-[#050507] transition-all duration-700 ease-[cubic-bezier(0.8,0,0.2,1)] flex flex-col pt-20 ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'}`}
+        className={`fixed inset-0 z-[50] transition-all duration-700 ease-[cubic-bezier(0.8,0,0.2,1)] flex flex-col pt-20 ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'}`}
       >
-        <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
-        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-indigo-600/5 rounded-full blur-[120px] pointer-events-none"></div>
+        {/* Solid background layers - ensure they're not transparent */}
+        <div className="dark:hidden absolute inset-0 bg-white z-0"></div>
+        <div className="hidden dark:block absolute inset-0 bg-[#050507] z-0"></div>
+        {/* Decorative patterns on top */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none z-[1]"></div>
+        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-indigo-600/5 rounded-full blur-[120px] pointer-events-none z-[1]"></div>
 
-        <div className="flex-1 overflow-y-auto pb-5 lg:pb-12 px-6 md:px-12 scrollbar-hide relative z-10">
+        <div className="flex-1 overflow-y-auto pb-5 lg:pb-12 px-6 md:px-12 scrollbar-hide relative z-[2]">
           <div className="max-w-screen-xl mx-auto pt-12">
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-16 gap-y-16">
@@ -322,7 +326,7 @@ export const Header: React.FC = () => {
         </div>
 
         {/* --- GLOBAL ACTION DOCK --- */}
-        <div className="bg-zinc-50/80 dark:bg-zinc-900/50 border-t border-zinc-200/50 dark:border-white/5 p-4  shrink-0 pb-[max(2rem,env(safe-area-inset-bottom))]">
+        <div className="bg-zinc-50/80 dark:bg-zinc-900/50 border-t border-zinc-200/50 dark:border-white/5 p-4 shrink-0 pb-[max(2rem,env(safe-area-inset-bottom))] relative z-[2]">
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-4 lg:gap-10">
             <div className="flex items-center gap-3">
                <div className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></div>

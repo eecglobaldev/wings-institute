@@ -407,7 +407,7 @@ export const CareerNavigatorPageClient: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                {/* Personality Profile */}
                <div className="lg:col-span-7">
-                  <div className="glass-panel p-8 md:p-10 rounded-[3rem] border border-white/60 dark:border-white/10 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl shadow-2xl relative overflow-hidden">
+                  <div className="glass-panel enhanced-shadow p-8 md:p-10 rounded-[3rem] border border-white/60 dark:border-white/10 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl relative overflow-hidden">
                      <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-3xl"></div>
                      <div className="flex items-center gap-4 mb-8">
                         <div className="p-3 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-600">

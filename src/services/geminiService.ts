@@ -116,7 +116,11 @@ export const analyzePAAnnouncement = async (
     durationHi: number
 ): Promise<PAFeedback> => {
     const ai = getAI();
-    if (!process.env.API_KEY) throw new Error("API Key Missing");
+    // Check for API key based on environment (client vs server)
+    const apiKey = typeof window !== 'undefined' 
+        ? process.env.NEXT_PUBLIC_GEMINI_API_KEY 
+        : process.env.API_KEY;
+    if (!apiKey) throw new Error("API Key Missing");
 
     if (audioBlobEn.size === 0 || audioBlobHi.size === 0) {
         throw new Error("One or more audio recordings are empty. Please re-record.");
@@ -191,7 +195,11 @@ export const analyzePAAnnouncement = async (
 
 export const getFinalAIFeedback = async (question: Question, answer: string, language: string, t: (key: any) => string): Promise<FeedbackData> => {
     const ai = getAI();
-    if (!process.env.API_KEY) throw new Error(t('noApiKey'));
+    // Check for API key based on environment (client vs server)
+    const apiKey = typeof window !== 'undefined' 
+        ? process.env.NEXT_PUBLIC_GEMINI_API_KEY 
+        : process.env.API_KEY;
+    if (!apiKey) throw new Error(t('noApiKey'));
 
     const langName = { en: 'English', hi: 'Hindi', gu: 'Gujarati' }[language] || 'English';
     

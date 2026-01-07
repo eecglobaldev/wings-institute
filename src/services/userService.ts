@@ -89,36 +89,9 @@ export const registerUser = async (userData: any) => {
     const database = ensureDb();
     const usersRef = collection(database, "wings_users");
 
-    // 1️⃣ CHECK IF USER ALREADY EXISTS
-    const q = query(usersRef, where("email", "==", userData.email));
-    const snapshot = await getDocs(q);
-
-    if (!snapshot.empty) {
-      return "EXISTS"; // user already has an account
-    }
-
-    // 2️⃣ CONVERT BRANCH ID TO BRANCH NAME
-    // let branchName = '';
-    // if (userData.isEECAgent === 'Yes' && userData.branch) {
-    //   const branch = BRANCHES.find(b => b.identifier === userData.branch);
-    //   branchName = branch ? branch.name : '';
-    // }
-
-    // 3️⃣ CONVERT STATE CODE TO STATE NAME
-    // let stateName = '';
-    // if (userData.state) {
-    //   const state = STATES.find(s => s.code === userData.state);
-    //   stateName = state ? state.name : userData.state;
-    // }
-
-    // 4️⃣ CREATE NEW USER
+    // CREATE NEW USER (allowing duplicate emails)
     await addDoc(usersRef, {
       ...userData,
-      // state: stateName, // Save state name instead of code
-      // targetCountry: userData.targetCountry || 'New Zealand', // Ensure targetCountry is saved (default to USA if not provided)
-      // isEECAgent: userData.isEECAgent || '', // Save EEC agent status
-      // branch: branchName, // Save branch name instead of ID
-      // isVerified: true,
       count: 0, // Initialize count to 0 for new users
       createdAt: serverTimestamp(),
     });

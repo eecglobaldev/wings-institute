@@ -8,7 +8,7 @@ import { LanguageToggle } from '@/components/LanguageToggle';
 import { FAQSection } from '@/components/FAQSection';
 import { AdmissionsSEOContent } from '@/components/AdmissionsSEOContent';
 import { sendOtpMSG91, verifyOtpMSG91 } from '@/services/messageService';
-import { checkUserExists, registerUser, checkEmailExists } from '@/services/userService';
+import { checkUserExists, registerUser } from '@/services/userService';
 import { sendRegistrationNotificationEmailsUniversal } from '@/services/emailService';
 
 export const AdmissionsPageClient: React.FC = () => {
@@ -156,25 +156,12 @@ export const AdmissionsPageClient: React.FC = () => {
         return;
       }
 
-      const emailExists = await checkEmailExists(formData.email);
-      if (emailExists) {
-        setEmailError(t('adm.error_email_exists'));
-        setIsRegistering(false);
-        return;
-      }
-
       // Ensure all required fields are included in the data being sent to Firebase
       const userDataToSave = {
         ...formData,
       };
       
       const result = await registerUser(userDataToSave);
-
-      if (result === "EXISTS") {
-        setEmailError(t('adm.error_email_exists'));
-        setIsRegistering(false);
-        return;
-      }
 
       if (result === "ERROR") {
         setError(t('adm.error_generic'));

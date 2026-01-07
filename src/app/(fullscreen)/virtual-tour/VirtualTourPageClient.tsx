@@ -365,6 +365,20 @@ export const VirtualTourPageClient: React.FC = () => {
   const [isAutoPlay, setIsAutoPlay] = useState(true);
   const [imgLoaded, setImgLoaded] = useState(false);
   const [fullScreenImage, setFullScreenImage] = useState<InstaPost | null>(null);
+
+  // Prevent body scroll when lightbox is open
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (fullScreenImage) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'unset';
+      }
+      return () => {
+        document.body.style.overflow = 'unset';
+      };
+    }
+  }, [fullScreenImage]);
   
   // Use static feed directly - no loading state needed
   const feed = STATIC_FEED;
@@ -671,13 +685,17 @@ export const VirtualTourPageClient: React.FC = () => {
       {/* 3. LIGHTBOX OVERLAY */}
       {fullScreenImage && (
           <div 
-            className="fixed inset-0 z-[10] bg-black/95 backdrop-blur-3xl flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300"
+            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-3xl flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300"
             onClick={() => setFullScreenImage(null)}
           >
              {/* Close Button */}
              <button 
-                className="absolute top-6 right-6 md:top-10 md:right-10 w-12 h-12 rounded-full bg-white/10 hover:bg-wings-red text-white flex items-center justify-center border border-white/20 transition-all z-20 active:scale-90"
-                onClick={() => setFullScreenImage(null)}
+                className="absolute top-6 right-6 md:top-10 md:right-10 w-12 h-12 rounded-full bg-white/10 hover:bg-wings-red text-white flex items-center justify-center border border-white/20 transition-all z-[101] active:scale-90"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setFullScreenImage(null);
+                }}
+                aria-label="Close image"
              >
                 <Icons.X className="w-6 h-6" />
              </button>

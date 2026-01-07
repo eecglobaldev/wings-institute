@@ -93,7 +93,7 @@ const generateFAQSchema = () => {
 };
 
 export const SalaryROICalculatorSEOContent: React.FC = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   // Inject Schema.org JSON-LD (client-side only)
   useEffect(() => {

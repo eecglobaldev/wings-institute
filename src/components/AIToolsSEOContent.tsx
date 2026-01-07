@@ -194,7 +194,7 @@ const generateFAQSchema = () => {
 
 // --- MAIN COMPONENT ---
 export const AIToolsSEOContent: React.FC = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   // Inject Schema.org JSON-LD on mount (client-side only)
   useEffect(() => {

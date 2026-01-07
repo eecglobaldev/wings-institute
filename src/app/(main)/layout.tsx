@@ -5,6 +5,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { BatchCountdownBar } from '@/components/BatchCountdownBar';
 import { WhatsAppWidget } from '@/components/WhatsAppWidget';
 import { AitoolWidget } from '@/components/AitoolWidget';
+import { LemonSliceWidget } from '@/components/LemonSliceWidget';
 
 export const metadata: Metadata = {
   // Inherited from root layout
@@ -33,8 +34,9 @@ export default function MainLayout({
       
       {/* Floating Widgets */}
       <BatchCountdownBar />
-      <WhatsAppWidget />
       <AitoolWidget />
+      <WhatsAppWidget />
+      <LemonSliceWidget />
     </>
   );
 }

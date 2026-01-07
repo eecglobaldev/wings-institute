@@ -47,34 +47,8 @@ export const WhatsAppWidget: React.FC = () => {
     <div 
       data-whatsapp-widget="true"
       data-widget-id={widgetIdRef.current}
-      className="fixed bottom-28 md:bottom-24 right-6 md:right-8 z-[40] flex flex-col items-end gap-2 group"
+      className="fixed bottom-40 md:bottom-80 right-6 md:right-8 z-[50] flex flex-col items-end gap-0 group"
     >
-      
-      {/* Close Button */}
-      <button 
-        onClick={() => {
-          setShowBubble(false);
-          setIsVisible(false);
-        }}
-        className="mb-1 p-1.5 rounded-full bg-zinc-200 dark:bg-white/20 text-zinc-500 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-white/30 transition-colors shadow-sm backdrop-blur-sm z-[100] relative"
-        aria-label={t('whatsapp.close')}
-      >
-        <Icons.X className="w-3 h-3" />
-      </button>
-
-      {/* Speech Bubble - Hidden on mobile to reduce clutter */}
-      <div 
-        className={`hidden md:block bg-white text-zinc-900 px-4 py-3 rounded-2xl rounded-br-none shadow-xl border border-zinc-100 max-w-[250px] transition-all duration-500 transform origin-bottom-right ${showBubble ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-4 pointer-events-none'}`}
-      >
-         <div className="flex items-start gap-3">
-            <div className="w-2 h-2 rounded-full bg-green-500 mt-1.5 shrink-0 animate-pulse"></div>
-            <div>
-               <p className="text-xs font-bold text-zinc-500 mb-1 uppercase tracking-wider">{t('whatsapp.role')}</p>
-               <p className="text-sm font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: t('whatsapp.bubble_text') }} />
-            </div>
-         </div>
-      </div>
-
       {/* Main WhatsApp Button */}
       <a 
         href={link}

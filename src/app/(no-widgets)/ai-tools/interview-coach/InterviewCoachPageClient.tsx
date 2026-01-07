@@ -144,7 +144,7 @@ export const InterviewCoachPageClient: React.FC = () => {
             setIsLoggedIn(true);
             setUserName(data.name);
             if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
-        }} />;
+        }} onClose={() => window.history.back()} />;
     }
 
     return (

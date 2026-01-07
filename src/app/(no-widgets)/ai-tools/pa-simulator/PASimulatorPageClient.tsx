@@ -200,7 +200,7 @@ export const PASimulatorPageClient: React.FC = () => {
     };
 
     if (!isLoggedIn) {
-        return <StudentLogin toolName="PA Simulator" onLoginSuccess={handleLogin} />;
+        return <StudentLogin toolName="PA Simulator" onLoginSuccess={handleLogin} onClose={() => window.history.back()} />;
     }
 
     return (

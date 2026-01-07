@@ -399,7 +399,7 @@ export const ResumeBuilderPageClient: React.FC = () => {
   // --- RENDER VIEWS ---
 
   if (!isLoggedIn) {
-    return <StudentLogin toolName="Resume Architect" onLoginSuccess={handleLogin} />;
+    return <StudentLogin toolName="Resume Architect" onLoginSuccess={handleLogin} onClose={() => window.history.back()} />;
   }
 
   const renderLanding = () => (

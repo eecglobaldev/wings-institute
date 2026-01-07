@@ -119,7 +119,7 @@ const generateFAQSchema = () => {
 };
 
 export function ContactSEOContent() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   // Inject Schema.org JSON-LD
   useEffect(() => {

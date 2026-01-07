@@ -12,6 +12,7 @@ import { LoginPage } from './LoginPage';
 interface StudentLoginProps {
   toolName: string;
   onLoginSuccess: (userData: any) => void;
+  onClose?: () => void;
 }
 
 const COURSES = [
@@ -65,7 +66,7 @@ const STATE_NAMES: Record<string, string> = {
  const STORAGE_KEY = 'wings_student_data';
  
 
-export const StudentLogin: React.FC<StudentLoginProps> = ({ toolName, onLoginSuccess }) => {
+export const StudentLogin: React.FC<StudentLoginProps> = ({ toolName, onLoginSuccess, onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -113,6 +114,17 @@ export const StudentLogin: React.FC<StudentLoginProps> = ({ toolName, onLoginSuc
       document.body.style.overflow = 'unset';
     };
   }, []);
+
+  // Handle Escape key to close modal
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && onClose && !isAlreadyLoggedIn) {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [onClose, isAlreadyLoggedIn]);
  
 
 
@@ -278,12 +290,26 @@ export const StudentLogin: React.FC<StudentLoginProps> = ({ toolName, onLoginSuc
   }
 
   return (
-   <div className="fixed inset-0 z-50 flex items-center justify-center px-4 overflow-y-auto">
-   {/* Background Overlay */}
-   <div className="fixed inset-0 bg-white/80 dark:bg-black/90 backdrop-blur-md z-0"></div>
+   <div className="fixed inset-0 z-[40] flex items-center justify-center px-4 overflow-y-auto">
+   {/* Background Overlay - Click to close */}
+   <div 
+      className="fixed inset-0 bg-white/80 dark:bg-black/90 backdrop-blur-md z-0"
+      onClick={onClose && !isAlreadyLoggedIn ? onClose : undefined}
+   ></div>
    
-   <div className="relative z-10 w-full max-w-lg my-8 animate-fade-in-up">
+   <div className="relative z-10 w-full max-w-lg my-8 animate-fade-in-up" onClick={(e) => e.stopPropagation()}>
       <div className="glass-panel p-8 rounded-[2.5rem] border border-white/40 dark:border-white/10 shadow-2xl bg-white/90 dark:bg-zinc-900/90 relative overflow-hidden">
+         
+         {/* Close Button */}
+         {onClose && !isAlreadyLoggedIn && (
+            <button
+               onClick={onClose}
+               className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-zinc-100 dark:bg-white/10 hover:bg-zinc-200 dark:hover:bg-white/20 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all z-50"
+               aria-label="Close"
+            >
+               <Icons.X className="w-5 h-5" />
+            </button>
+         )}
          
          {/* Decor */}
          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none"></div>

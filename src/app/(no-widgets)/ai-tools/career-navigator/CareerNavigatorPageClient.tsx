@@ -270,7 +270,7 @@ export const CareerNavigatorPageClient: React.FC = () => {
   };
 
   if (!isLoggedIn) {
-    return <StudentLogin toolName="Career Navigator" onLoginSuccess={handleLogin} />;
+    return <StudentLogin toolName="Career Navigator" onLoginSuccess={handleLogin} onClose={() => window.history.back()} />;
   }
 
   return (

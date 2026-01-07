@@ -246,7 +246,7 @@ const generateBreadcrumbSchema = () => {
 };
 
 export function TravelTourismSEOContent() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const { t, language } = useLanguage();
   const isVernacular = language === 'hi' || language === 'gu';
 

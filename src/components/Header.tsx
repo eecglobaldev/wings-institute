@@ -2,19 +2,24 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Icons } from './Icons';
 import { LanguageToggle } from './LanguageToggle';
 import { ROUTES, getPageType } from '@/lib/routes';
 import type { PageType } from '@/types';
 
+const STORAGE_KEY = 'wings_student_data';
+
 export const Header: React.FC = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const currentPage = getPageType(pathname) || 'advantage';
   
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userName, setUserName] = useState<string>('');
 
   const LOGO_LIGHT = "/images/wings-logo-black.png"; 
   const LOGO_DARK = "/images/wings-logo-white.png";
@@ -40,6 +45,39 @@ export const Header: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Check if user is logged in
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    const checkLoginStatus = () => {
+      const storedData = localStorage.getItem(STORAGE_KEY);
+      if (storedData) {
+        try {
+          const userData = JSON.parse(storedData);
+          setIsLoggedIn(true);
+          setUserName(userData.name || '');
+        } catch (err) {
+          setIsLoggedIn(false);
+          setUserName('');
+        }
+      } else {
+        setIsLoggedIn(false);
+        setUserName('');
+      }
+    };
+
+    checkLoginStatus();
+    // Listen for storage changes (e.g., when user logs in/out in another tab)
+    window.addEventListener('storage', checkLoginStatus);
+    // Also check periodically in case of same-tab changes
+    const interval = setInterval(checkLoginStatus, 1000);
+    
+    return () => {
+      window.removeEventListener('storage', checkLoginStatus);
+      clearInterval(interval);
+    };
+  }, []);
+
   const handleNav = () => {
     setIsOpen(false);
   };
@@ -58,6 +96,16 @@ export const Header: React.FC = () => {
       });
     } catch (error) {
       console.error('Failed to save theme preference:', error);
+    }
+  };
+
+  const handleLogout = () => {
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem(STORAGE_KEY);
+      setIsLoggedIn(false);
+      setUserName('');
+      router.push('/');
+      router.refresh(); // Refresh to update the page state
     }
   };
 
@@ -180,7 +228,7 @@ export const Header: React.FC = () => {
              {/* MENU TRIGGER */}
              <button 
                 onClick={() => setIsOpen(!isOpen)}
-                className="group relative w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center transition-all active:scale-90 z-[30] bg-zinc-900 dark:bg-white rounded-full"
+                className="group relative w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center transition-all active:scale-90 z-[70] bg-zinc-900 dark:bg-white rounded-full"
                 aria-label="Toggle Navigation Matrix"
             >
               <div className="relative flex flex-col gap-1.5 items-center">
@@ -299,6 +347,21 @@ export const Header: React.FC = () => {
                         <span className="text-base font-medium tracking-tight text-zinc-500 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors">{item.label}</span>
                      </Link>
                    ))}
+                   {/* Logout option in mobile menu */}
+                   {isLoggedIn && (
+                     <button
+                       onClick={() => {
+                         handleLogout();
+                         handleNav();
+                       }}
+                       className="flex items-center gap-3 text-left group mt-2"
+                     >
+                       <div className="w-2 h-2 rounded-full bg-red-200 dark:bg-red-800 group-hover:bg-red-500 group-hover:scale-150 transition-all"></div>
+                       <span className="text-base font-medium tracking-tight text-red-500 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
+                         Logout {userName ? `(${userName})` : ''}
+                       </span>
+                     </button>
+                   )}
                 </div>
                 
                 <div className="mt-12 flex flex-col items-center md:items-start group/identity">

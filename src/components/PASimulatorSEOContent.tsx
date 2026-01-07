@@ -96,7 +96,7 @@ const generateFAQSchema = () => ({
 
 // --- MAIN COMPONENT ---
 export const PASimulatorSEOContent: React.FC = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;

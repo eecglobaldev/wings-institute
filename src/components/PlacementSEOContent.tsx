@@ -346,7 +346,7 @@ const generateFAQSchema = () => {
 
 // --- MAIN COMPONENT ---
 export function PlacementSEOContent() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   // Inject Schema.org JSON-LD on mount
   useEffect(() => {

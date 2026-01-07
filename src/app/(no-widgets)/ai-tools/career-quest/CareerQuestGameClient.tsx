@@ -69,7 +69,7 @@ export const CareerQuestGameClient: React.FC = () => {
   };
 
   if (!isLoggedIn) {
-    return <StudentLogin toolName="CareerQuest" onLoginSuccess={handleLogin} />;
+    return <StudentLogin toolName="CareerQuest" onLoginSuccess={handleLogin} onClose={() => window.history.back()} />;
   }
 
   if (view === 'LOADING') {

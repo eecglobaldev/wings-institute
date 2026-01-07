@@ -131,7 +131,7 @@ const generateFAQSchema = () => {
 };
 
 export function AboutSEOContent() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   useEffect(() => {
     const orgScriptId = 'about-org-schema';

@@ -143,7 +143,8 @@ import {
   FileQuestion,
   Medal,
   CalendarCheck,
-  CircleCheck
+  CircleCheck,
+  LogOut
 } from 'lucide-react';
 
 export const Icons = {
@@ -286,6 +287,7 @@ export const Icons = {
   FileQuestion,
   Medal,
   CalendarCheck,
-  CircleCheck
+  CircleCheck,
+  LogOut
 };
 

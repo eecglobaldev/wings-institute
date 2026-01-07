@@ -32,7 +32,7 @@ const faqKeys = [
 ];
 
 export const HomepageSEOContent: React.FC = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const { t, language } = useLanguage();
   const isVernacular = language === 'hi' || language === 'gu';
 

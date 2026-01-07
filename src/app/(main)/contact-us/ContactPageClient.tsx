@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Icons } from '@/components/Icons';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -15,6 +15,7 @@ import { sendQuickInquiryEmails } from '@/services/emailService';
 export function ContactPageClient() {
   const { language, t } = useLanguage();
   const isVernacular = language === 'hi' || language === 'gu';
+  const [isMounted, setIsMounted] = useState(false);
   const [phoneState, setPhoneState] = useState<'IDLE' | 'SENDING' | 'SENT' | 'VERIFIED'>('IDLE');
   const [phoneOtp, setPhoneOtp] = useState('');
   const [phoneValue, setPhoneValue] = useState('');
@@ -25,6 +26,11 @@ export function ContactPageClient() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+
+  // Only render map on client-side to avoid SSR issues
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -229,15 +235,24 @@ export function ContactPageClient() {
           {/* Right Form */}
           <div className="space-y-12">
             <div className="glass-panel p-2 rounded-[3.5rem] shadow-[0_30px_100px_-20px_rgba(0,0,0,0.3)] border border-white/40 dark:border-white/20 overflow-hidden h-[350px] relative group">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7382.035471043882!2d73.170787!3d22.315169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8b1d99d887b%3A0x72563e9ea9fe920f!2sWings%20Institute%20Air%20Hostess%20%26%20Hotel%20Management!5e0!3m2!1sen!2sin!4v1766752053425!5m2!1sen!2sin"
-                title="Wings Institute Location Map"
-                style={{border:0}} 
-                allowFullScreen={true} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-[3.2rem] w-full h-full grayscale group-hover:grayscale-0 transition-all duration-1000"
-              ></iframe>
+              {isMounted ? (
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7382.035471043882!2d73.170787!3d22.315169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8b1d99d887b%3A0x72563e9ea9fe920f!2sWings%20Institute%20Air%20Hostess%20%26%20Hotel%20Management!5e0!3m2!1sen!2sin!4v1766752053425!5m2!1sen!2sin"
+                  title="Wings Institute Location Map"
+                  style={{border:0}} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-[3.2rem] w-full h-full grayscale group-hover:grayscale-0 transition-all duration-1000"
+                />
+              ) : (
+                <div className="rounded-[3.2rem] w-full h-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
+                  <div className="text-center">
+                    <Icons.MapPin className="w-12 h-12 text-zinc-400 dark:text-zinc-600 mx-auto mb-2" />
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">Loading map...</p>
+                  </div>
+                </div>
+              )}
             </div>
             
             {/* Form */}

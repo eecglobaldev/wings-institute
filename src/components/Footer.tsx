@@ -13,6 +13,7 @@ export const Footer: React.FC = () => {
   const isVernacular = language === 'hi' || language === 'gu';
   const currentYear = new Date().getFullYear();
   const [isDark, setIsDark] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   // Vernacular styling classes
   const vernacularText = isVernacular ? 'leading-[1.8] tracking-wide' : '';
@@ -28,6 +29,11 @@ export const Footer: React.FC = () => {
     const observer = new MutationObserver(checkTheme);
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
     return () => observer.disconnect();
+  }, []);
+
+  // Only render map on client-side to avoid SSR issues
+  useEffect(() => {
+    setIsMounted(true);
   }, []);
 
   // OFFICIAL ASSETS & LINKS
@@ -199,16 +205,25 @@ export const Footer: React.FC = () => {
                  <h3 className={`text-xl md:text-2xl font-display font-bold text-zinc-900 dark:text-white truncate leading-[1.4] ${vernacularHeading}`}>{t('footer.campus_name')}</h3>
               </div>
               <div className="relative glass-panel p-1 rounded-[2.5rem] border border-white/60 dark:border-white/10 overflow-hidden h-[300px] md:h-[400px] shadow-2xl group">
-                 <iframe 
-                    src={MAP_EMBED_SRC}
-                    title="Wings Institute Location Map"
-                    style={{ border: 0 }} 
-                    allowFullScreen={true} 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                    allow="geolocation"
-                    className="rounded-[2.2rem] w-full h-full grayscale-[0.3] group-hover:grayscale-0 transition-all duration-1000 brightness-[0.98] dark:brightness-[0.9]"
-                 ></iframe>
+                 {isMounted ? (
+                   <iframe 
+                      src={MAP_EMBED_SRC}
+                      title="Wings Institute Location Map"
+                      style={{ border: 0 }} 
+                      allowFullScreen={true} 
+                      loading="lazy" 
+                      referrerPolicy="no-referrer-when-downgrade"
+                      allow="geolocation"
+                      className="rounded-[2.2rem] w-full h-full grayscale-[0.3] group-hover:grayscale-0 transition-all duration-1000 brightness-[0.98] dark:brightness-[0.9]"
+                   />
+                 ) : (
+                   <div className="rounded-[2.2rem] w-full h-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
+                     <div className="text-center">
+                       <Icons.MapPin className="w-12 h-12 text-zinc-400 dark:text-zinc-600 mx-auto mb-2" />
+                       <p className="text-sm text-zinc-500 dark:text-zinc-400">Loading map...</p>
+                     </div>
+                   </div>
+                 )}
                  <div className="absolute bottom-6 right-6">
                     <a 
                       href={MAP_DIRECTIONS_URL}

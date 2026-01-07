@@ -22,6 +22,25 @@ interface EducationItem {
   score: string;
 }
 
+interface CertificationItem {
+  name: string;
+  issuingAuthority: string;
+  licenseNumber: string;
+  expiryDate: string;
+}
+
+interface AwardItem {
+  name: string;
+  issuer: string;
+  date: string;
+  description: string;
+}
+
+interface SocialLinks {
+  linkedin: string;
+  portfolio: string;
+}
+
 interface ResumeData {
   personal: {
     fullName: string;
@@ -38,8 +57,9 @@ interface ResumeData {
     list: ExperienceItem[];
   };
   education: EducationItem[];
-  certifications: string[];
-  awards: string[];
+  certifications: CertificationItem[];
+  awards: AwardItem[];
+  socialLinks: SocialLinks;
   skills: string[];
   languages: {
     name: string;
@@ -61,6 +81,7 @@ const INITIAL_RESUME: ResumeData = {
   education: [{ degree: '', institution: '', year: '', score: '' }],
   certifications: [],
   awards: [],
+  socialLinks: { linkedin: '', portfolio: '' },
   skills: [],
   languages: [
     { name: 'English', level: 'Conversational' },
@@ -279,6 +300,33 @@ export const ResumeBuilderPageClient: React.FC = () => {
             <div class="company">${edu.institution} • Score: ${edu.score}</div>
           </div>
         `).join('')}
+        ${resume.certifications.length > 0 ? `
+        <div class="section-title">Certifications & Licenses</div>
+        ${resume.certifications.map(cert => `
+          <div class="sub-item">
+            <div class="role">${cert.name}</div>
+            <div class="company">${cert.issuingAuthority}${cert.licenseNumber ? ` • License: ${cert.licenseNumber}` : ''}${cert.expiryDate ? ` • Expires: ${new Date(cert.expiryDate).toLocaleDateString()}` : ''}</div>
+          </div>
+        `).join('')}
+        ` : ''}
+        ${resume.awards.length > 0 ? `
+        <div class="section-title">Honors & Awards</div>
+        ${resume.awards.map(award => `
+          <div class="sub-item">
+            ${award.date ? `<span class="date">${new Date(award.date).toLocaleDateString()}</span>` : ''}
+            <div class="role">${award.name}</div>
+            <div class="company">${award.issuer}</div>
+            ${award.description ? `<div class="content">${award.description}</div>` : ''}
+          </div>
+        `).join('')}
+        ` : ''}
+        ${(resume.socialLinks.linkedin || resume.socialLinks.portfolio) ? `
+        <div class="section-title">Digital Presence</div>
+        <div class="content">
+          ${resume.socialLinks.linkedin ? `<strong>LinkedIn:</strong> ${resume.socialLinks.linkedin}<br/>` : ''}
+          ${resume.socialLinks.portfolio ? `<strong>Portfolio:</strong> ${resume.socialLinks.portfolio}` : ''}
+        </div>
+        ` : ''}
         <div class="section-title">Key Proficiencies</div>
         <div class="content"><strong>Technical:</strong> ${resume.skills.join(', ')}</div>
         <div class="content"><strong>Linguistic:</strong> ${resume.languages.map(l => `${l.name} (${l.level})`).join(', ')}</div>
@@ -392,14 +440,17 @@ export const ResumeBuilderPageClient: React.FC = () => {
     <div className="max-w-5xl mx-auto animate-fade-in pb-32 px-6 px-[env(safe-area-inset-left)] px-[env(safe-area-inset-right)]">
        {/* Stepper HUD: Horizontal scrollable on mobile */}
        <div className="flex justify-between items-center mb-16 relative overflow-x-auto no-scrollbar">
-          <div className="absolute top-1/2 left-0 w-full h-0.5 bg-zinc-200 dark:bg-white/10 -z-10 min-w-[600px]"></div>
+          <div className="absolute top-1/2 left-0 w-full h-0.5 bg-zinc-200 dark:bg-white/10 -z-10 min-w-[900px]"></div>
           {[
             { id: 1, label: 'Profile' },
             { id: 2, label: 'Work' },
             { id: 3, label: 'Academia' },
-            { id: 4, label: 'Skills' },
-            { id: 5, label: 'Traits' },
-            { id: 6, label: 'Audit' }
+            { id: 4, label: 'Certifications' },
+            { id: 5, label: 'Awards' },
+            { id: 6, label: 'Social' },
+            { id: 7, label: 'Skills' },
+            { id: 8, label: 'Traits' },
+            { id: 9, label: 'Audit' }
           ].map(s => (
             <div key={s.id} className="flex flex-col items-center gap-3 shrink-0 px-2 md:px-0">
                 <div className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-black transition-all duration-500 ${step >= s.id ? 'bg-indigo-600 text-white shadow-[0_0_20px_rgba(79,70,229,0.4)]' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-400'}`}>
@@ -433,6 +484,8 @@ export const ResumeBuilderPageClient: React.FC = () => {
                     {/* text-[16px] prevents iOS zoom behavior */}
                     <input placeholder="Full Name" value={resume.personal.fullName} onChange={e => setResume({...resume, personal: {...resume.personal, fullName: e.target.value}})} className="w-full bg-zinc-50 dark:bg-black/40 border border-zinc-200 dark:border-white/10 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-indigo-500/50 text-[16px]" />
                     <input type="date" value={resume.personal.dob} onChange={e => setResume({...resume, personal: {...resume.personal, dob: e.target.value}})} className="w-full bg-zinc-50 dark:bg-black/40 border border-zinc-200 dark:border-white/10 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-indigo-500/50 text-[16px]" />
+                    <input placeholder="Email Address" type="email" value={resume.personal.email} onChange={e => setResume({...resume, personal: {...resume.personal, email: e.target.value}})} className="w-full bg-zinc-50 dark:bg-black/40 border border-zinc-200 dark:border-white/10 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-indigo-500/50 text-[16px]" />
+                    <input placeholder="Phone Number" type="tel" value={resume.personal.phone} onChange={e => setResume({...resume, personal: {...resume.personal, phone: e.target.value}})} className="w-full bg-zinc-50 dark:bg-black/40 border border-zinc-200 dark:border-white/10 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-indigo-500/50 text-[16px]" />
                     <input placeholder="City" value={resume.personal.city} onChange={e => setResume({...resume, personal: {...resume.personal, city: e.target.value}})} className="w-full bg-zinc-50 dark:bg-black/40 border border-zinc-200 dark:border-white/10 rounded-2xl px-6 py-4 outline-none focus:ring-2 focus:ring-indigo-500/50 text-[16px]" />
                     <select value={resume.personal.targetRole} onChange={e => setResume({...resume, personal: {...resume.personal, targetRole: e.target.value}})} className="w-full bg-zinc-50 dark:bg-black/40 border border-zinc-200 dark:border-white/10 rounded-2xl px-6 py-4 outline-none appearance-none cursor-pointer text-[16px]">
                         <option value="">Target Domain</option>
@@ -532,6 +585,100 @@ export const ResumeBuilderPageClient: React.FC = () => {
           )}
 
           {step === 4 && (
+             <div className="space-y-10 animate-fade-in">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <h2 className="text-2xl md:text-3xl font-display font-bold text-zinc-900 dark:text-white">Certifications & Licenses</h2>
+                    <button onClick={() => setResume({...resume, certifications: [...resume.certifications, {name: '', issuingAuthority: '', licenseNumber: '', expiryDate: ''}]})} className="px-4 py-2 rounded-xl bg-indigo-500/10 text-indigo-600 text-xs font-bold border border-indigo-500/20 active:scale-95 transition-transform touch-manipulation">Add Certification</button>
+                </div>
+                <div className="space-y-6">
+                    {resume.certifications.map((cert, i) => (
+                    <div key={i} className="p-6 md:p-10 rounded-[2.5rem] bg-zinc-50 dark:bg-black/30 border border-zinc-100 dark:border-white/5 relative">
+                        {resume.certifications.length > 0 && (
+                            <button onClick={() => setResume({...resume, certifications: resume.certifications.filter((_, idx) => idx !== i)})} aria-label="Remove Certification" className="absolute top-6 right-6 p-2 rounded-full text-zinc-300 hover:text-red-500 transition-colors active:scale-90 touch-manipulation">
+                                <Icons.X className="w-4 h-4" />
+                            </button>
+                        )}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input placeholder="Certification Name (e.g., First Aid & CPR)" value={cert.name} onChange={e => { const nl = [...resume.certifications]; nl[i].name = e.target.value; setResume({...resume, certifications: nl}); }} className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-3 text-[16px]" />
+                            <input placeholder="Issuing Authority" value={cert.issuingAuthority} onChange={e => { const nl = [...resume.certifications]; nl[i].issuingAuthority = e.target.value; setResume({...resume, certifications: nl}); }} className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-3 text-[16px]" />
+                            <input placeholder="License Number (if applicable)" value={cert.licenseNumber} onChange={e => { const nl = [...resume.certifications]; nl[i].licenseNumber = e.target.value; setResume({...resume, certifications: nl}); }} className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-3 text-[16px]" />
+                            <input type="date" placeholder="Expiry Date" value={cert.expiryDate} onChange={e => { const nl = [...resume.certifications]; nl[i].expiryDate = e.target.value; setResume({...resume, certifications: nl}); }} className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-3 text-[16px]" />
+                        </div>
+                    </div>
+                    ))}
+                    {resume.certifications.length === 0 && (
+                        <div className="p-12 md:p-20 text-center border-2 border-dashed border-zinc-100 dark:border-white/5 rounded-[3rem] flex flex-col items-center justify-center bg-zinc-50/50 dark:bg-black/10">
+                            <Icons.Award className="w-12 h-12 text-zinc-200 dark:text-zinc-800 mb-4" />
+                            <p className="text-zinc-400 font-bold uppercase tracking-widest text-sm">Add your certifications and licenses</p>
+                            <p className="text-zinc-500 text-xs mt-2">Examples: First Aid & CPR, SEP, DGR, HACCP</p>
+                        </div>
+                    )}
+                </div>
+             </div>
+          )}
+
+          {step === 5 && (
+             <div className="space-y-10 animate-fade-in">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <h2 className="text-2xl md:text-3xl font-display font-bold text-zinc-900 dark:text-white">Honors & Awards</h2>
+                    <button onClick={() => setResume({...resume, awards: [...resume.awards, {name: '', issuer: '', date: '', description: ''}]})} className="px-4 py-2 rounded-xl bg-indigo-500/10 text-indigo-600 text-xs font-bold border border-indigo-500/20 active:scale-95 transition-transform touch-manipulation">Add Award</button>
+                </div>
+                <div className="space-y-6">
+                    {resume.awards.map((award, i) => (
+                    <div key={i} className="p-6 md:p-10 rounded-[2.5rem] bg-zinc-50 dark:bg-black/30 border border-zinc-100 dark:border-white/5 relative">
+                        {resume.awards.length > 0 && (
+                            <button onClick={() => setResume({...resume, awards: resume.awards.filter((_, idx) => idx !== i)})} aria-label="Remove Award" className="absolute top-6 right-6 p-2 rounded-full text-zinc-300 hover:text-red-500 transition-colors active:scale-90 touch-manipulation">
+                                <Icons.X className="w-4 h-4" />
+                            </button>
+                        )}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input placeholder="Award Name (e.g., Employee of the Month)" value={award.name} onChange={e => { const nl = [...resume.awards]; nl[i].name = e.target.value; setResume({...resume, awards: nl}); }} className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-3 text-[16px]" />
+                            <input placeholder="Issuer" value={award.issuer} onChange={e => { const nl = [...resume.awards]; nl[i].issuer = e.target.value; setResume({...resume, awards: nl}); }} className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-3 text-[16px]" />
+                            <input type="date" placeholder="Date" value={award.date} onChange={e => { const nl = [...resume.awards]; nl[i].date = e.target.value; setResume({...resume, awards: nl}); }} className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-3 text-[16px]" />
+                        </div>
+                        <textarea placeholder="Brief Description" value={award.description} onChange={e => { const nl = [...resume.awards]; nl[i].description = e.target.value; setResume({...resume, awards: nl}); }} rows={3} className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-4 text-[16px]" />
+                    </div>
+                    ))}
+                    {resume.awards.length === 0 && (
+                        <div className="p-12 md:p-20 text-center border-2 border-dashed border-zinc-100 dark:border-white/5 rounded-[3rem] flex flex-col items-center justify-center bg-zinc-50/50 dark:bg-black/10">
+                            <Icons.Trophy className="w-12 h-12 text-zinc-200 dark:text-zinc-800 mb-4" />
+                            <p className="text-zinc-400 font-bold uppercase tracking-widest text-sm">Add your honors and awards</p>
+                            <p className="text-zinc-500 text-xs mt-2">Examples: Employee of the Month, Best Groomed Trainee, Dean's List</p>
+                        </div>
+                    )}
+                </div>
+             </div>
+          )}
+
+          {step === 6 && (
+             <div className="space-y-10 animate-fade-in">
+                <h2 className="text-2xl md:text-3xl font-display font-bold text-zinc-900 dark:text-white">Social Links & Digital Portfolio</h2>
+                <div className="space-y-6">
+                    <div className="p-6 md:p-10 rounded-[2.5rem] bg-zinc-50 dark:bg-black/30 border border-zinc-100 dark:border-white/5">
+                        <label className="block text-sm font-bold text-zinc-700 dark:text-zinc-300 mb-3 uppercase tracking-wider">LinkedIn Profile</label>
+                        <input 
+                            type="url" 
+                            placeholder="https://linkedin.com/in/yourprofile" 
+                            value={resume.socialLinks.linkedin} 
+                            onChange={e => setResume({...resume, socialLinks: {...resume.socialLinks, linkedin: e.target.value}})} 
+                            className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-4 text-[16px]" 
+                        />
+                    </div>
+                    <div className="p-6 md:p-10 rounded-[2.5rem] bg-zinc-50 dark:bg-black/30 border border-zinc-100 dark:border-white/5">
+                        <label className="block text-sm font-bold text-zinc-700 dark:text-zinc-300 mb-3 uppercase tracking-wider">Digital Portfolio URL</label>
+                        <input 
+                            type="url" 
+                            placeholder="https://yourportfolio.com" 
+                            value={resume.socialLinks.portfolio} 
+                            onChange={e => setResume({...resume, socialLinks: {...resume.socialLinks, portfolio: e.target.value}})} 
+                            className="w-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 rounded-xl px-6 py-4 text-[16px]" 
+                        />
+                    </div>
+                </div>
+             </div>
+          )}
+
+          {step === 7 && (
              <div className="space-y-12 animate-fade-in">
                 <h2 className="text-2xl md:text-3xl font-display font-bold text-zinc-900 dark:text-white">Proficiencies</h2>
                 <div className="flex flex-wrap gap-3">
@@ -555,7 +702,7 @@ export const ResumeBuilderPageClient: React.FC = () => {
              </div>
           )}
 
-          {step === 5 && (
+          {step === 8 && (
              <div className="space-y-12 animate-fade-in">
                 <h2 className="text-2xl md:text-3xl font-display font-bold text-zinc-900 dark:text-white">Traits & Assets</h2>
                 <div className="flex flex-wrap gap-3">
@@ -568,7 +715,7 @@ export const ResumeBuilderPageClient: React.FC = () => {
              </div>
           )}
 
-          {step === 6 && (
+          {step === 9 && (
              <div className="space-y-12 text-center animate-fade-in py-10">
                 <div className="inline-flex p-4 rounded-3xl bg-indigo-500/10 text-indigo-600 mb-6 shadow-inner border border-indigo-500/20"><Icons.ShieldCheck className="w-12 h-12" /></div>
                 <h2 className="text-3xl md:text-5xl font-display font-black text-zinc-900 dark:text-white tracking-tighter leading-tight">Forensic Final Audit.</h2>
@@ -595,7 +742,7 @@ export const ResumeBuilderPageClient: React.FC = () => {
           {/* Nav Footer */}
           <div className="mt-16 pt-10 border-t border-zinc-100 dark:border-white/5 flex justify-between gap-4">
              <button onClick={() => step > 1 ? setStep(step - 1) : setMode('LANDING')} className="px-6 md:px-8 py-4 font-black uppercase text-[10px] md:text-xs tracking-widest text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors active:scale-95 touch-manipulation">Back</button>
-             {step < 6 && (
+             {step < 9 && (
                 <button onClick={() => { if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' }); setStep(step + 1); }} className="px-10 md:px-12 py-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-2xl font-black uppercase text-[10px] md:text-xs tracking-widest shadow-xl hover:shadow-2xl active:scale-95 transition-all touch-manipulation">Continue</button>
              )}
           </div>
@@ -642,7 +789,7 @@ export const ResumeBuilderPageClient: React.FC = () => {
           <div ref={resumeRef} className="w-full max-w-[800px] p-8 md:p-24 font-serif bg-white shadow-inner">
              <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12 mb-16 border-b-8 border-indigo-600 pb-16">
                 <div className="flex-1 space-y-6 w-full">
-                    <h2 className="text-4xl md:text-6xl font-display font-black tracking-tighter mb-4 text-indigo-900 uppercase leading-none break-words">${resume.personal.fullName}</h2>
+                    <h2 className="text-4xl md:text-6xl font-display font-black tracking-tighter mb-4 text-indigo-900 uppercase leading-none break-words">{resume.personal.fullName}</h2>
                     <div className="flex flex-wrap gap-x-6 md:gap-x-8 gap-y-3 text-[10px] md:text-[11px] font-black text-zinc-400 uppercase tracking-[0.2em]">
                        <span className="flex items-center gap-2 shrink-0"><Icons.Mail className="w-3.5 h-3.5" /> {resume.personal.email}</span>
                        <span className="flex items-center gap-2 shrink-0"><Icons.Phone className="w-3.5 h-3.5" /> {resume.personal.phone}</span>
@@ -703,6 +850,52 @@ export const ResumeBuilderPageClient: React.FC = () => {
                             ))}
                         </div>
                     </section>
+                    {resume.certifications.length > 0 && (
+                        <section>
+                            <h3 className="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-600 mb-8 md:mb-10 flex items-center gap-4">
+                                <div className="w-8 md:w-10 h-0.5 bg-indigo-600"></div> Certifications & Licenses
+                            </h3>
+                            <div className="space-y-6 md:space-y-8">
+                                {resume.certifications.map((cert, i) => (
+                                    <div key={i} className="space-y-1">
+                                        <h4 className="font-black text-base md:text-lg text-zinc-900 leading-tight">{cert.name}</h4>
+                                        <p className="text-[10px] md:text-xs font-bold text-zinc-500 uppercase tracking-wider">
+                                            {cert.issuingAuthority}
+                                            {cert.licenseNumber && ` • License: ${cert.licenseNumber}`}
+                                            {cert.expiryDate && ` • Expires: ${new Date(cert.expiryDate).toLocaleDateString()}`}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+                    {resume.awards.length > 0 && (
+                        <section>
+                            <h3 className="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-600 mb-8 md:mb-10 flex items-center gap-4">
+                                <div className="w-8 md:w-10 h-0.5 bg-indigo-600"></div> Honors & Awards
+                            </h3>
+                            <div className="space-y-6 md:space-y-8">
+                                {resume.awards.map((award, i) => (
+                                    <div key={i} className="space-y-1">
+                                        <div className="flex justify-between items-start gap-4">
+                                            <div className="flex-1">
+                                                <h4 className="font-black text-base md:text-lg text-zinc-900 leading-tight">{award.name}</h4>
+                                                <p className="text-[10px] md:text-xs font-bold text-zinc-500 uppercase tracking-wider">{award.issuer}</p>
+                                            </div>
+                                            {award.date && (
+                                                <div className="text-[9px] md:text-[10px] font-black text-zinc-400 shrink-0">
+                                                    {new Date(award.date).toLocaleDateString()}
+                                                </div>
+                                            )}
+                                        </div>
+                                        {award.description && (
+                                            <p className="text-sm leading-relaxed text-zinc-600 mt-2">{award.description}</p>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    )}
                 </div>
                 <div className="md:col-span-4 space-y-10 md:space-y-14">
                     <section>
@@ -735,6 +928,25 @@ export const ResumeBuilderPageClient: React.FC = () => {
                             </div>
                         </div>
                     </section>
+                    {(resume.socialLinks.linkedin || resume.socialLinks.portfolio) && (
+                        <section>
+                            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-indigo-600 mb-6">Digital Presence</h3>
+                            <div className="space-y-3">
+                                {resume.socialLinks.linkedin && (
+                                    <a href={resume.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs font-bold text-indigo-600 hover:text-indigo-700 transition-colors">
+                                        <Icons.Link className="w-3.5 h-3.5" />
+                                        LinkedIn Profile
+                                    </a>
+                                )}
+                                {resume.socialLinks.portfolio && (
+                                    <a href={resume.socialLinks.portfolio} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs font-bold text-indigo-600 hover:text-indigo-700 transition-colors">
+                                        <Icons.Link className="w-3.5 h-3.5" />
+                                        Digital Portfolio
+                                    </a>
+                                )}
+                            </div>
+                        </section>
+                    )}
                 </div>
              </div>
              <div className="mt-20 md:mt-32 pt-10 border-t-2 border-zinc-50 text-center">

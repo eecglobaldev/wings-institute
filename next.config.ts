@@ -26,12 +26,12 @@ const nextConfig: NextConfig = {
     // Reduced sizes for lower memory usage (optimized for 1GB RAM)
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    // Image quality options (75 is default, 90 for better quality on critical images)
+    qualities: [75, 90],
     // Minimum quality for optimized images
     minimumCacheTTL: 60,
     // Enable unoptimized for faster dev builds (disable in production)
     unoptimized: false,
-    // Image quality (75 is default, 90 for better quality on critical images)
-    // Individual images can override with quality prop
     // Enable faster image loading
     dangerouslyAllowSVG: false,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

@@ -198,8 +198,8 @@ export function PlacementsPageClient() {
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
             
             {/* Phone Mockup */}
-            <div className="relative mx-auto lg:mx-0 shrink-0 sticky top-32">
-              <div className="w-[300px] h-[600px] md:w-[340px] md:h-[680px] bg-zinc-900 rounded-[3rem] border-[12px] border-zinc-900 shadow-2xl relative overflow-hidden z-10 ring-4 ring-zinc-200/20 dark:ring-white/5">
+            <div className="relative mx-auto lg:mx-0 shrink-0">
+              <div className="w-[300px] h-[600px] md:w-[340px] md:h-[680px] bg-zinc-900 rounded-[3rem] border-[12px] border-zinc-900 shadow-2xl relative overflow-hidden ring-4 ring-zinc-200/20 dark:ring-white/5">
                 
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-7 bg-zinc-900 rounded-b-2xl z-30"></div>
                 
@@ -262,7 +262,7 @@ export function PlacementsPageClient() {
             {/* Video List */}
             <div className="flex-1 w-full max-w-lg">
               <h3 className={`text-sm uppercase tracking-widest text-zinc-500 mb-4 px-2 ${isVernacular ? 'font-extrabold' : 'font-bold'}`}>{t('place.next_up')}</h3>
-              <div className="flex flex-col gap-2.5 h-[680px] overflow-y-auto pr-2 pb-10 scrollbar-hide">
+              <div className="flex flex-col gap-2.5 pr-2">
                 {videoVault.map((video, idx) => (
                   <div 
                     key={video.id}

@@ -120,7 +120,7 @@ export default function AirHostessPageClient({ initialLang }: AirHostessPageClie
                   </p>
                </div>
 
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 perspective-container">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 perspective-container">
 
                   <PowerModuleCard
                      index={1}
@@ -177,6 +177,18 @@ export default function AirHostessPageClient({ initialLang }: AirHostessPageClie
                      icon={Icons.MonitorPlay}
                      color="purple"
                      desc={t('ah.mod5_desc')}
+                     tapLabel={t('ah.mod_tap')}
+                     curriculumLabel={t('ah.mod_curriculum')}
+                     includedLabel={t('ah.mod_included')}
+                  />
+
+                  <PowerModuleCard
+                     index={6}
+                     title={t('ah.mod6_title')}
+                     roleTitle={t('ah.mod6_role')}
+                     icon={Icons.MonitorPlay}
+                     color="cyan"
+                     desc={t('ah.mod6_desc')}
                      tapLabel={t('ah.mod_tap')}
                      curriculumLabel={t('ah.mod_curriculum')}
                      includedLabel={t('ah.mod_included')}

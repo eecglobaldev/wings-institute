@@ -186,6 +186,32 @@ const nextConfig: NextConfig = {
         destination: '/privacy-policy',
         permanent: true,
       },
+      // AI Tools redirects (short URLs to full paths)
+      {
+        source: '/resume-builder',
+        destination: '/ai-tools/resume-builder',
+        permanent: true,
+      },
+      {
+        source: '/interview-coach',
+        destination: '/ai-tools/interview-coach',
+        permanent: true,
+      },
+      {
+        source: '/pa-simulator',
+        destination: '/ai-tools/pa-simulator',
+        permanent: true,
+      },
+      {
+        source: '/career-navigator',
+        destination: '/ai-tools/career-navigator',
+        permanent: true,
+      },
+      {
+        source: '/career-quest',
+        destination: '/ai-tools/career-quest',
+        permanent: true,
+      },
     ];
   },
 

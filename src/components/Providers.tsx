@@ -2,6 +2,7 @@
 
 import { ReactNode } from 'react';
 import { LanguageProvider } from '@/contexts/LanguageContext';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import type { Language } from '@/types';
 
 interface ProvidersProps {
@@ -16,6 +17,7 @@ interface ProvidersProps {
 export function Providers({ children, language }: ProvidersProps) {
   return (
     <LanguageProvider initialLanguage={language}>
+      <ScrollToTop />
       {children}
     </LanguageProvider>
   );

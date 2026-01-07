@@ -115,7 +115,7 @@ export function AirportManagementPageClient() {
         </div>
       </section>
 
-      {/* 2. THE 4 PILLARS (Core Modules) */}
+      {/* 2. THE 5 PILLARS (Core Modules) */}
       <section className="px-6 mb-32 bg-zinc-50/50 dark:bg-white/5 py-24 rounded-[3rem]">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-12 flex-wrap">
@@ -124,7 +124,7 @@ export function AirportManagementPageClient() {
             <h2 className={`text-3xl md:text-5xl font-display font-bold text-zinc-900 dark:text-white ml-auto text-right ${isVernacular ? 'leading-[1.3]' : ''}`}>{t('am.modules_title')}</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 perspective-container">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 perspective-container">
             <PowerModuleCard 
               index={1}
               title={t('am.mod1_title')}
@@ -168,6 +168,18 @@ export function AirportManagementPageClient() {
               icon={Icons.MonitorPlay}
               color="emerald"
               desc={t('am.mod4_desc')}
+              tapLabel={t('am.mod_tap')}
+              curriculumLabel={t('am.mod_curriculum')}
+              includedLabel={t('am.cert_included')}
+            />
+
+            <PowerModuleCard 
+              index={5}
+              title={t('am.mod5_title')}
+              roleTitle={t('am.mod5_role')}
+              icon={Icons.MonitorPlay}
+              color="cyan"
+              desc={t('am.mod5_desc')}
               tapLabel={t('am.mod_tap')}
               curriculumLabel={t('am.mod_curriculum')}
               includedLabel={t('am.cert_included')}

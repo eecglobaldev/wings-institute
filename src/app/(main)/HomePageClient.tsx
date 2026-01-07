@@ -45,7 +45,7 @@ export default function HomePage({ initialLang }: HomePageProps) {
                </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 ">
                {/* Card 1: AVSEC */}
                <SlideUpCard 
                   title={t('groom.card1_title')}
@@ -79,6 +79,18 @@ export default function HomePage({ initialLang }: HomePageProps) {
                   colorClass="bg-[#991b1b]" 
                   iconColorClass="bg-red-50 text-red-600"
                   desc={t('groom.card3_desc')}
+                  tapLabel={t('groom.tap_reveal')}
+                  certLabel={t('groom.cert_included')}
+               />
+
+               {/* Card 4: DCS */}
+               <SlideUpCard 
+                  title={t('groom.card4_title')}
+                  subtitle={t('groom.card4_subtitle')}
+                  icon={Icons.MonitorPlay}
+                  colorClass="bg-gradient-to-br from-[#0f766e] to-[#115e59]"
+                  iconColorClass="bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400"
+                  desc={t('groom.card4_desc')}
                   tapLabel={t('groom.tap_reveal')}
                   certLabel={t('groom.cert_included')}
                />

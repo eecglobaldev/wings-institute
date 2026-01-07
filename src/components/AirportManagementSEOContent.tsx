@@ -250,6 +250,70 @@ export function AirportManagementSEOContent() {
   const { t, language } = useLanguage();
   const isVernacular = language === 'hi' || language === 'gu';
 
+  // Save scroll position before navigation
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleBeforeUnload = () => {
+        const scrollPosition = window.scrollY || window.pageYOffset;
+        sessionStorage.setItem('seo-scroll-airport-management', String(scrollPosition));
+      };
+
+      const handleLinkClick = (e: MouseEvent) => {
+        const target = e.target as HTMLElement;
+        const link = target.closest('a[href="/admissions"]');
+        if (link) {
+          const scrollPosition = window.scrollY || window.pageYOffset;
+          sessionStorage.setItem('seo-scroll-airport-management', String(scrollPosition));
+        }
+      };
+
+      window.addEventListener('beforeunload', handleBeforeUnload);
+      document.addEventListener('click', handleLinkClick);
+
+      return () => {
+        window.removeEventListener('beforeunload', handleBeforeUnload);
+        document.removeEventListener('click', handleLinkClick);
+      };
+    }
+  }, []);
+
+  // Restore expanded state and scroll position from sessionStorage on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storageKey = 'seo-expanded-airport-management';
+      const scrollKey = 'seo-scroll-airport-management';
+      const savedState = sessionStorage.getItem(storageKey);
+      const savedScroll = sessionStorage.getItem(scrollKey);
+      const urlHash = window.location.hash;
+      
+      if (savedState === 'true' || urlHash === '#seo-content') {
+        setIsExpanded(true);
+        setTimeout(() => {
+          if (savedScroll) {
+            const scrollPos = parseInt(savedScroll, 10);
+            window.scrollTo({ top: scrollPos, behavior: 'auto' });
+            sessionStorage.removeItem(scrollKey);
+          } else {
+            const section = document.getElementById('airport-management-seo-content');
+            if (section) {
+              section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        }, 300);
+      }
+    }
+  }, []);
+
+  // Save expanded state to sessionStorage when it changes
+  const handleToggle = () => {
+    const newState = !isExpanded;
+    setIsExpanded(newState);
+    if (typeof window !== 'undefined') {
+      const storageKey = 'seo-expanded-airport-management';
+      sessionStorage.setItem(storageKey, String(newState));
+    }
+  };
+
   // Vernacular-specific styling classes for improved readability
   const vernacularText = isVernacular ? 'leading-[1.8] font-medium' : 'leading-relaxed';
   const vernacularHeading = isVernacular ? 'leading-[1.6]' : 'leading-tight';
@@ -292,7 +356,8 @@ export function AirportManagementSEOContent() {
         
         {/* Accordion Trigger */}
         <button 
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={handleToggle}
+          id="airport-management-seo-content"
           className="w-full group flex items-center justify-between p-6 md:p-8 rounded-[2rem] bg-gradient-to-br from-zinc-50 to-white dark:from-zinc-900 dark:to-zinc-950 border border-zinc-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all"
         >
           <div className="flex items-center gap-4">

@@ -274,6 +274,75 @@ export function AirHostessSEOContent() {
   const vernacularListItem = isVernacular ? 'leading-[1.8]' : 'leading-normal';
   const vernacularTableCell = isVernacular ? 'leading-[1.7] font-medium' : 'leading-normal';
 
+  // Save scroll position before navigation
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleBeforeUnload = () => {
+        const scrollPosition = window.scrollY || window.pageYOffset;
+        sessionStorage.setItem('seo-scroll-air-hostess', String(scrollPosition));
+      };
+
+      // Save scroll position when clicking links
+      const handleLinkClick = (e: MouseEvent) => {
+        const target = e.target as HTMLElement;
+        const link = target.closest('a[href="/admissions"]');
+        if (link) {
+          const scrollPosition = window.scrollY || window.pageYOffset;
+          sessionStorage.setItem('seo-scroll-air-hostess', String(scrollPosition));
+        }
+      };
+
+      window.addEventListener('beforeunload', handleBeforeUnload);
+      document.addEventListener('click', handleLinkClick);
+
+      return () => {
+        window.removeEventListener('beforeunload', handleBeforeUnload);
+        document.removeEventListener('click', handleLinkClick);
+      };
+    }
+  }, []);
+
+  // Restore expanded state and scroll position from sessionStorage on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storageKey = 'seo-expanded-air-hostess';
+      const scrollKey = 'seo-scroll-air-hostess';
+      const savedState = sessionStorage.getItem(storageKey);
+      const savedScroll = sessionStorage.getItem(scrollKey);
+      const urlHash = window.location.hash;
+      
+      // Restore from sessionStorage or URL hash
+      if (savedState === 'true' || urlHash === '#seo-content') {
+        setIsExpanded(true);
+        // Restore scroll position after content is expanded and rendered
+        setTimeout(() => {
+          if (savedScroll) {
+            const scrollPos = parseInt(savedScroll, 10);
+            window.scrollTo({ top: scrollPos, behavior: 'auto' });
+            // Clear saved scroll position after restoring
+            sessionStorage.removeItem(scrollKey);
+          } else {
+            // Fallback: scroll to section if no saved position
+            const section = document.getElementById('air-hostess-seo-content');
+            if (section) {
+              section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        }, 300); // Increased delay to ensure content is fully rendered
+      }
+    }
+  }, []);
+
+  // Save expanded state to sessionStorage when it changes
+  const handleToggle = () => {
+    const newState = !isExpanded;
+    setIsExpanded(newState);
+    if (typeof window !== 'undefined') {
+      const storageKey = 'seo-expanded-air-hostess';
+      sessionStorage.setItem(storageKey, String(newState));
+    }
+  };
+
   // Inject all Schema.org JSON-LD into document head
   useEffect(() => {
     const schemas = [
@@ -307,7 +376,8 @@ export function AirHostessSEOContent() {
         
         {/* Accordion Trigger */}
         <button 
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={handleToggle}
+          id="air-hostess-seo-content"
           className="w-full group flex items-center justify-between p-6 md:p-8 rounded-[2rem] bg-gradient-to-br from-zinc-50 to-white dark:from-zinc-900 dark:to-zinc-950 border border-zinc-200 dark:border-white/10 shadow-lg hover:shadow-xl transition-all"
         >
           <div className="flex items-center gap-4">

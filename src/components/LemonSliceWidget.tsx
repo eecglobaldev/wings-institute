@@ -235,7 +235,7 @@ export const LemonSliceWidget: React.FC = () => {
       {/* Lemon Slice Agent Container - Auto-opened on page load */}
       {/* Positioned at middle of right edge */}
       {isAgentOpen && (
-        <div className="fixed -bottom-24 right-6 md:right-8 -translate-y-1/2 z-[45]">
+        <div className="fixed -bottom-24 right-0 md:right-0 -translate-y-1/2 z-[45]">
           {/* Collapse Button */}
           <button
             onClick={() => setIsAgentOpen(false)}

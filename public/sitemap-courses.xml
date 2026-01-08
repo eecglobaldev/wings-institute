@@ -2,17 +2,15 @@
 <!--
   WINGS INSTITUTE - COURSE PAGES SITEMAP
   2026 SEO Standard - Revenue-Generating Course Pages
-  Last Updated: 2 January 2026
-  
-  URL Structure follows React SPA routing (types.ts PageType)
+  Last Updated: 8 January 2026
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <!-- Air Hostess / Cabin Crew Training - Flagship Course -->
   <url>
-    <loc>https://wingsinstitute.com/air-hostess</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://wingsinstitute.com/air-hostess-training</loc>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -25,8 +23,8 @@
   
   <!-- Airport Management / Ground Staff -->
   <url>
-    <loc>https://wingsinstitute.com/airport-mgmt</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://wingsinstitute.com/airport-management</loc>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -39,8 +37,8 @@
   
   <!-- Hotel Management -->
   <url>
-    <loc>https://wingsinstitute.com/hotel-mgmt</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://wingsinstitute.com/hotel-management</loc>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -53,8 +51,8 @@
   
   <!-- Culinary / Cooking Course -->
   <url>
-    <loc>https://wingsinstitute.com/culinary</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://wingsinstitute.com/culinary-cooking-course</loc>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
@@ -65,10 +63,10 @@
     </image:image>
   </url>
   
-  <!-- Travel & Tourism -->
+  <!-- Travel & Tourism Management -->
   <url>
-    <loc>https://wingsinstitute.com/travel-tourism</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://wingsinstitute.com/travel-tourism-management</loc>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>

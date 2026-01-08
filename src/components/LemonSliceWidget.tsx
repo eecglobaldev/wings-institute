@@ -91,25 +91,51 @@ export const LemonSliceWidget: React.FC = () => {
 
   return (
     <>
-      {/* Bubble Button Container */}
-      <div 
-        data-lemonslice-widget="true"
-        data-widget-id={widgetIdRef.current}
-        className="fixed bottom-24 md:bottom-64 right-6 md:right-8 z-[45] flex flex-col items-end gap-0 group"
-      >
-        {/* Main Lemon Slice Button */}
-        <button
-          onClick={() => setIsAgentOpen(!isAgentOpen)}
-          className="relative w-12 h-12 md:w-16 md:h-16 rounded-full shadow-[0_4px_20px_rgba(59,130,246,0.4)] hover:shadow-[0_8px_30px_rgba(59,130,246,0.6)] transition-all duration-300 hover:scale-110 flex items-center justify-center border-2 border-white bg-blue-500"
-          aria-label="Open Video Agent"
+      {/* Bubble Button Container - Hidden when agent is open */}
+      {!isAgentOpen && (
+        <div 
+          data-lemonslice-widget="true"
+          data-widget-id={widgetIdRef.current}
+          className="fixed bottom-28 md:bottom-24 right-6 md:right-8 z-[45] flex flex-col items-end gap-2 group"
         >
-          {/* Blue Ring Animation */}
-          <div className="absolute inset-0 border-2 border-blue-500 rounded-full animate-ping opacity-20"></div>
+          {/* Speech Bubble - Hidden on mobile to reduce clutter */}
+          <div 
+            className={`hidden md:block relative bg-white text-zinc-900 px-4 py-3 rounded-2xl rounded-br-none shadow-xl border border-zinc-100 max-w-[250px] transition-all duration-500 transform origin-bottom-right mb-[-2px] ${showBubble ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-90 translate-y-4 pointer-events-none'}`}
+          >
+            {/* Close Button - Positioned on top of the speech bubble */}
+            <button 
+              onClick={() => {
+                setShowBubble(false);
+                setIsVisible(false);
+              }}
+              className="absolute -top-2 -right-2 p-1.5 rounded-full bg-zinc-200 dark:bg-white/20 text-zinc-500 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-white/30 transition-colors shadow-sm backdrop-blur-sm z-[100]"
+              aria-label="Close Video Agent"
+            >
+              <Icons.X className="w-3 h-3" />
+            </button>
+            
+            <div className="flex items-center justify-center gap-3">
+              <div className="w-2 h-2 rounded-full bg-blue-500 mt-0.5 shrink-0 animate-pulse"></div>
+              <div>
+                <p className="text-sm font-bold text-zinc-500 uppercase tracking-wider">Talk to AI Counselor</p>
+              </div>
+            </div>
+          </div>
           
-          {/* Video/Play Icon */}
-          <Icons.PlayCircle className="w-6 h-6 md:w-8 md:h-8 text-white fill-white" />
-        </button>
-      </div>
+          {/* Main Lemon Slice Button */}
+          <button
+            onClick={() => setIsAgentOpen(!isAgentOpen)}
+            className="relative w-12 h-12 md:w-16 md:h-16 rounded-full shadow-[0_4px_20px_rgba(59,130,246,0.4)] hover:shadow-[0_8px_30px_rgba(59,130,246,0.6)] transition-all duration-300 hover:scale-110 flex items-center justify-center border-2 border-white bg-blue-500"
+            aria-label="Open Video Agent"
+          >
+            {/* Blue Ring Animation */}
+            <div className="absolute inset-0 border-2 border-blue-500 rounded-full animate-ping opacity-20"></div>
+            
+            {/* Video/Play Icon */}
+            <Icons.PlayCircle className="w-6 h-6 md:w-8 md:h-8 text-white fill-white" />
+          </button>
+        </div>
+      )}
 
       {/* Lemon Slice Agent Container - Only shown when opened */}
       {isAgentOpen && (

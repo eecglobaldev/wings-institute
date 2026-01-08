@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     description: "Gujarat's premier aviation & hospitality institute since 2008. Professional cabin crew, hotel management & culinary training with Airbus A330 Mock Cabin. 100% placement assistance.",
     images: [
       {
-        url: '/images/wings-og-image.jpg',
+        url: 'https://wingsinstitute.com/images/wings-og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Wings Institute - Air Hostess and Hotel Management Training Campus in Vadodara',
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Wings Institute Vadodara | Aviation & Hospitality Training',
     description: 'Professional Air Hostess, Cabin Crew & Hotel Management courses in Gujarat. Airbus A330 Mock Cabin training. Since 2008.',
-    images: ['/images/wings-twitter-card.jpg'],
+    images: ['https://wingsinstitute.com/images/wings-og-image.jpg'],
     site: '@wingsinstitute',
     creator: '@wingsinstitute',
   },
@@ -99,6 +99,11 @@ export const metadata: Metadata = {
     icon: [
       { url: '/images/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
       { url: '/images/wings-favicon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/wings-logo.png', sizes: '192x192', type: 'image/png' },
+      { url: '/images/wings-logo.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/wings-logo.png', sizes: '180x180', type: 'image/png' },
     ],
   },
   manifest: '/manifest.json',
@@ -130,6 +135,18 @@ export default async function RootLayout({
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* Explicit OG tags for WhatsApp compatibility */}
+        <meta property="og:image" content="https://wingsinstitute.com/images/wings-og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:alt" content="Wings Institute - Air Hostess and Hotel Management Training Campus in Vadodara" />
+        {/* Apple Touch Icon for iOS */}
+        <link rel="apple-touch-icon" href="/images/wings-logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/wings-logo.png" />
+        {/* PWA Icons for Android */}
+        <link rel="icon" type="image/png" sizes="192x192" href="/images/wings-logo.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/images/wings-logo.png" />
         {/* Preconnect for performance */}
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />

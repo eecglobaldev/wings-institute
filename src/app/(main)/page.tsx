@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Wings Institute',
     images: [
       {
-        url: '/images/og-home.jpg',
+        url: 'https://wingsinstitute.com/images/wings-og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Wings Institute - Aviation & Hospitality Training'
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Wings Institute Vadodara | Aviation & Hospitality Training',
     description: "Gujarat's premier aviation & hospitality institute since 2008.",
-    images: ['/images/og-home.jpg'],
+    images: ['https://wingsinstitute.com/images/wings-og-image.jpg'],
   },
   alternates: {
     canonical: 'https://wingsinstitute.com',

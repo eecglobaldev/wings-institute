@@ -23,6 +23,45 @@ export const metadata: Metadata = {
   },
 };
 
+// JSON-LD Schema for Course
+const courseSchema = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Travel & Tourism Management",
+  "description": "Master Amadeus & Galileo GDS systems, visa processing, tour packaging & itinerary planning. Start your own travel agency or work with leading travel companies like MakeMyTrip, SOTC, and Thomas Cook. 100% placement assistance.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "Wings Institute Air Hostess & Hotel Management",
+    "url": "https://wingsinstitute.com"
+  },
+  "educationalLevel": "Diploma",
+  "timeRequired": "P12M",
+  "courseMode": "Full-time",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Full-time",
+    "instructor": {
+      "@type": "Person",
+      "name": "Wings Institute Faculty"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Travel & Tourism Training",
+    "availability": "https://schema.org/InStock"
+  }
+};
+
 export default function TravelTourismPage() {
-  return <TravelTourismPageClient />;
+  return (
+    <>
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      
+      <TravelTourismPageClient />
+    </>
+  );
 }

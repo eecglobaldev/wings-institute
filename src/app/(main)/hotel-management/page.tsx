@@ -23,6 +23,81 @@ export const metadata: Metadata = {
   },
 };
 
+// JSON-LD Schema for Course
+const courseSchema = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Hotel Management & Hospitality Training",
+  "description": "Comprehensive hotel management training covering Front Office, F&B Service, Housekeeping & Kitchen operations. Includes 6-month paid internship at 5-star hotels like Taj, Marriott, and Oberoi. 100% placement assistance.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "Wings Institute Air Hostess & Hotel Management",
+    "url": "https://wingsinstitute.com"
+  },
+  "educationalLevel": "Diploma",
+  "timeRequired": "P12M",
+  "courseMode": "Full-time",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Full-time",
+    "instructor": {
+      "@type": "Person",
+      "name": "Wings Institute Faculty"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Hospitality Training",
+    "availability": "https://schema.org/InStock"
+  }
+};
+
+// FAQ Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is cooking compulsory in Hotel Management?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No! Hotel Management has four major departments: Front Office, Housekeeping, F&B Service, and Kitchen. You can choose to specialize in Front Office or Management if you don't like cooking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we get paid during the internship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! All our students undergo a 6-month industrial training in 5-star hotels like Taj, Oberoi, and Marriott, where they typically earn a monthly stipend ranging from ₹1500 to ₹5000 depending on the property."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I work on Cruise Ships after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Hotel Management graduates are highly sought after by Cruise Liners. However, most cruise companies require 1-2 years of onshore 5-star hotel experience before hiring."
+      }
+    }
+  ]
+};
+
 export default function HotelManagementPage() {
-  return <HotelManagementPageClient />;
+  return (
+    <>
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      
+      <HotelManagementPageClient />
+    </>
+  );
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Icons } from './Icons';
@@ -87,6 +87,49 @@ export const Breadcrumbs: React.FC = () => {
   }
 
   const trail = buildBreadcrumbTrail(currentPage);
+
+  // Generate and inject BreadcrumbList schema
+  useEffect(() => {
+    const breadcrumbItems = trail.map((crumb, index) => {
+      const url = crumb.page === 'advantage' 
+        ? 'https://wingsinstitute.com' 
+        : `https://wingsinstitute.com${ROUTES[crumb.page]}`;
+      
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": crumb.label,
+        "item": url
+      };
+    });
+
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbItems
+    };
+
+    // Remove existing breadcrumb schema if any
+    const existingScript = document.getElementById('breadcrumb-schema');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
+    // Add new breadcrumb schema
+    const script = document.createElement('script');
+    script.id = 'breadcrumb-schema';
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(breadcrumbSchema);
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup on unmount
+      const scriptToRemove = document.getElementById('breadcrumb-schema');
+      if (scriptToRemove) {
+        scriptToRemove.remove();
+      }
+    };
+  }, [pathname, currentPage, trail]);
 
   return (
     <nav 

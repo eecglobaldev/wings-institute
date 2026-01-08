@@ -23,6 +23,45 @@ export const metadata: Metadata = {
   },
 };
 
+// JSON-LD Schema for Course
+const courseSchema = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Culinary Arts & Professional Chef Training",
+  "description": "Professional chef training program covering Indian, Continental, Bakery & Confectionery cuisines. HACCP certified kitchen training with hands-on practice. 100% placement assistance at 5-star hotels & restaurants.",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "Wings Institute Air Hostess & Hotel Management",
+    "url": "https://wingsinstitute.com"
+  },
+  "educationalLevel": "Diploma",
+  "timeRequired": "P12M",
+  "courseMode": "Full-time",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Full-time",
+    "instructor": {
+      "@type": "Person",
+      "name": "Wings Institute Faculty"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "category": "Culinary Training",
+    "availability": "https://schema.org/InStock"
+  }
+};
+
 export default function CulinaryPage() {
-  return <CulinaryPageClient />;
+  return (
+    <>
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      
+      <CulinaryPageClient />
+    </>
+  );
 }

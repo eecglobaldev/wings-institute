@@ -23,6 +23,38 @@ export const metadata: Metadata = {
   },
 };
 
+// AboutPage Schema
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Wings Institute Vadodara",
+  "description": "Discover Wings Institute's 17-year legacy in aviation & hospitality education. Meet our expert faculty, explore world-class facilities, and join 5000+ successful alumni.",
+  "mainEntity": {
+    "@type": "EducationalOrganization",
+    "@id": "https://wingsinstitute.com/#organization",
+    "name": "Wings Institute Air Hostess & Hotel Management",
+    "foundingDate": "2008",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": "50+"
+    },
+    "alumni": {
+      "@type": "Person",
+      "name": "5000+ Alumni"
+    }
+  }
+};
+
 export default function AboutPage() {
-  return <AboutPageClient />;
+  return (
+    <>
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+      
+      <AboutPageClient />
+    </>
+  );
 }

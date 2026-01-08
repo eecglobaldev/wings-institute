@@ -80,6 +80,13 @@ const organizationSchema = {
     "opens": "10:00",
     "closes": "19:00"
   },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "5000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "sameAs": [
     "https://www.instagram.com/wingsinstitute",
     "https://www.facebook.com/wingsaviationtraining",

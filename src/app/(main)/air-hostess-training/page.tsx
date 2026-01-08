@@ -71,6 +71,38 @@ const courseSchema = {
   }
 };
 
+// FAQ Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "I am from a Gujarati medium background. Can I join?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! 70% of our students come from vernacular backgrounds. Our specialized 'Spoken English' module starts from the basics and transforms you into a fluent speaker before you graduate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the height requirement for Cabin Crew?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most domestic airlines, the minimum height requirement for females is 155 cm (approx 5'1\"). For international airlines like Emirates, it is 160 cm or an arm-reach of 212 cm while standing on tiptoes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you guarantee a job?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No honest institute can 'guarantee' a job. We provide 100% Placement Assistance. We train you, build your resume, conduct mock interviews, and send you for unlimited interviews until you get placed."
+      }
+    }
+  ]
+};
+
 export default async function Page() {
   const cookieStore = await cookies();
   const initialLang = (cookieStore.get('lang')?.value as 'en' | 'hi' | 'gu') || 'en';
@@ -81,6 +113,10 @@ export default async function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       
       <AirHostessPageClient initialLang={initialLang} />
